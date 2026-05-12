@@ -90,6 +90,45 @@
   });
 
   applyLanguage(getLanguage());
+
+  const notice = document.querySelector("[data-policy-notice]");
+  if (notice) {
+    const storageKey = `studio-yona-notice-dismissed:${notice.dataset.noticeKey || "default"}`;
+    const endDate = notice.dataset.noticeEnd;
+    const today = new Date();
+    const end = endDate ? new Date(`${endDate}T23:59:59+09:00`) : null;
+    const isExpired = end && today.getTime() > end.getTime();
+    const getDismissed = () => {
+      try {
+        return window.localStorage.getItem(storageKey) === "true";
+      } catch {
+        return false;
+      }
+    };
+    const setDismissed = () => {
+      try {
+        window.localStorage.setItem(storageKey, "true");
+      } catch {
+        return;
+      }
+    };
+    const isDismissed = getDismissed();
+
+    if (isExpired || isDismissed) {
+      notice.hidden = true;
+    } else {
+      notice.hidden = false;
+    }
+
+    const closeNotice = notice.querySelector("[data-policy-notice-close]");
+    if (closeNotice) {
+      closeNotice.addEventListener("click", () => {
+        setDismissed();
+        notice.hidden = true;
+      });
+    }
+  }
+
   const menu = document.querySelector("[data-menu]");
   const menuToggles = document.querySelectorAll("[data-menu-toggle]");
   const menuClosers = document.querySelectorAll("[data-menu-close]");
