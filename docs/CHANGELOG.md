@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- EDSN Frame 한글/영문 개인정보처리방침에 GitHub Actions 기반 Supabase DB 백업 artifact 14일 보관, GitHub 처리위탁/국외이전, 백업 파기 및 보안조치 문구를 추가했다.
+
 - EDSN Frame 한글/영문 개인정보처리방침 15항에서 앱 내 공개 위치 안내 줄을 제거하고 공개 URL과 시행일만 남겼다.
 
 - EDSN Frame 한글/영문 이용약관·개인정보처리방침 마지막 섹션에 시행일 `2026.05.02.`를 추가했다.

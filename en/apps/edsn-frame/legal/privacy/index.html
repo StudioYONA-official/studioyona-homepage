@@ -102,6 +102,11 @@
                     </tr>
                     <tr>
                       <td>Required</td>
+                      <td>Ensuring service operational stability, responding to incidents, and backing up/restoring data</td>
+                      <td>Backup copies of service operational data stored in the Supabase DB, such as account authentication/session-related information, account-based snapshots, point/currency balances, point grant/deduction history, owned item information, and purchase/entitlement snapshots</td>
+                    </tr>
+                    <tr>
+                      <td>Required</td>
                       <td>Prevent repeated fraudulent claiming of referral rewards and free/reward grants</td>
                       <td>Apple DeviceCheck token and verification result, Apple/Google account identifier hash processed with a server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
                     </tr>
@@ -169,6 +174,10 @@
                       <td>400 days by default from the event date. If retention is required by law or for dispute handling, the record may be separately retained for the required period.</td>
                     </tr>
                     <tr>
+                      <td>Database backups for service operational stability, incident response, and data recovery</td>
+                      <td>Retained for up to 14 days from creation of the backup artifact, then expired or deleted</td>
+                    </tr>
+                    <tr>
                       <td>Feedback/inquiry and account deletion response records</td>
                       <td>Until processing is completed and thereafter for any period required by applicable law or dispute response needs</td>
                     </tr>
@@ -195,6 +204,7 @@
                 </li>
               </ol>
               <p>Hash records used for fraud and abuse prevention do not store original Apple/Google account identifiers, email addresses, device names, or advertising identifiers, and are deleted when the retention period expires.</p>
+              <p>Backup artifacts used for service stability and incident recovery are deleted or expired when the configured retention period ends and are not intended for long-term retention.</p>
             </div>
 
             <div class="section">
@@ -235,6 +245,11 @@
                       <td>Google LLC</td>
                       <td>Google account sign-in (when selected), ad serving, ad reward processing, and ad consent management</td>
                       <td>Until termination of the entrustment agreement or achievement of the processing purpose</td>
+                    </tr>
+                    <tr>
+                      <td>GitHub, Inc.</td>
+                      <td>Creating database backup files through GitHub Actions and storing backup artifacts</td>
+                      <td>Up to 14 days from creation of the backup artifact</td>
                     </tr>
                   </tbody>
                 </table>
@@ -289,6 +304,14 @@
                       <td>Transferred when payments, restorations, Apple sign-in, or free/reward grant abuse-prevention verification occur</td>
                       <td>Payment processing, account authentication, and device-level abuse prevention</td>
                       <td>Subject to Apple policies</td>
+                    </tr>
+                    <tr>
+                      <td>GitHub, Inc.</td>
+                      <td>Account and service operational data included in Supabase DB backups</td>
+                      <td>United States and other countries/regions where GitHub infrastructure operates</td>
+                      <td>Transferred over a network when GitHub Actions backup jobs run</td>
+                      <td>Service incident response, data backup, and recovery</td>
+                      <td>Up to 14 days from creation of the backup artifact</td>
                     </tr>
                   </tbody>
                 </table>
@@ -369,6 +392,8 @@
                   <ul>
                     <li>Using external authentication infrastructure when handling authentication/sessions</li>
                     <li>Separating secrets from values that may be publicly exposed</li>
+                    <li>Managing backup authorization information through GitHub production Environment secrets</li>
+                    <li>Restricting access to backup artifacts and limiting artifact retention periods</li>
                     <li>Applying a policy that does not store raw tokens, receipt originals, or free-text originals in logs</li>
                   </ul>
                 </li>
