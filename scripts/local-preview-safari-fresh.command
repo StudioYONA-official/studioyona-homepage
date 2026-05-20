@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-PROJECT_DIR='/Users/Captain/Projects/VibeCoding/Studio YONA HomePage'
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 for candidate in 8421 8422 8423 8424 8425 8426 8427 8428 8429; do
   if ! lsof -tiTCP:${candidate} -sTCP:LISTEN >/dev/null 2>&1; then
     PORT="${candidate}"

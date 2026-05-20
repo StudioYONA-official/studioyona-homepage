@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-PROJECT_DIR='/Users/Captain/Projects/VibeCoding/Studio YONA HomePage'
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 PORT=8123
 URL="http://localhost:${PORT}/?preview=$(date +%s)"
 SERVER_COMMAND="cd '$PROJECT_DIR'; /usr/bin/python3 scripts/no_cache_server.py --port ${PORT} --directory '$PROJECT_DIR'"

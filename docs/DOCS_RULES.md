@@ -62,6 +62,39 @@ README.md
 - 시작 방법
 - 자주 쓰는 명령
 
+### Design Baseline
+
+파일:
+
+```text
+docs/design.md
+docs/skill.md
+```
+
+용도:
+
+- 홈페이지 디자인 수정 기준
+- 디자인 토큰, 컴포넌트 상태, 접근성 요구사항
+- UI 규칙/컴포넌트 명세/디자인 시스템 문서 작성 기준
+
+디자인 수정 작업 전에는 `docs/design.md`와 `docs/skill.md`를 먼저 확인한다.
+
+### Site Copy
+
+파일:
+
+```text
+docs/site-copy.md
+```
+
+용도:
+
+- 홈페이지와 주요 소개 페이지의 화면 문구 편집 원본
+- 홈/일반 페이지/앱 상세 페이지의 한국어·영어 카피 정리
+- 사용자가 문구를 수정한 뒤 HTML에 다시 반영하기 위한 기준
+
+화면 문구를 대량 수정할 때는 `docs/site-copy.md`를 먼저 확인한다.
+
 ## Worklog Trigger
 
 아래 중 하나라도 해당하면 worklog를 만든다.
