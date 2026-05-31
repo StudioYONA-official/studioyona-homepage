@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- EDSN Frame 한글·영문 개인정보처리방침과 이용약관에 EU/EEA 출시 준비용 regional privacy notice, GDPR 처리 근거/권리 안내, EU 소비자·디지털 서비스 안내를 추가했다.
+
 - 제공된 2026년 5월 24일 Detective Recorder 한국어 법률 문서를 기준으로 탐정의 녹음기 한글·영문 개인정보처리방침과 이용약관을 교체하고, Apple 인앱결제·구독·iCloud 동기화·국외이전 관련 문구를 반영했다.
 
 - Stampho 영문 법률 페이지의 사업장 주소 표기를 EDSN Frame 영문 법률 페이지의 확정 운영자 정보 표기와 통일했다.
