@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+- 2026년 6월 2일 Detective Recorder 제출 대상을 iPhone/iPad/Mac 앱으로 고정하고, 온디바이스 전사 모델 처리, 외부 전사 서버 미사용, 전사 결과 책임·정확도 제한 문구를 한글·영문 개인정보처리방침과 이용약관 및 중립 법률 진입 페이지에 반영했다.
+
+- 2026년 5월 31일 Public Legal URL Sync 지시에 따라 탐정의 녹음기 한글·영문 개인정보처리방침과 이용약관을 RecorderFix 원문 기준으로 다시 동기화하고, 첫 출시 후보에서 공개하면 안 되는 iCloud/CloudKit 동기화 관련 문구를 제거했다.
+
 - EDSN Frame 한글·영문 개인정보처리방침과 이용약관에 EU/EEA 출시 준비용 regional privacy notice, GDPR 처리 근거/권리 안내, EU 소비자·디지털 서비스 안내를 추가했다.
 
 - 제공된 2026년 5월 24일 Detective Recorder 한국어 법률 문서를 기준으로 탐정의 녹음기 한글·영문 개인정보처리방침과 이용약관을 교체하고, Apple 인앱결제·구독·iCloud 동기화·국외이전 관련 문구를 반영했다.
