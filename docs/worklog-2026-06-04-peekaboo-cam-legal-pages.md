@@ -46,6 +46,12 @@ Publish App Store submission-ready public legal URLs for 까꿍캠 through the H
   - `http://127.0.0.1:8123/ko/apps/peekaboo-cam/legal/terms/`
 - Legal drafting references checked: PIPC 2025 privacy policy writing guideline page, Personal Information Protection Act current text, Apple App Review Guidelines, and the local `korean-privacy-terms` checklist references.
 - Stop-hook scan: no exception swallowing, fake success, placeholder legal URL, or silent-fail path introduced.
+- Commit `1624b14` was pushed to `origin/main`.
+- Live no-cache header checks returned `200 OK` for:
+  - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/privacy/?v=20260604b`
+  - `https://www.studioyona.co.kr/ko/apps/peekaboo-cam/legal/privacy/?v=20260604b`
+  - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/terms/?v=20260604c`
+- Live body keyword checks were attempted after deployment, but the shell environment intermittently failed DNS resolution for `www.studioyona.co.kr`; local body checks and live 200 headers passed.
 
 ## Handoff / Next
 
