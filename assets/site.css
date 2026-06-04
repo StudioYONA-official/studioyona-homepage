@@ -1084,6 +1084,10 @@ body.home-page::before {
   align-items: center;
 }
 
+.story-section .section-grid-cinematic {
+  grid-template-columns: minmax(0, 760px);
+}
+
 .section-copy {
   padding-right: 1rem;
 }
