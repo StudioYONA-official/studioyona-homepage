@@ -13,7 +13,7 @@ Publish App Store submission-ready public legal URLs for 까꿍캠 through the H
 
 ## Reasoning Step
 
-- Plan: Reuse the existing Homepage legal shell and Studio YONA operator/contact facts, then draft app-specific Korean legal text for paid app sale and possible future In-App Purchases. Confidence: 0.90.
+- Plan: Reuse the existing Homepage legal shell and Studio YONA operator/contact facts, then draft app-specific Korean legal text for paid app sale and In-App Purchase policy coverage. Confidence: 0.90.
 - Implement: Add `peekaboo-cam` legal routes under neutral and Korean paths. Confidence: 0.88.
 - Verify: Run HTML parser validation, stale route checks, local HTTP checks, and live URL checks after deployment. Confidence: 0.86.
 
@@ -23,7 +23,7 @@ Publish App Store submission-ready public legal URLs for 까꿍캠 through the H
 - Operator: 스튜디오 요나.
 - Representative and privacy officer: 이나영.
 - Support email: studioyona.official@gmail.com.
-- App scope: iOS camera app with photo/video capture, parent voice presets, front-camera visual cues, clean saved media, paid App Store sale, and possible future In-App Purchases.
+- App scope: iOS camera app with photo/video capture, parent voice presets, front-camera visual cues, clean saved media, paid App Store sale, and In-App Purchase policy coverage.
 - Current build does not include account, ads, analytics SDK, company server upload, cloud sync, or implemented StoreKit products.
 
 ## Changes
@@ -44,7 +44,7 @@ Publish App Store submission-ready public legal URLs for 까꿍캠 through the H
   - `http://127.0.0.1:8123/apps/peekaboo-cam/legal/terms/`
   - `http://127.0.0.1:8123/ko/apps/peekaboo-cam/legal/privacy/`
   - `http://127.0.0.1:8123/ko/apps/peekaboo-cam/legal/terms/`
-- Legal drafting references checked: PIPC 2025 privacy policy writing guideline page, Personal Information Protection Act current text, Apple App Review Guidelines, and the local `korean-privacy-terms` checklist references.
+- Public legal copy reviewed for launch tone: speculative wording and drafting-reference notes were removed from the public-facing pages.
 - Stop-hook scan: no exception swallowing, fake success, placeholder legal URL, or silent-fail path introduced.
 - Commit `1624b14` was pushed to `origin/main`.
 - Live no-cache header checks returned `200 OK` for:
@@ -58,4 +58,4 @@ Publish App Store submission-ready public legal URLs for 까꿍캠 through the H
 - Use the neutral URLs for App Store Connect:
   - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/privacy/`
   - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/terms/`
-- If In-App Purchases are added to the first release, update these pages with the actual product, StoreKit, server validation, restore, and subscription details before submission.
+- If In-App Purchase products are added, update these pages with the actual product, StoreKit, server validation, restore, and subscription details before submission.
