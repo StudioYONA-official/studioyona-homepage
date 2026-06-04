@@ -690,17 +690,17 @@ img {
 
 body.home-page {
   --home-bg: #fbf8f3;
-  --home-line: rgba(32, 25, 18, 0.12);
+  --home-line: rgba(143, 121, 83, 0.22);
   --home-card: rgba(255, 252, 246, 0.94);
   --home-card-strong: rgba(255, 252, 246, 0.88);
   --home-dark: #201912;
   --home-soft: #6c625b;
-  --home-accent: #5c392a;
-  --home-accent-cool: #8a5a44;
-  --home-button: #5c392a;
-  --home-inverse: #fffaf5;
-  --home-focus: #5c392a;
-  --home-shadow: 0 24px 70px rgba(57, 38, 26, 0.12);
+  --home-accent: #8f7953;
+  --home-accent-cool: #b9a77f;
+  --home-button: #9f875d;
+  --home-inverse: #201912;
+  --home-focus: #8f7953;
+  --home-shadow: 0 24px 70px rgba(143, 121, 83, 0.14);
   --home-radius: 20px;
   --space-1: 7px;
   --space-2: 12px;
@@ -712,7 +712,7 @@ body.home-page {
   --space-8: 24px;
   background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), transparent 34%),
-    radial-gradient(circle at 85% 10%, rgba(138, 90, 68, 0.12), transparent 26%),
+    radial-gradient(circle at 85% 10%, rgba(185, 167, 127, 0.22), transparent 26%),
     linear-gradient(180deg, #fbf8f3 0%, #f7f2ea 56%, #f3ecdf 100%);
   color: var(--home-dark);
   font-family: "TT-Hoves-Pro-Trial", Arial, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
@@ -1243,7 +1243,7 @@ body.home-page::before {
   border: 1px solid var(--home-line);
   display: grid;
   place-items: center;
-  background: rgba(138, 90, 68, 0.08);
+  background: rgba(185, 167, 127, 0.18);
 }
 
 .app-icon-visual {
