@@ -261,10 +261,10 @@ Path: `apps/index.html`
 
 KR:
 - Title: Studio YONA | 앱 소개
-- Description: EDSN Frame, Stampho, 탐정의 녹음기 — Studio YONA의 앱을 만나보세요.
+- Description: EDSN Frame, Stampho, 까꿍캠, 탐정의 녹음기 — Studio YONA의 앱을 만나보세요.
 - Eyebrow: 앱 소개
 - H1: 우리 가족의 일상에서 태어난 앱들.
-- Lead: 포토부스에 못 가는 날 만든 EDSN Frame, 사진과 영상 위에 필요한 stamp를 남기는 Stampho. Studio YONA의 앱은 모두 실제 필요에서 시작합니다.
+- Lead: 포토부스에 못 가는 날 만든 EDSN Frame, 사진과 영상 위에 필요한 stamp를 남기는 Stampho, 아이의 시선을 모아주는 까꿍캠. Studio YONA의 앱은 모두 실제 필요에서 시작합니다.
 - CTA 1: EDSN Frame 보기
 - CTA 2: Stampho 보기
 - Hero card 1: 📸 / EDSN Frame — 내 폰이 포토부스
@@ -273,15 +273,16 @@ KR:
 - Section title: Studio YONA의 앱
 - Card 1: iOS 출시 중 / EDSN Frame (어디서나 프레임) / 내 스마트폰으로 언제 어디서나 포토부스처럼 귀여운 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요. / 자세히 보기
 - Card 2: 출시 준비 중 / Stampho / 사진과 영상 위에 필요한 text stamp를 남기고, 카테고리별 preset으로 반복 기록을 더 쉽게 이어 가세요. / 자세히 보기
-- Card 3: 이후 준비 중 / 탐정의 녹음기 / 카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요. / 자세히 보기
-- Card 4: 안심하세요 / 투명한 운영 / 개인정보처리방침과 이용약관을 앱별로 공개하고 있으며, 궁금한 점은 언제든 이메일로 물어보실 수 있습니다.
+- Card 3: 런칭 준비 중 / 까꿍캠 / 부모 음성 프리셋과 전면 카메라 시각 큐로 아이의 시선을 카메라 쪽으로 모아주는 보호자용 카메라 앱입니다. / 자세히 보기
+- Card 4: 이후 준비 중 / 탐정의 녹음기 / 카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요. / 자세히 보기
+- Card 5: 안심하세요 / 투명한 운영 / 개인정보처리방침과 이용약관을 앱별로 공개하고 있으며, 궁금한 점은 언제든 이메일로 물어보실 수 있습니다.
 
 EN:
 - Title: Studio YONA | Apps
-- Description: EDSN Frame, Stampho, Detective's Recorder — meet the apps from Studio YONA.
+- Description: EDSN Frame, Stampho, Peekaboo Cam, Detective's Recorder — meet the apps from Studio YONA.
 - Eyebrow: Apps
 - H1: Born from our family's everyday life.
-- Lead: EDSN Frame was born on a day we couldn't visit a photo booth. Stampho turns everyday photos and videos into stamped records. Every Studio YONA app begins with a real need.
+- Lead: EDSN Frame was born on a day we couldn't visit a photo booth. Stampho turns everyday photos and videos into stamped records. Peekaboo Cam helps families capture a child's attention. Every Studio YONA app begins with a real need.
 - CTA 1: EDSN Frame
 - CTA 2: Stampho
 - Hero card 1: 📸 / EDSN Frame — A photo booth in your pocket
@@ -290,8 +291,9 @@ EN:
 - Section title: Apps from Studio YONA
 - Card 1: Now on iOS / EDSN Frame / Turn your phone into a photo booth. Take cute group photos anytime, anywhere, with fun frames and effects. / Learn more
 - Card 2: Coming soon / Stampho / Add useful text stamps to photos and videos, then keep repeated records moving with category-based presets. / Learn more
-- Card 3: Planned later / Detective's Recorder / Tap a category and recording starts instantly — auto-organized. Keep lectures, meetings, and daily conversations neatly sorted. / Learn more
-- Card 4: You're safe / Transparent practices / We publish privacy policies and terms for each app, and you can always reach us by email with questions.
+- Card 3: Launch prep / Peekaboo Cam / A guardian camera app with parent voice presets and front-camera visual cues to help children look toward the camera. / Learn more
+- Card 4: Planned later / Detective's Recorder / Tap a category and recording starts instantly — auto-organized. Keep lectures, meetings, and daily conversations neatly sorted. / Learn more
+- Card 5: You're safe / Transparent practices / We publish privacy policies and terms for each app, and you can always reach us by email with questions.
 
 ## Support Page
 
