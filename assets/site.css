@@ -689,19 +689,19 @@ img {
 }
 
 body.home-page {
-  --home-bg: #fff9ee;
-  --home-line: rgba(30, 30, 29, 0.14);
-  --home-card: #f7f1e6;
-  --home-card-strong: #e2d4b7;
-  --home-dark: #232322;
-  --home-soft: #85827d;
-  --home-accent: #ae8d18;
-  --home-accent-cool: #e2d4b7;
-  --home-button: #ae8d18;
-  --home-inverse: #fff9ee;
-  --home-focus: #232322;
-  --home-shadow: none;
-  --home-radius: 8px;
+  --home-bg: #fbf8f3;
+  --home-line: rgba(32, 25, 18, 0.12);
+  --home-card: rgba(255, 252, 246, 0.94);
+  --home-card-strong: rgba(255, 252, 246, 0.88);
+  --home-dark: #201912;
+  --home-soft: #6c625b;
+  --home-accent: #5c392a;
+  --home-accent-cool: #8a5a44;
+  --home-button: #5c392a;
+  --home-inverse: #fffaf5;
+  --home-focus: #5c392a;
+  --home-shadow: 0 24px 70px rgba(57, 38, 26, 0.12);
+  --home-radius: 20px;
   --space-1: 7px;
   --space-2: 12px;
   --space-3: 12.59px;
@@ -710,7 +710,10 @@ body.home-page {
   --space-6: 16.52px;
   --space-7: 20px;
   --space-8: 24px;
-  background: var(--home-bg);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), transparent 34%),
+    radial-gradient(circle at 85% 10%, rgba(138, 90, 68, 0.12), transparent 26%),
+    linear-gradient(180deg, #fbf8f3 0%, #f7f2ea 56%, #f3ecdf 100%);
   color: var(--home-dark);
   font-family: "TT-Hoves-Pro-Trial", Arial, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   font-size: 16px;
@@ -752,7 +755,7 @@ body.home-page::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 249, 238, 0.94);
+  background: rgba(251, 248, 243, 0.94);
   backdrop-filter: blur(16px);
   pointer-events: none;
 }
@@ -817,11 +820,11 @@ body.home-page::before {
 
 .home-lang a:hover {
   color: var(--home-dark);
-  background: rgba(226, 222, 207, 0.08);
+  background: rgba(138, 90, 68, 0.08);
 }
 
 .home-lang a:active {
-  background: rgba(197, 173, 111, 0.18);
+  background: rgba(138, 90, 68, 0.16);
 }
 
 .home-lang a[aria-current="page"] {
@@ -914,7 +917,7 @@ body.home-page::before {
   padding: var(--space-2);
   border-radius: var(--home-radius);
   border: 1px solid var(--home-line);
-  background: rgba(12, 12, 12, 0.96);
+  background: rgba(255, 252, 246, 0.98);
   color: var(--home-dark);
   box-shadow: var(--home-shadow);
 }
@@ -1142,9 +1145,9 @@ body.home-page::before {
 
 .app-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
-  gap: clamp(1.25rem, 3vw, 2rem);
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) clamp(112px, 14vw, 148px);
+  gap: clamp(1rem, 2.4vw, 1.5rem);
+  align-items: center;
   padding: clamp(1.25rem, 3vw, 1.8rem);
   border-radius: var(--home-radius);
   border: 1px solid var(--home-line);
@@ -1228,11 +1231,26 @@ body.home-page::before {
 
 .app-visual {
   position: relative;
-  min-height: 320px;
+  min-height: 0;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: var(--home-radius);
   overflow: hidden;
   border: 1px solid var(--home-line);
-  background: rgba(226, 222, 207, 0.05);
+  display: grid;
+  place-items: center;
+  background: rgba(138, 90, 68, 0.08);
+}
+
+.app-icon-visual {
+  align-self: center;
+}
+
+.app-icon-art {
+  width: 72%;
+  aspect-ratio: 1;
+  border-radius: 22%;
+  box-shadow: 0 16px 34px rgba(57, 38, 26, 0.12);
 }
 
 .app-visual-frame {
@@ -2120,6 +2138,11 @@ body.app-page.app-legal-page {
   .section-grid-cinematic,
   .app-panel {
     grid-template-columns: 1fr;
+  }
+
+  .app-icon-visual {
+    width: clamp(104px, 32vw, 132px);
+    justify-self: start;
   }
 
   .section-copy {
