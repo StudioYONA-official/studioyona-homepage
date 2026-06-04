@@ -45,6 +45,12 @@ Align Peekaboo Cam legal pages with the same Korean/English link pattern used by
   - `/en/apps/peekaboo-cam/legal/terms/`
 - `git diff --check` passed.
 - Stop-hook scan: no exception swallowing, fake success, placeholder legal URL, or silent-fail path introduced.
+- Commit `592737e` was pushed to `origin/main`.
+- Live no-cache header checks returned `200 OK` for:
+  - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/privacy/?v=20260604lang1`
+  - `https://www.studioyona.co.kr/en/apps/peekaboo-cam/legal/privacy/?v=20260604lang1`
+  - `https://www.studioyona.co.kr/en/apps/peekaboo-cam/legal/terms/?v=20260604lang1`
+- Live body keyword checks were attempted, but the shell environment intermittently failed DNS resolution for `www.studioyona.co.kr`; local body checks and live 200 headers passed.
 
 ## Handoff / Next
 
