@@ -60,10 +60,10 @@
           <article class="card content">
             <div class="section">
               <h2>1. General Provisions</h2>
-              <p>Studio YONA (the "Company") values the personal information of users of the EDSN Frame iOS app (the "Service") and has established this Privacy Policy in order to comply with applicable laws and regulations, including the Personal Information Protection Act.</p>
+              <p>Studio YONA (the "Company") values the personal information of users of the EDSN Frame iOS and Android apps (the "Service") and has established this Privacy Policy in order to comply with applicable laws and regulations, including the Personal Information Protection Act.</p>
               <ul>
                 <li>Service name: <strong>EDSN Frame</strong></li>
-                <li>Scope of application: iOS app, in-app guest use flow, Apple/Google account linking, in-app purchases, advertising/consent flows, customer support/account deletion flows</li>
+                <li>Scope of application: iOS and Android apps, in-app guest use flow, Apple/Google account linking, in-app purchases, advertising/consent flows, customer support/account deletion flows</li>
                 <li>Operator information: <strong>Studio YONA / Representative Nayoung Lee / #419, 4F, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea</strong></li>
               </ul>
             </div>
@@ -93,7 +93,7 @@
                     <tr>
                       <td>Optional</td>
                       <td>In-app purchases, restoration of memberships/ad-skip/shop entitlements, and entitlement synchronization</td>
-                      <td>App Store transaction identifiers, product IDs, entitlement IDs, purchase/restoration status, and internal user IDs</td>
+                      <td>App Store or Google Play transaction identifiers, Google Play purchase tokens, product IDs, entitlement IDs, purchase/restoration status, and internal user IDs</td>
                     </tr>
                     <tr>
                       <td>Optional</td>
@@ -108,17 +108,17 @@
                     <tr>
                       <td>Required</td>
                       <td>Prevent repeated fraudulent claiming of referral rewards and free/reward grants</td>
-                      <td>Apple DeviceCheck token and verification result, Apple/Google account identifier hash processed with a server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
+                      <td>Apple DeviceCheck or Google Play Integrity verification result, Apple/Google account identifier hash processed with a server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
                     </tr>
                     <tr>
                       <td>Optional</td>
                       <td>Handling customer inquiries, receiving feedback, processing account deletion, and handling complaints</td>
-                      <td>Inquiry email address, inquiry contents, app version, iOS version, device model, and any diagnostic summary or screenshots attached by the user</td>
+                      <td>Inquiry email address, inquiry contents, app version, OS version, device model, and any diagnostic summary or screenshots attached by the user</td>
                     </tr>
                     <tr>
                       <td>Optional</td>
                       <td>Providing advertisements, measuring ad performance, processing rewarded ads, and managing consent status</td>
-                      <td>Advertising identifiers (such as IDFA, when permitted), ad consent status, ad exposure/reward processing results, and ad-skip entitlement status</td>
+                      <td>Advertising identifiers (such as IDFA or Android Advertising ID, when permitted), ad consent status, Google UMP consent status, ad exposure/reward processing results, and ad-skip entitlement status</td>
                     </tr>
                   </tbody>
                 </table>
@@ -127,7 +127,7 @@
               <ul>
                 <li>Based on the current implementation, original photos and videos taken through the Service are generally stored on the user's device or in the user's photo library and are not uploaded to the operator's server during normal use of the Service.</li>
                 <li>Linking an Apple or Google account is optional, and users may start the core shooting flow in guest mode.</li>
-                <li>The Apple DeviceCheck token is sent to Apple to verify and prevent repeated fraudulent claiming of free/reward grants. The Company does not store the raw DeviceCheck token on its server. The Company stores only the minimum records needed for abuse prevention, such as grant status, grant key, and processing time.</li>
+                <li>Apple DeviceCheck or Google Play Integrity verification information may be sent to Apple or Google to verify and prevent repeated fraudulent claiming of free/reward grants. The Company does not store raw device tokens on its server. The Company stores only the minimum records needed for abuse prevention, such as grant status, grant key, and processing time.</li>
                 <li>The Company does not collect unique identifiers such as resident registration numbers, passport numbers, or driver's license numbers.</li>
                 <li>The Company does not, by default, collect sensitive information such as health information or biometric information. If the actual operational scope changes, this Policy will be updated.</li>
               </ul>
@@ -243,7 +243,7 @@
                     </tr>
                     <tr>
                       <td>Google LLC</td>
-                      <td>Google account sign-in (when selected), ad serving, ad reward processing, and ad consent management</td>
+                      <td>Google account sign-in (when selected), Google Play purchase/restoration, Play Integrity verification, ad serving, ad reward processing, and ad consent management</td>
                       <td>Until termination of the entrustment agreement or achievement of the processing purpose</td>
                     </tr>
                     <tr>
@@ -291,10 +291,10 @@
                     </tr>
                     <tr>
                       <td>Google LLC</td>
-                      <td>Google sign-in information (when selected), advertising/advertising identifiers, and consent status</td>
+                      <td>Google sign-in information (when selected), Google Play transaction/purchase token information, Play Integrity verification results, advertising/advertising identifiers, and AdMob/UMP consent status</td>
                       <td>United States and other countries</td>
-                      <td>Transferred when sign-in occurs or ad requests are made</td>
-                      <td>Providing sign-in, serving/measuring advertising, and managing consent</td>
+                      <td>Transferred when sign-in, Google Play purchase/restoration, Play Integrity verification, or ad requests occur</td>
+                      <td>Providing sign-in, Google Play purchase/restoration, device/app integrity verification, serving/measuring advertising, and managing consent</td>
                       <td>Until the purpose is achieved or the contract ends</td>
                     </tr>
                     <tr>
@@ -332,9 +332,21 @@
               </ol>
               <p>These rights may be exercised through in-app settings or the contact channel below.</p>
               <ul>
-                <li>In-app features: Settings &gt; Account &gt; Delete Account, legal links in Settings, and permission/tracking settings in iOS system settings</li>
+                <li>In-app features: Settings &gt; Account &gt; Delete Account, legal links in Settings, and permission/tracking/advertising settings in iOS or Android system settings</li>
                 <li>Inquiry email: <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a></li>
               </ul>
+              <h3>How to request deletion of your account and related data</h3>
+              <p>Users who link an Apple or Google account may request deletion of their account and related data inside the app. This guidance applies to EDSN Frame distributed on both the Apple App Store and Google Play.</p>
+              <ol>
+                <li>Open the EDSN Frame app.</li>
+                <li>Go to <strong>Settings</strong>.</li>
+                <li>Open <strong>View Account</strong> or the <strong>Account</strong> screen.</li>
+                <li>Select <strong>Account Withdrawal</strong> or <strong>Withdrawal Guide</strong>.</li>
+                <li>Review the deletion notice, impact summary, purchase/restoration notice, and submit the deletion request by following the in-app steps.</li>
+              </ol>
+              <p>If the user cannot access the app or the in-app deletion request cannot be completed, the user may request account deletion by emailing <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>. The Company may request only the minimum information necessary to verify and identify the account.</p>
+              <p>When the deletion request is completed, the Company deletes or de-identifies account information directly managed by the Company, internal user ID, account-based progress, point/reward status, shop ownership, purchase-restoration linkage information, and account-related information needed for customer support handling.</p>
+              <p>However, records required for legal compliance, payment settlement, refund or dispute response, security, and abuse prevention may be separately retained for the retention period stated in this Policy or for the period required by applicable law. App Store or Google Play payment records may be retained separately by Apple or Google under their respective platform policies and applicable laws.</p>
               <p>The Company does not direct the Service primarily to children under the age of 14. If the Company becomes aware that it has collected personal information from a child under 14 without consent from a legal representative, it will review and take necessary measures without delay, such as deletion or restriction of use. A legal representative may notify the Company of the relevant facts or request deletion through the contact channel below.</p>
             </div>
 
@@ -343,8 +355,8 @@
               <p>The Company may process automatically collected information or behavioral information within the scope necessary to provide advertising, measure advertising performance, and operate the Service.</p>
               <h3>9-1. Processed Items</h3>
               <ul>
-                <li>Advertising identifiers (such as IDFA, when permitted by iOS)</li>
-                <li>Apple DeviceCheck token and verification result, used to prevent repeated fraudulent claiming of free/reward grants and not for advertising tracking.</li>
+                <li>Advertising identifiers (such as IDFA or Android Advertising ID, when permitted)</li>
+                <li>Apple DeviceCheck or Google Play Integrity verification result, used to prevent repeated fraudulent claiming of free/reward grants and not for advertising tracking.</li>
                 <li>Ad exposure/click/reward processing status</li>
                 <li>App version, device OS, permission status, and minimal service usage log information</li>
               </ul>
@@ -366,6 +378,12 @@
                   <ul>
                     <li>Path: <code>Settings &gt; Privacy &amp; Security &gt; Apple Advertising</code></li>
                     <li>You may disable personalized ads.</li>
+                  </ul>
+                </li>
+                <li>Limiting Android Advertising ID
+                  <ul>
+                    <li>Path: <code>Settings &gt; Privacy &gt; Ads</code> or the advertising/privacy settings provided by the device manufacturer</li>
+                    <li>You may delete the advertising ID or limit personalized ads.</li>
                   </ul>
                 </li>
                 <li>Changing settings within the app
@@ -439,10 +457,12 @@
               <ul>
                 <li>If there is a material change, the Company will provide advance notice through in-app notices, Service screens, or a separate notice channel.</li>
                 <li>The revision history is intended to be made available at the top of this Policy or in a separate notice area.</li>
+                <li>The June 14, 2026 notice about the Android launch, Google Play processing items, and account/data deletion guidance is available as a separate update notice.</li>
                 <li>The May 12, 2026 notice about backup and recovery operations is available as a separate update notice.</li>
               </ul>
               <div class="hero-actions">
-                <a class="button secondary" href="/en/apps/edsn-frame/legal/privacy/update-2026-05-12/">View update notice</a>
+                <a class="button secondary" href="/en/apps/edsn-frame/legal/privacy/update-2026-06-14/">View June 14, 2026 update notice</a>
+                <a class="button secondary" href="/en/apps/edsn-frame/legal/privacy/update-2026-05-12/">View May 12, 2026 update notice</a>
               </div>
             </div>
 
@@ -476,7 +496,7 @@
                       <td>Consent, where required by applicable law or platform rules</td>
                     </tr>
                     <tr>
-                      <td>Security, fraud prevention, anti-abuse checks, DeviceCheck verification, service diagnostics, and backup/recovery operations</td>
+                      <td>Security, fraud prevention, anti-abuse checks, DeviceCheck or Play Integrity verification, service diagnostics, and backup/recovery operations</td>
                       <td>Legitimate interests in protecting the Service, preventing abuse, and maintaining service stability</td>
                     </tr>
                     <tr>
@@ -499,6 +519,7 @@
               <ul>
                 <li>Public URL: <a href="https://www.studioyona.co.kr/en/apps/edsn-frame/legal/privacy/">https://www.studioyona.co.kr/en/apps/edsn-frame/legal/privacy/</a></li>
                 <li>Effective date: 2026.05.02.</li>
+                <li>Last updated: 2026.06.14.</li>
               </ul>
             </div>
           </article>
