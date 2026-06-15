@@ -118,6 +118,7 @@
       notice.hidden = true;
     } else {
       notice.hidden = false;
+      document.body.classList.add("policy-notice-open");
     }
 
     const closeNotice = notice.querySelector("[data-policy-notice-close]");
@@ -125,6 +126,7 @@
       closeNotice.addEventListener("click", () => {
         setDismissed();
         notice.hidden = true;
+        document.body.classList.remove("policy-notice-open");
       });
     }
   }

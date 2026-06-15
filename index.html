@@ -7,8 +7,9 @@
     <title>Studio YONA | 홈</title>
     <link rel="canonical" href="https://www.studioyona.co.kr/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css?v=20260604c" />
-    <script defer src="/assets/site.js?v=20260512a"></script>
+    <link rel="preload" href="/assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/site.css?v=20260615a" />
+    <script defer src="/assets/site.js?v=20260615a"></script>
   </head>
   <body
     class="home-page"
@@ -125,6 +126,10 @@
             우리 가족의 필요로부터,
             작고 오래 남을 앱을 만듭니다.
           </p>
+          <div class="hero-actions">
+            <a class="button" href="#apps">앱 보러가기</a>
+            <a class="button secondary" href="/about/">스튜디오 소개</a>
+          </div>
         </div>
 
         <div class="hero-copy" data-lang-block="en" hidden>
@@ -134,6 +139,10 @@
             From our family's needs,
             we make small apps that last.
           </p>
+          <div class="hero-actions">
+            <a class="button" href="#apps">See our apps</a>
+            <a class="button secondary" href="/about/?lang=en">About the studio</a>
+          </div>
         </div>
       </section>
 
@@ -174,6 +183,16 @@
       </section>
 
       <section id="apps" class="home-section apps-section" data-reveal>
+        <header class="apps-head" data-lang-block="ko">
+          <p class="section-kicker">Apps</p>
+          <h2 class="section-title">우리가 만든 앱</h2>
+          <p class="section-text">가족의 작은 불편에서 시작해, 하나씩 정성껏 만든 앱입니다.</p>
+        </header>
+        <header class="apps-head" data-lang-block="en" hidden>
+          <p class="section-kicker">Apps</p>
+          <h2 class="section-title">Apps we made</h2>
+          <p class="section-text">Each one began with a small family need and was built with care.</p>
+        </header>
         <div class="apps-stack" data-lang-block="ko">
           <article class="app-panel app-panel-featured">
             <div class="app-copy">
@@ -189,7 +208,6 @@
               <ul class="app-points">
                 <li>언제 어디서나 포토부스 감성</li>
                 <li>다양한 프레임과 꾸미기 요소</li>
-                <li>Studio YONA의 첫 번째 앱</li>
               </ul>
               <div class="app-actions">
                 <a class="button" href="/ko/apps/edsn-frame/">앱 소개 보기</a>
@@ -213,7 +231,6 @@
               <ul class="app-points">
                 <li>누르자마자 시작되는 빠른 기록</li>
                 <li>카테고리 기반 자동 정리 흐름</li>
-                <li>Studio YONA의 두 번째 앱</li>
               </ul>
               <div class="app-actions">
                 <a class="button secondary" href="/ko/apps/detective-recorder/">앱 소개 보기</a>
@@ -237,7 +254,6 @@
               <ul class="app-points">
                 <li>사진과 영상에 남기는 빠른 text stamp</li>
                 <li>자주 쓰는 stamp preset과 카테고리 관리</li>
-                <li>Studio YONA의 세 번째 앱</li>
               </ul>
               <div class="app-actions">
                 <a class="button secondary" href="/ko/apps/stampho/">앱 소개 보기</a>
@@ -254,6 +270,7 @@
             <div class="app-copy">
               <p class="section-kicker">Launch preparation</p>
               <h2 class="app-title"><span class="app-title-main no-break">까꿍캠</span></h2>
+              <span class="app-badge">출시 준비 중</span>
               <p class="app-text">
                 아이와 함께 사진이나 동영상을 찍을 때 카메라 쪽으로 시선을 모아주는 보호자용 카메라 앱입니다.
                 부모 음성 프리셋과 전면 카메라 시각 큐로 촬영 순간을 더 편하게 준비할 수 있습니다.
@@ -287,7 +304,6 @@
               <ul class="app-points">
                 <li>Photo booth mood, anywhere</li>
                 <li>Frames and visual details that feel collectible</li>
-                <li>Studio YONA's first app</li>
               </ul>
               <div class="app-actions">
                 <a class="button" href="/en/apps/edsn-frame/">View app</a>
@@ -311,7 +327,6 @@
               <ul class="app-points">
                 <li>Immediate recording flow</li>
                 <li>Category-first organization</li>
-                <li>Studio YONA's second app</li>
               </ul>
               <div class="app-actions">
                 <a class="button secondary" href="/en/apps/detective-recorder/">View app</a>
@@ -335,7 +350,6 @@
               <ul class="app-points">
                 <li>Fast text stamps for photos and videos</li>
                 <li>Category-based stamp presets</li>
-                <li>Studio YONA's third app</li>
               </ul>
               <div class="app-actions">
                 <a class="button secondary" href="/en/apps/stampho/">View app</a>
@@ -352,6 +366,7 @@
             <div class="app-copy">
               <p class="section-kicker">Launch preparation</p>
               <h2 class="app-title">Peekaboo Cam</h2>
+              <span class="app-badge">Coming soon</span>
               <p class="app-text">
                 A guardian camera app that helps children look toward the phone during photos and videos.
                 Parent voice presets and front-camera visual cues make capture moments easier to prepare.
