@@ -1,4 +1,5 @@
 (() => {
+  document.documentElement.classList.add("has-js");
   const currentYear = new Date().getFullYear();
 
   document.querySelectorAll("[data-current-year]").forEach((node) => {
@@ -180,20 +181,42 @@
   }
 
   const revealTargets = document.querySelectorAll("[data-reveal]");
-  if ("IntersectionObserver" in window && revealTargets.length > 0) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
-          obs.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.14 }
-    );
+  if (revealTargets.length > 0) {
+    const reveal = (element) => element.classList.add("is-visible");
 
-    revealTargets.forEach((element) => observer.observe(element));
-  } else {
-    revealTargets.forEach((element) => element.classList.add("is-visible"));
+    // Reveal anything already in view on load (e.g. the hero) right away.
+    const revealInView = () => {
+      revealTargets.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) {
+          reveal(element);
+        }
+      });
+    };
+    revealInView();
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            reveal(entry.target);
+            obs.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      revealTargets.forEach((element) => {
+        if (!element.classList.contains("is-visible")) {
+          observer.observe(element);
+        }
+      });
+    } else {
+      revealTargets.forEach(reveal);
+    }
+
+    // Safety net: never leave content hidden, even if the observer never fires.
+    window.setTimeout(() => revealTargets.forEach(reveal), 1600);
   }
 })();

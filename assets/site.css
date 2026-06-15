@@ -6,6 +6,30 @@
   src: url("/assets/fonts/PretendardVariable.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/PlayfairDisplay-latin-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/PlayfairDisplay-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Song Myung";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/SongMyung-korean-400.woff2") format("woff2");
+}
+
 :root {
   color-scheme: light;
   --font-sans: "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
@@ -227,30 +251,37 @@ img {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   margin: 0 0 1rem;
-  color: var(--accent-warm);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  color: var(--slate, #445d72);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .eyebrow::before {
-  content: "";
-  width: 36px;
-  height: 1px;
-  background: currentColor;
+  content: "{";
+}
+
+.eyebrow::after {
+  content: "}";
+}
+
+.hero .eyebrow,
+.section .eyebrow,
+.section-head .eyebrow {
+  color: var(--slate, #445d72);
 }
 
 .hero h1,
 .section h2,
 .feature-title {
   margin: 0;
-  font-family: var(--font-sans);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.01em;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
 }
 
 .hero h1 {
@@ -289,7 +320,8 @@ img {
   transition:
     background-color 200ms ease,
     border-color 200ms ease,
-    color 200ms ease;
+    color 200ms ease,
+    transform 200ms ease;
 }
 
 .button.secondary {
@@ -698,6 +730,15 @@ img {
 
 body.app-page,
 body.compact-page {
+  --font-display: "Playfair Display", "Song Myung", Georgia, serif;
+  --ink: #1a1a1e;
+  --maroon-deep: #350812;
+  --maroon: #582020;
+  --slate: #445d72;
+  --bronze: #996e31;
+  --bronze-soft: #c5ad6f;
+  --paper: #fffdf8;
+  --sand: #f6f1e4;
   --home-line: rgba(143, 121, 83, 0.22);
   --home-card: rgba(255, 252, 246, 0.94);
   --home-card-strong: rgba(255, 252, 246, 0.88);
@@ -708,7 +749,7 @@ body.compact-page {
   --home-inverse: #201912;
   --home-focus: #8f7953;
   --home-shadow: 0 24px 70px rgba(143, 121, 83, 0.14);
-  --home-radius: 20px;
+  --home-radius: 14px;
   --space-1: 7px;
   --space-2: 12px;
   --space-3: 12.59px;
@@ -721,6 +762,15 @@ body.compact-page {
 
 body.home-page {
   --home-bg: #fbf8f3;
+  --font-display: "Playfair Display", "Song Myung", Georgia, serif;
+  --ink: #1a1a1e;
+  --maroon-deep: #350812;
+  --maroon: #582020;
+  --slate: #445d72;
+  --bronze: #996e31;
+  --bronze-soft: #c5ad6f;
+  --paper: #fffdf8;
+  --sand: #f6f1e4;
   --home-line: rgba(143, 121, 83, 0.22);
   --home-card: rgba(255, 252, 246, 0.94);
   --home-card-strong: rgba(255, 252, 246, 0.88);
@@ -732,7 +782,7 @@ body.home-page {
   --home-inverse: #201912;
   --home-focus: #8f7953;
   --home-shadow: 0 24px 70px rgba(143, 121, 83, 0.14);
-  --home-radius: 20px;
+  --home-radius: 14px;
   --space-1: 7px;
   --space-2: 12px;
   --space-3: 12.59px;
@@ -753,28 +803,31 @@ body.home-page {
 }
 
 body.home-page .button {
-  background: #5c392a;
-  color: #fff8f1;
-  border-color: #5c392a;
+  background: #8a5f28;
+  color: var(--paper);
+  border-color: #8a5f28;
+  border-radius: 3px;
 }
 
 body.home-page .button:hover,
 body.home-page .button:focus-visible {
-  background: #4a2d20;
-  border-color: #4a2d20;
+  background: #855228;
+  border-color: #855228;
+  transform: translateY(-2px);
 }
 
 body.home-page .button.secondary {
   background: transparent;
   color: var(--home-dark);
-  border-color: var(--home-button);
+  border-color: var(--slate);
+  border-radius: 3px;
 }
 
 body.home-page .button.secondary:hover,
 body.home-page .button.secondary:focus-visible {
-  background: var(--home-card-strong);
+  background: rgba(68, 93, 114, 0.08);
   color: var(--home-dark);
-  border-color: var(--home-accent);
+  border-color: var(--slate);
 }
 
 body.home-page::before {
@@ -934,7 +987,7 @@ body.home-page::before {
   height: 1.5px;
   border-radius: 999px;
   background: var(--home-inverse);
-  transition: none;
+  transition: transform 0.3s ease;
 }
 
 .menu-open .menu-toggle-icon span:first-child {
@@ -1037,7 +1090,7 @@ body.home-page::before {
   position: relative;
   width: min(calc(100% - 2rem), 1120px);
   margin: 0 auto;
-  padding: 7rem 0 2.5rem;
+  padding: clamp(4rem, 7vw, 6rem) 0;
 }
 
 .home-footer-band {
@@ -1094,21 +1147,29 @@ body.home-page::before {
 
 .section-kicker {
   margin: 0 0 var(--space-4);
-  color: #7a6643;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  color: var(--slate);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.section-kicker::before {
+  content: "{ ";
+}
+
+.section-kicker::after {
+  content: " }";
 }
 
 .hero-title,
 .section-title,
 .app-title {
   margin: 0;
-  font-family: "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.02;
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
 }
 
 .hero-title {
@@ -1446,7 +1507,11 @@ body.policy-notice-open .home-footer-band {
 }
 
 .contact-section {
-  padding-bottom: 0.45rem;
+  margin-top: var(--space-8);
+  padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 4vw, 3.5rem);
+  background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--ink) 70%);
+  border-radius: 3px;
+  color: var(--paper);
 }
 
 .contact-section .section-copy {
@@ -1455,6 +1520,27 @@ body.policy-notice-open .home-footer-band {
 
 .contact-section .section-text {
   max-width: none;
+  color: rgba(255, 253, 248, 0.72);
+}
+
+.contact-section .section-title {
+  color: var(--paper);
+}
+
+.contact-section .section-kicker {
+  color: var(--bronze-soft);
+}
+
+body.home-page .contact-section .button.secondary {
+  background: #8a5f28;
+  color: var(--paper);
+  border-color: #8a5f28;
+}
+
+body.home-page .contact-section .button.secondary:hover,
+body.home-page .contact-section .button.secondary:focus-visible {
+  background: #855228;
+  border-color: #855228;
 }
 
 .support-label,
@@ -1572,9 +1658,9 @@ body.compact-page .shell {
 
 body.app-page {
   --app-max-width: 1120px;
-  --app-radius-xl: 28px;
-  --app-radius-lg: 22px;
-  --app-radius-md: 16px;
+  --app-radius-xl: 16px;
+  --app-radius-lg: 12px;
+  --app-radius-md: 10px;
   min-height: 100vh;
   color: #201912;
   font-family: "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
@@ -1593,7 +1679,7 @@ body.app-page::before {
 
 body.app-page.app-legal-page {
   --app-max-width: 1040px;
-  --app-radius-lg: 20px;
+  --app-radius-lg: 12px;
 }
 
 .app-page .shell {
@@ -1713,26 +1799,32 @@ body.app-page.app-legal-page {
 .app-page .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.4rem;
   margin: 0;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(138, 90, 68, 0.1);
-  color: #5c392a;
-  font-size: 0.86rem;
-  letter-spacing: 0.02em;
-  font-weight: 500;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--slate, #445d72);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .app-page .eyebrow::before {
-  display: none;
+  display: inline;
+  content: "{";
+}
+
+.app-page .eyebrow::after {
+  content: "}";
 }
 
 .app-page h1,
 .app-page h2,
 .app-page h3 {
-  font-family: var(--font-sans);
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-weight: 400;
   line-height: 1.05;
   margin: 0;
 }
@@ -1796,15 +1888,15 @@ body.app-page.app-legal-page {
   align-items: center;
   justify-content: center;
   min-height: 46px;
-  padding: 0 18px;
-  border-radius: 999px;
+  padding: 0 20px;
+  border-radius: 3px;
   border: 1px solid transparent;
   font-weight: 600;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .app-page .button.primary {
-  background: #5c392a;
+  background: #8a5f28;
   color: #fff8f1;
 }
 
@@ -1816,7 +1908,33 @@ body.app-page.app-legal-page {
 
 .app-page .button:hover,
 .app-page .button:focus-visible {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+
+body.compact-page .button {
+  background: #8a5f28;
+  color: #fff8f1;
+  border-color: #8a5f28;
+  border-radius: 3px;
+}
+
+body.compact-page .button:hover,
+body.compact-page .button:focus-visible {
+  background: #74501f;
+  border-color: #74501f;
+  transform: translateY(-2px);
+}
+
+body.compact-page .button.secondary {
+  background: transparent;
+  color: var(--home-dark);
+  border-color: var(--slate);
+}
+
+body.compact-page .button.secondary:hover,
+body.compact-page .button.secondary:focus-visible {
+  background: rgba(68, 93, 114, 0.08);
+  border-color: var(--slate);
 }
 
 .app-page .details {
@@ -1833,10 +1951,10 @@ body.app-page.app-legal-page {
 }
 
 .app-page .detail-label {
-  font-size: 0.8rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #6c625b;
+  color: var(--slate, #445d72);
 }
 
 .app-page .detail-value {
@@ -1935,11 +2053,13 @@ body.app-page.app-legal-page {
 }
 
 .app-page .pill {
-  padding: 10px 12px;
-  border-radius: 999px;
-  background: rgba(138, 90, 68, 0.08);
-  color: #5c392a;
-  font-size: 0.88rem;
+  padding: 7px 12px;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid var(--home-line, rgba(143, 121, 83, 0.22));
+  color: var(--home-soft, #6c625b);
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
 }
 
 .app-page .layout {
@@ -2146,15 +2266,82 @@ body.app-page.app-legal-page {
   font-size: 0.63rem;
 }
 
-[data-reveal] {
-  opacity: 1;
-  transform: none;
-  transition: none;
+/* Scroll reveal — only active when JS adds .has-js (content visible otherwise).
+   Block fade-up for content sections (hero & apps animate their children instead). */
+html.has-js body.home-page .story-section[data-reveal],
+html.has-js body.home-page .support-section[data-reveal],
+html.has-js body.home-page .contact-section[data-reveal],
+html.has-js body.home-page .home-footer-band[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-[data-reveal].is-visible {
+html.has-js body.home-page .story-section.is-visible,
+html.has-js body.home-page .support-section.is-visible,
+html.has-js body.home-page .contact-section.is-visible,
+html.has-js body.home-page .home-footer-band.is-visible {
   opacity: 1;
   transform: none;
+}
+
+/* Hero: stagger the lines in */
+html.has-js body.home-page .hero-section .hero-copy > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+html.has-js body.home-page .hero-section.is-visible .hero-copy > * {
+  opacity: 1;
+  transform: none;
+}
+
+body.home-page .hero-section.is-visible .hero-copy > *:nth-child(2) { transition-delay: 0.08s; }
+body.home-page .hero-section.is-visible .hero-copy > *:nth-child(3) { transition-delay: 0.16s; }
+body.home-page .hero-section.is-visible .hero-copy > *:nth-child(4) { transition-delay: 0.24s; }
+
+/* Apps: cards rise with a stagger */
+html.has-js body.home-page .apps-section .apps-stack .app-panel {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out,
+    box-shadow 0.35s ease-out, border-color 0.35s ease-out;
+}
+
+html.has-js body.home-page .apps-section.is-visible .apps-stack .app-panel {
+  opacity: 1;
+  transform: none;
+}
+
+body.home-page .apps-section.is-visible .apps-stack .app-panel:nth-child(2) { transition-delay: 0.08s; }
+body.home-page .apps-section.is-visible .apps-stack .app-panel:nth-child(3) { transition-delay: 0.16s; }
+body.home-page .apps-section.is-visible .apps-stack .app-panel:nth-child(4) { transition-delay: 0.24s; }
+
+/* Compact pages (about / apps / contact / support): gentle block fade-up */
+html.has-js body.compact-page [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+html.has-js body.compact-page [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Card hover: quiet lift via shadow + slate border, icon eases in */
+body.home-page .app-panel:hover {
+  border-color: rgba(68, 93, 114, 0.4);
+  box-shadow: 0 26px 60px rgba(26, 26, 30, 0.12);
+}
+
+body.home-page .app-panel .app-icon-art {
+  transition: transform 0.5s ease-out;
+}
+
+body.home-page .app-panel:hover .app-icon-art {
+  transform: scale(1.05);
 }
 
 @keyframes drift {
@@ -2474,5 +2661,13 @@ body.app-page.app-legal-page {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  body.home-page [data-reveal],
+  body.compact-page [data-reveal],
+  body.home-page .hero-section .hero-copy > *,
+  body.home-page .apps-section .apps-stack .app-panel {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
