@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>사진 다운로드 | EDSN Frame</title>
+    <meta
+      name="description"
+      content="EDSN Frame 행사/매장 모드에서 전달된 사진을 다운로드하는 화면입니다."
+    />
+    <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f5f2;
+        --ink: #171717;
+        --soft: #5e5f5f;
+        --line: #d8d7d2;
+        --brand: #3b4242;
+        --accent: #af3035;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      section {
+        width: min(420px, 100%);
+        text-align: center;
+      }
+
+      .brand {
+        display: inline-grid;
+        margin: 0 auto 30px;
+        text-align: center;
+      }
+
+      .brand-en {
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 0.28em;
+        color: var(--brand);
+        text-transform: uppercase;
+      }
+
+      .brand-dot {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-left: 5px;
+        border-radius: 50%;
+        background: var(--accent);
+        vertical-align: top;
+      }
+
+      h1 {
+        font-size: 26px;
+        line-height: 1.25;
+        margin: 0 0 12px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.55;
+        margin: 0 0 22px;
+        color: var(--soft);
+      }
+
+      .button {
+        display: block;
+        background: #1f1a17;
+        color: white;
+        text-decoration: none;
+        border-radius: 12px;
+        padding: 16px 20px;
+        font-size: 17px;
+        font-weight: 800;
+        min-height: 56px;
+      }
+
+      .button + .button {
+        margin-top: 10px;
+      }
+
+      .button.secondary {
+        background: white;
+        color: #1f1a17;
+        border: 1px solid var(--line);
+        box-shadow: 0 8px 22px rgba(31, 26, 23, 0.08);
+      }
+
+      .meta {
+        font-size: 13px;
+        color: #77716c;
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="brand" aria-label="EDSN Frame">
+          <span class="brand-en">EDSN Frame<span class="brand-dot" aria-hidden="true"></span></span>
+        </div>
+        <h1 id="title">사진을 받을 준비가 되었어요</h1>
+        <p id="message">아래 버튼을 눌러 사진을 열어 주세요. Tap below to open your photo.</p>
+        <a id="downloadButton" class="button" href="#" rel="noopener noreferrer">사진 다운로드 받기 / Download photo</a>
+        <a id="appStoreButton" class="button secondary" href="https://apps.apple.com/app/edsn-frame/id6762376094" rel="noopener noreferrer">
+          '어디서나 프레임 EDSN Frame' 다운로드 받기 (iOS)
+        </a>
+        <p id="meta" class="meta"></p>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.hash.slice(1));
+        var downloadURL = params.get("downloadURL");
+        var appStoreURL = params.get("appStoreURL");
+        var remainingDownloads = params.get("remainingDownloads");
+        var expiresText = params.get("expiresText");
+        var downloadButton = document.getElementById("downloadButton");
+        var appStoreButton = document.getElementById("appStoreButton");
+        var title = document.getElementById("title");
+        var message = document.getElementById("message");
+        var meta = document.getElementById("meta");
+
+        if (!downloadURL) {
+          title.textContent = "QR 코드를 확인할 수 없어요";
+          message.textContent = "운영자에게 새 QR 코드를 요청해 주세요.";
+          downloadButton.hidden = true;
+          meta.hidden = true;
+          return;
+        }
+
+        downloadButton.href = downloadURL;
+        if (appStoreURL) {
+          appStoreButton.href = appStoreURL;
+        }
+
+        var metaParts = [];
+        if (remainingDownloads !== null && remainingDownloads !== "") {
+          metaParts.push("남은 다운로드 " + remainingDownloads + "회");
+        }
+        if (expiresText) {
+          metaParts.push("만료 시간 " + expiresText);
+        }
+
+        if (metaParts.length > 0) {
+          meta.textContent = metaParts.join(" · ");
+        } else {
+          meta.hidden = true;
+        }
+      })();
+    </script>
+  </body>
+</html>

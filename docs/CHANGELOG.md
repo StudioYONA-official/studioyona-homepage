@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 2026년 6월 16일 EDSN Frame 행사/매장 모드 QR 사진 전달용 공개 다운로드 랜딩 페이지(`/ko/apps/edsn-frame/photo-download/`)를 추가했다. 이 페이지는 URL fragment로 받은 다운로드 URL, 잔여 다운로드 횟수, 만료 시간을 표시하고 검색 노출과 referrer 전송을 막는다.
+
 - 2026년 6월 14일 EDSN Frame Android 출시 기준으로 한글·영문 개인정보처리방침을 iOS/Android 공통 공개 문구로 확정하고, Google Play 결제·복원, Play Integrity, Android 광고 ID, Google UMP/AdMob 동의 흐름, 계정 및 관련 데이터 삭제 안내를 반영했다.
 
 - 2026년 6월 14일 홈페이지 메인 개인정보처리방침 개정 공지를 새 2026.06.14. 안내로 교체하고, 한글·영문 개정 안내 페이지에 변경 대조표를 추가했다.
