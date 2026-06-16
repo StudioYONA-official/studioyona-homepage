@@ -32,11 +32,10 @@ Related Files:
 ## Verification
 - Local JSON parse: PASS.
 - Local static preview request for `/.well-known/assetlinks.json`: PASS.
-- Live verification: pending deployment.
+- Live `https://www.studioyona.co.kr/.well-known/assetlinks.json`: PASS, HTTP 200 with `content-type: application/json; charset=utf-8`.
+- Google Digital Asset Links API `statements:list`: PASS, returned the `kr.co.studioyona.edsnframe` statement with SHA-256 `69:FE:0B:86:04:BE:6E:85:46:01:EC:21:33:60:2F:A6:78:74:FD:85:46:D7:0B:1B:3D:20:B0:70:14:19:DB:32`.
 
 ## Handoff / Next
-- Deploy the Homepage repository to GitHub Pages.
-- Confirm `https://www.studioyona.co.kr/.well-known/assetlinks.json` returns HTTP 200.
 - Compare the fingerprint with Play Console > App integrity > App signing key certificate > SHA-256.
 - If Play SHA-256 differs, append it to `sha256_cert_fingerprints`.
 - After live assetlinks is correct, switch Android `autoVerify` to `true` and verify on device.
