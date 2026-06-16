@@ -502,7 +502,7 @@ img {
 }
 
 .section {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   border-radius: var(--radius-xl);
   padding: clamp(1.25rem, 2.5vw, 2rem);
 }
@@ -1709,7 +1709,7 @@ body.app-page.app-legal-page {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 20px 0 14px;
+  padding: 14px 0 12px;
 }
 
 .app-page .brand {
@@ -1763,7 +1763,7 @@ body.app-page.app-legal-page {
 }
 
 .app-page .hero {
-  padding: 36px 0 18px;
+  padding: 22px 0 16px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -1772,7 +1772,7 @@ body.app-page.app-legal-page {
 }
 
 .app-page.app-legal-page .hero {
-  padding-top: 26px;
+  padding-top: 16px;
 }
 
 .app-page .hero::after {
@@ -1982,7 +1982,7 @@ body.compact-page .button.secondary:focus-visible {
 
 .app-page .section {
   margin-top: 0;
-  padding: 18px 0 0;
+  padding: 12px 0 0;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -2087,7 +2087,7 @@ body.compact-page .button.secondary:focus-visible {
 
 .app-page .side,
 .app-page .content {
-  padding: 28px;
+  padding: 24px;
 }
 
 .app-page .side h2,
