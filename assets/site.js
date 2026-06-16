@@ -182,41 +182,34 @@
 
   const revealTargets = document.querySelectorAll("[data-reveal]");
   if (revealTargets.length > 0) {
-    const reveal = (element) => element.classList.add("is-visible");
+    const pending = new Set(revealTargets);
 
-    // Reveal anything already in view on load (e.g. the hero) right away.
+    const reveal = (element) => {
+      element.classList.add("is-visible");
+      pending.delete(element);
+    };
+
+    // Reveal each target as it scrolls into view, so the motion actually plays.
     const revealInView = () => {
-      revealTargets.forEach((element) => {
+      pending.forEach((element) => {
         const rect = element.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) {
+        if (rect.top < window.innerHeight * 0.88 && rect.bottom > -1) {
           reveal(element);
         }
       });
+      if (pending.size === 0) {
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", onScroll);
+      }
     };
-    revealInView();
 
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver(
-        (entries, obs) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            reveal(entry.target);
-            obs.unobserve(entry.target);
-          });
-        },
-        { threshold: 0.12 }
-      );
+    window.addEventListener("scroll", revealInView, { passive: true });
+    window.addEventListener("resize", revealInView);
 
-      revealTargets.forEach((element) => {
-        if (!element.classList.contains("is-visible")) {
-          observer.observe(element);
-        }
-      });
-    } else {
-      revealTargets.forEach(reveal);
-    }
-
-    // Safety net: never leave content hidden, even if the observer never fires.
-    window.setTimeout(() => revealTargets.forEach(reveal), 1600);
+    // Let the hidden state paint once, then reveal what's already in view (the
+    // hero) so its entrance animates instead of snapping in. setTimeout (unlike
+    // requestAnimationFrame) keeps running in background tabs, so the content is
+    // never left hidden.
+    window.setTimeout(revealInView, 40);
   }
 })();
