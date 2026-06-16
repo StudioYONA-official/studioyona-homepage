@@ -398,7 +398,7 @@ img {
   min-height: 44px;
   padding: 0 var(--space-4, 0.85rem);
   border: 1px solid var(--home-line, rgba(45, 91, 124, 0.16));
-  border-radius: 4px;
+  border-radius: 10px;
   font: inherit;
   font-size: 13.33px;
   font-weight: 800;
@@ -406,8 +406,9 @@ img {
 }
 
 .policy-notice-link {
-  background: var(--home-button, var(--home-accent, var(--text)));
-  color: var(--home-inverse, #fff);
+  background: #c9ad74;
+  color: #2e2117;
+  border-color: #c9ad74;
 }
 
 .policy-notice-close {
@@ -426,6 +427,13 @@ img {
 .policy-notice-link:active,
 .policy-notice-close:active {
   border-color: var(--home-accent, rgba(45, 91, 124, 0.16));
+}
+
+.policy-notice-link:hover,
+.policy-notice-link:focus-visible {
+  background: #b89a5e;
+  border-color: #b89a5e;
+  color: #2e2117;
 }
 
 .hero-side {
@@ -803,16 +811,16 @@ body.home-page {
 }
 
 body.home-page .button {
-  background: #b08d4f;
+  background: #c9ad74;
   color: #2e2117;
-  border-color: #b08d4f;
+  border-color: #c9ad74;
   border-radius: 10px;
 }
 
 body.home-page .button:hover,
 body.home-page .button:focus-visible {
-  background: #9e7d42;
-  border-color: #9e7d42;
+  background: #b89a5e;
+  border-color: #b89a5e;
   transform: translateY(-2px);
 }
 
@@ -1896,9 +1904,9 @@ body.app-page.app-legal-page {
 }
 
 .app-page .button.primary {
-  background: #b08d4f;
+  background: #c9ad74;
   color: #2e2117;
-  border-color: #b08d4f;
+  border-color: #c9ad74;
 }
 
 .app-page .button.secondary {
@@ -1913,16 +1921,16 @@ body.app-page.app-legal-page {
 }
 
 body.compact-page .button {
-  background: #b08d4f;
+  background: #c9ad74;
   color: #2e2117;
-  border-color: #b08d4f;
+  border-color: #c9ad74;
   border-radius: 10px;
 }
 
 body.compact-page .button:hover,
 body.compact-page .button:focus-visible {
-  background: #9e7d42;
-  border-color: #9e7d42;
+  background: #b89a5e;
+  border-color: #b89a5e;
   transform: translateY(-2px);
 }
 
