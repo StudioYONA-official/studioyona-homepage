@@ -906,11 +906,11 @@ body.home-page::before {
 .home-lang {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-1);
-  border-radius: var(--home-radius);
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
   border: 1px solid var(--home-line);
-  background: var(--home-card);
+  background: rgba(255, 252, 246, 0.55);
   backdrop-filter: blur(14px);
 }
 
@@ -918,20 +918,21 @@ body.home-page::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 36px;
-  min-height: 36px;
-  padding: 0 var(--space-2);
-  border-radius: 4px;
+  min-width: 34px;
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 7px;
   color: var(--home-soft);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .home-lang a:hover {
   color: var(--home-dark);
-  background: rgba(138, 90, 68, 0.08);
+  background: rgba(143, 121, 83, 0.1);
 }
 
 .home-lang a:active {
@@ -939,8 +940,9 @@ body.home-page::before {
 }
 
 .home-lang a[aria-current="page"] {
-  color: var(--home-inverse);
-  background: var(--home-button);
+  color: var(--home-dark);
+  background: var(--paper, #fffdf8);
+  box-shadow: 0 1px 3px rgba(57, 38, 26, 0.14);
 }
 
 .menu-toggle,
@@ -955,17 +957,19 @@ body.home-page::before {
 .menu-toggle {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  min-height: 44px;
-  padding: 0 var(--space-1) 0 var(--space-4);
-  border-radius: var(--home-radius);
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 13px;
+  border-radius: 10px;
   border: 1px solid var(--home-line);
-  background: var(--home-card);
+  background: rgba(255, 252, 246, 0.55);
   backdrop-filter: blur(14px);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .menu-toggle:hover {
   background: var(--home-card-strong);
+  border-color: rgba(143, 121, 83, 0.4);
 }
 
 .menu-toggle:active {
@@ -981,20 +985,18 @@ body.home-page::before {
 
 .menu-toggle-icon {
   display: inline-grid;
-  gap: 0.35rem;
-  width: 44px;
-  height: 44px;
+  gap: 5px;
+  width: 20px;
+  height: 14px;
   place-content: center;
-  border-radius: 4px;
-  background: var(--home-button);
 }
 
 .menu-toggle-icon span {
   display: block;
-  width: 16px;
+  width: 18px;
   height: 1.5px;
   border-radius: 999px;
-  background: var(--home-inverse);
+  background: var(--home-dark);
   transition: transform 0.3s ease;
 }
 
@@ -1098,12 +1100,12 @@ body.home-page::before {
   position: relative;
   width: min(calc(100% - 2rem), 1120px);
   margin: 0 auto;
-  padding: clamp(4rem, 7vw, 6rem) 0;
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
 }
 
 /* About section spacing halved */
 body.home-page .story-section {
-  padding-block: clamp(2rem, 3.5vw, 3rem);
+  padding-block: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .home-footer-band {
@@ -1263,7 +1265,7 @@ body.home-page .story-section {
 }
 
 .apps-section {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .apps-head {
@@ -1516,7 +1518,7 @@ body.policy-notice-open .home-footer-band {
 .story-section + .apps-section,
 .apps-section + .support-section,
 .support-section + .contact-section {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .contact-section {
@@ -2539,19 +2541,20 @@ body.home-page .app-panel:hover .app-icon-art {
   }
 
   .home-lang {
-    gap: 0.2rem;
-    padding: 0.2rem;
+    gap: 2px;
+    padding: 3px;
   }
 
   .home-lang a {
-    min-width: 40px;
-    min-height: 44px;
-    font-size: 0.75rem;
+    min-width: 38px;
+    min-height: 40px;
+    font-size: 0.72rem;
   }
 
   .menu-toggle {
-    gap: 0.55rem;
-    padding-left: 0.75rem;
+    gap: 0;
+    padding: 0 11px;
+    min-height: 40px;
   }
 
   .policy-notice {
@@ -2594,7 +2597,7 @@ body.home-page .app-panel:hover .app-icon-art {
   }
 
   .home-section {
-    padding-top: 7rem;
+    padding-top: 3.5rem;
   }
 
   .hero-section {
