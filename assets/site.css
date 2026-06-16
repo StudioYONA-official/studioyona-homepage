@@ -310,7 +310,7 @@ img {
   justify-content: center;
   gap: 0.5rem;
   min-height: 44px;
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 0 var(--space-6, 1rem);
   border: 1px solid transparent;
   background: var(--home-button, var(--home-accent, var(--text)));
@@ -803,31 +803,31 @@ body.home-page {
 }
 
 body.home-page .button {
-  background: #8a5f28;
-  color: var(--paper);
-  border-color: #8a5f28;
-  border-radius: 3px;
+  background: #b08d4f;
+  color: #2e2117;
+  border-color: #b08d4f;
+  border-radius: 10px;
 }
 
 body.home-page .button:hover,
 body.home-page .button:focus-visible {
-  background: #855228;
-  border-color: #855228;
+  background: #9e7d42;
+  border-color: #9e7d42;
   transform: translateY(-2px);
 }
 
 body.home-page .button.secondary {
   background: transparent;
   color: var(--home-dark);
-  border-color: var(--slate);
-  border-radius: 3px;
+  border-color: rgba(143, 121, 83, 0.55);
+  border-radius: 10px;
 }
 
 body.home-page .button.secondary:hover,
 body.home-page .button.secondary:focus-visible {
-  background: rgba(68, 93, 114, 0.08);
+  background: rgba(143, 121, 83, 0.1);
   color: var(--home-dark);
-  border-color: var(--slate);
+  border-color: rgba(143, 121, 83, 0.85);
 }
 
 body.home-page::before {
@@ -1509,7 +1509,7 @@ body.policy-notice-open .home-footer-band {
 .contact-section {
   margin-top: var(--space-8);
   padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 4vw, 3.5rem);
-  background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--ink) 70%);
+  background: linear-gradient(135deg, #4a342a 0%, #2f2823 75%);
   border-radius: 3px;
   color: var(--paper);
 }
@@ -1532,15 +1532,15 @@ body.policy-notice-open .home-footer-band {
 }
 
 body.home-page .contact-section .button.secondary {
-  background: #8a5f28;
-  color: var(--paper);
-  border-color: #8a5f28;
+  background: #cbb182;
+  color: #2e2117;
+  border-color: #cbb182;
 }
 
 body.home-page .contact-section .button.secondary:hover,
 body.home-page .contact-section .button.secondary:focus-visible {
-  background: #855228;
-  border-color: #855228;
+  background: #bd9d5f;
+  border-color: #bd9d5f;
 }
 
 .support-label,
@@ -1889,21 +1889,22 @@ body.app-page.app-legal-page {
   justify-content: center;
   min-height: 46px;
   padding: 0 20px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 1px solid transparent;
   font-weight: 600;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .app-page .button.primary {
-  background: #8a5f28;
-  color: #fff8f1;
+  background: #b08d4f;
+  color: #2e2117;
+  border-color: #b08d4f;
 }
 
 .app-page .button.secondary {
-  background: rgba(255, 255, 255, 0.56);
+  background: transparent;
   color: #201912;
-  border-color: rgba(32, 25, 18, 0.12);
+  border-color: rgba(143, 121, 83, 0.55);
 }
 
 .app-page .button:hover,
@@ -1912,29 +1913,29 @@ body.app-page.app-legal-page {
 }
 
 body.compact-page .button {
-  background: #8a5f28;
-  color: #fff8f1;
-  border-color: #8a5f28;
-  border-radius: 3px;
+  background: #b08d4f;
+  color: #2e2117;
+  border-color: #b08d4f;
+  border-radius: 10px;
 }
 
 body.compact-page .button:hover,
 body.compact-page .button:focus-visible {
-  background: #74501f;
-  border-color: #74501f;
+  background: #9e7d42;
+  border-color: #9e7d42;
   transform: translateY(-2px);
 }
 
 body.compact-page .button.secondary {
   background: transparent;
   color: var(--home-dark);
-  border-color: var(--slate);
+  border-color: rgba(143, 121, 83, 0.55);
 }
 
 body.compact-page .button.secondary:hover,
 body.compact-page .button.secondary:focus-visible {
-  background: rgba(68, 93, 114, 0.08);
-  border-color: var(--slate);
+  background: rgba(143, 121, 83, 0.1);
+  border-color: rgba(143, 121, 83, 0.85);
 }
 
 .app-page .details {
