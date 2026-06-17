@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+- 2026년 6월 17일 홈 화면 앱 목록에서 Stampho를 숨기고, 까꿍캠을 출시 상태로 전환했으며 Peekaboo Cam 프로젝트의 최신 AppIcon을 홈 아이콘 자산으로 다시 반영했다.
+
+- 2026년 6월 17일 홈 화면에 노출되는 EDSN Frame, 탐정의 녹음기, 까꿍캠 앱 카드에 각 App Store 상품 페이지 링크를 추가했다.
+
 - 2026년 6월 16일 EDSN Frame Android App Links 검증을 위해 `/.well-known/assetlinks.json`을 추가했다. 현재 파일에는 로컬 release/upload signing SHA-256을 반영했으며, Play 앱 서명 키 SHA-256이 다르면 Play Console 값도 함께 추가해야 한다.
 
 - 2026년 6월 16일 EDSN Frame 행사/매장 모드 QR 사진 전달용 공개 다운로드 랜딩 페이지(`/ko/apps/edsn-frame/photo-download/`)를 추가했다. 이 페이지는 URL fragment로 받은 다운로드 URL, 잔여 다운로드 횟수, 만료 시간을 표시하고 검색 노출과 referrer 전송을 막는다.
