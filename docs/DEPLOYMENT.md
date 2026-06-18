@@ -131,6 +131,12 @@ GitHub는 apex와 함께 `www`를 같이 설정하는 것을 권장한다. 두 �
   - `https://www.studioyona.co.kr/apps/edsn-frame/legal/terms/`
   - `https://www.studioyona.co.kr/apps/detective-recorder/legal/privacy/`
   - `https://www.studioyona.co.kr/apps/detective-recorder/legal/terms/`
+- `https://www.studioyona.co.kr/ko/apps/veruma/`
+- `https://www.studioyona.co.kr/en/apps/veruma/`
+- `https://www.studioyona.co.kr/ko/apps/veruma/legal/privacy/`
+- `https://www.studioyona.co.kr/en/apps/veruma/legal/privacy/`
+- `https://www.studioyona.co.kr/ko/apps/veruma/legal/terms/`
+- `https://www.studioyona.co.kr/en/apps/veruma/legal/terms/`
   - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/privacy/`
   - `https://www.studioyona.co.kr/apps/peekaboo-cam/legal/terms/`
 - 언어별 정책 문서는 다음 패턴 사용
