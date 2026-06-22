@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <title>EDSN Frame | 로그인으로 돌아가기</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --background: #f7f1e6;
+        --surface: #fffaf0;
+        --ink: #22201d;
+        --muted: #6a6258;
+        --line: #ded4c2;
+        --accent: #005b4d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: var(--background);
+        color: var(--ink);
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      main {
+        width: min(100%, 420px);
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        width: 100%;
+        border-radius: 16px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .secondary {
+        margin-top: 10px;
+        background: transparent;
+        color: var(--muted);
+        border: 1px solid var(--line);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>EDSN Frame으로 돌아가는 중</h1>
+      <p>
+        앱이 자동으로 열리지 않으면 아래 버튼을 눌러 로그인 완료 화면으로 돌아가 주세요.
+      </p>
+      <a id="open-app" href="edsnframe://oauth/">앱으로 돌아가기</a>
+      <a class="secondary" href="/ko/apps/edsn-frame/">EDSN Frame 소개로 이동</a>
+    </main>
+
+    <script>
+      (function () {
+        "use strict";
+
+        var query = window.location.search || "";
+        var hash = window.location.hash || "";
+        var callbackUrl = "edsnframe://oauth/" + query + hash;
+        var openAppLink = document.getElementById("open-app");
+
+        if (openAppLink) {
+          openAppLink.setAttribute("href", callbackUrl);
+        }
+
+        window.setTimeout(function () {
+          window.location.href = callbackUrl;
+        }, 250);
+
+        window.setTimeout(function () {
+          if (openAppLink) {
+            openAppLink.focus();
+          }
+        }, 1500);
+      })();
+    </script>
+  </body>
+</html>

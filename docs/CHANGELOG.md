@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 2026년 6월 23일 EDSN Frame Android OAuth App Link fallback을 위해 `/apps/edsn-frame/auth/callback/` 정적 브리지 페이지를 추가했다. 이 페이지는 OAuth query/fragment를 외부로 전송하지 않고 `edsnframe://oauth/` 앱 스킴으로만 전달한다.
+
 - 2026년 6월 19일 Veruma 앱 소개, 지원, 한글·영문 개인정보처리방침, 한글·영문 이용약관 공개 페이지를 추가하고 홈·앱 목록에 Veruma를 노출했다.
 
 - 2026년 6월 17일 홈 화면 앱 목록에서 Stampho를 숨기고, 까꿍캠을 출시 상태로 전환했으며 Peekaboo Cam 프로젝트의 최신 AppIcon을 홈 아이콘 자산으로 다시 반영했다.

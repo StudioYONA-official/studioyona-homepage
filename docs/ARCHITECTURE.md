@@ -141,6 +141,31 @@
   - 단점:
     - 기존 상단 내비게이션에 바로 노출되던 법률 링크는 상세 본문/푸터 링크에 더 의존하게 된다.
 
+### 2026-06-23 - Android OAuth Callback Uses Static Web Bridge As Fallback
+
+- Context:
+  - EDSN Frame Android browser OAuth can return to the website callback URL
+    when Android App Link delegation fails on a user device.
+  - The callback URL may include one-time OAuth `code`, `oauth_state`, or
+    fragment parameters, so it must not load analytics or third-party scripts
+    that could receive referrer or URL data.
+- Decision:
+  - `/apps/edsn-frame/auth/callback/` is a buildless static bridge page.
+  - It reads only the current page query/fragment in the browser and forwards
+    it to `edsnframe://oauth/`.
+  - The page keeps a manual "앱으로 돌아가기" link for cases where automatic
+    custom-scheme opening is blocked.
+- Consequences:
+  - 장점:
+    - 기존 HTTPS App Link OAuth redirects can still recover even when Android
+      does not delegate the URL to the app.
+    - The bridge remains compatible with GitHub Pages and does not introduce a
+      backend or secret handling.
+  - 단점:
+    - Browser custom-scheme opening can still require user interaction on some
+      devices, so the Android app should continue using the custom scheme as
+      the primary OAuth redirect target.
+
 ## Open Decisions / Pending Issues
 
 ### 2026-04-14 - Deployment Model Must Be Revisited Before Adding Admin Features
