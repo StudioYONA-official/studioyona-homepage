@@ -58,3 +58,26 @@ references; only the inline bridge script is present.
 - After GitHub Pages propagation, confirm:
   `https://www.studioyona.co.kr/apps/edsn-frame/auth/callback/?oauth_state=test&code=test`
   returns the bridge page instead of 404.
+
+## Follow-up: 404 Fallback Variants
+
+Same date follow-up after tester reports showed Studio YONA 404 again.
+
+Live checks confirmed:
+
+- `/apps/edsn-frame/auth/callback?oauth_state=test-state&code=test-code`
+  returns HTTP 301 to the slash canonical bridge, then HTTP 200.
+- `/apps/edsn-frame/auth/callback/?oauth_state=test-state&code=test-code`
+  returns the bridge page.
+- `/auth/callback?oauth_state=test-state&code=test-code` still returned 404.
+- `/ko/apps/edsn-frame/auth/callback?oauth_state=test-state&code=test-code`
+  still returned 404.
+
+Changes:
+
+- Added `auth/callback/index.html`.
+- Added `ko/apps/edsn-frame/auth/callback/index.html`.
+- Added `en/apps/edsn-frame/auth/callback/index.html`.
+
+These pages reuse the same no-external-resource bridge and forward query or
+fragment data to `edsnframe://oauth/`.

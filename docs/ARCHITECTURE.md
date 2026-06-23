@@ -150,7 +150,12 @@
     fragment parameters, so it must not load analytics or third-party scripts
     that could receive referrer or URL data.
 - Decision:
-  - `/apps/edsn-frame/auth/callback/` is a buildless static bridge page.
+  - `/apps/edsn-frame/auth/callback/` is the canonical buildless static bridge
+    page.
+  - `/auth/callback/`, `/ko/apps/edsn-frame/auth/callback/`, and
+    `/en/apps/edsn-frame/auth/callback/` mirror the same bridge so Supabase
+    Site URL or locale-scoped fallback redirects do not expose the public 404
+    page.
   - It reads only the current page query/fragment in the browser and forwards
     it to `edsnframe://oauth/`.
   - The page keeps a manual "앱으로 돌아가기" link for cases where automatic
