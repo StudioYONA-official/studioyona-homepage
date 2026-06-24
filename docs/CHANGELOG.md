@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+- 2026년 6월 24일 수정된 `docs/site-copy-ko-edit.md` 한국어 문구를 홈, 회사 소개, 앱 소개, 고객지원, 문의 페이지와 비법무 앱 페이지에 반영하고 영어 문구도 대응 번역했다.
+
+- 2026년 6월 24일 법무 문서를 제외한 공개 홈페이지 문구를 한국어 기준으로 수정할 수 있도록 `docs/site-copy-ko-edit.md` 편집용 문서를 추가했다.
+
 - 2026년 6월 24일 홈 앱 소개 카드의 마크업과 정보 구조를 EDSN Frame 카드 기준으로 통일하고, 앱별 뱃지와 압축된 한 줄 카드 마크업을 제거했으며 Veruma App Store 링크를 추가했다.
 
 - 2026년 6월 23일 EDSN Frame Android OAuth fallback이 Supabase Site URL 또는 locale-scoped URL로 떨어질 때 404가 노출되지 않도록 `/auth/callback/`, `/ko/apps/edsn-frame/auth/callback/`, `/en/apps/edsn-frame/auth/callback/`에도 같은 앱 스킴 브리지 페이지를 추가했다.
