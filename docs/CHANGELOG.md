@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 2026년 6월 24일 홈 앱 소개 카드의 마크업과 정보 구조를 EDSN Frame 카드 기준으로 통일하고, 앱별 뱃지와 압축된 한 줄 카드 마크업을 제거했으며 Veruma App Store 링크를 추가했다.
+
 - 2026년 6월 23일 EDSN Frame Android OAuth fallback이 Supabase Site URL 또는 locale-scoped URL로 떨어질 때 404가 노출되지 않도록 `/auth/callback/`, `/ko/apps/edsn-frame/auth/callback/`, `/en/apps/edsn-frame/auth/callback/`에도 같은 앱 스킴 브리지 페이지를 추가했다.
 
 - 2026년 6월 23일 EDSN Frame Android OAuth App Link fallback을 위해 `/apps/edsn-frame/auth/callback/` 정적 브리지 페이지를 추가했다. 이 페이지는 OAuth query/fragment를 외부로 전송하지 않고 `edsnframe://oauth/` 앱 스킴으로만 전달한다.
