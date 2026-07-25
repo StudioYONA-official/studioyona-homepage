@@ -331,6 +331,96 @@ Path: `ko/apps/edsn-frame/index.html`
 - Info 4: 가격: 무료 (인앱 구매 포함)
 - Screenshots title: 스크린샷
 - Screenshots body: 앱 화면을 미리 만나보세요.
+- Guide title: 어디서나 프레임 질문과 답변
+- Guide body: 앱의 기본 사용, 프레임, 행사 모드, 구독, 포인트를 질문과 답변 형식으로 정리했습니다. 궁금한 질문을 왼쪽에서 바로 선택하세요.
+- Guide question label: 질문
+- Guide question 1 nav: 무슨 어플인가요? / 앱 개요
+- Guide question 1 title: 어디서나 프레임은 무슨 어플인가요?
+- Guide question 1 answer: 어디서나 프레임은 스마트폰을 포토부스처럼 쓰는 촬영 앱입니다. 앱에서 컷 수와 프레임을 고르고, 촬영하기를 눌러 사진을 찍은 뒤, 결과 화면에서 프레임·문구·스탬프·보정 요소를 다듬어 저장합니다.
+- Guide question 1 point 1: 새로 촬영할 수도 있고, 기존 사진이나 영상을 불러와 포토부스 결과물로 만들 수도 있습니다.
+- Guide question 1 point 2: 개인 촬영은 물론, 행사 모드를 이용해 웨딩·축제·매장·팝업 현장에서 여러 손님이 차례로 촬영하는 흐름도 운영할 수 있습니다.
+- Guide question 2 nav: 어떤 프레임으로 촬영하나요? / 일반·특수 프레임
+- Guide question 2 title: 어떤 프레임으로 촬영할 수 있나요?
+- Guide question 2 answer: 촬영 전에는 일반 프레임과 특수 프레임 중에서 선택합니다. 일반 프레임은 1컷, 2컷, 4컷, 6컷, 9컷처럼 포토부스에 익숙한 구성을 만들 때 사용합니다.
+- Guide question 2 point 1: 처음 쓰는 경우에는 세로 4컷이나 세로 6컷처럼 단순한 구성으로 시작하는 편이 쉽습니다.
+- Guide question 2 point 2: 특수 프레임에는 컬러 헌트, 릴 스토리, 인스턴트처럼 촬영 방식이나 결과 분위기가 달라지는 구성이 포함될 수 있습니다.
+- Guide question 2 point 3: 실제로 선택 가능한 프레임 종류는 앱 버전, 보유한 프레임 팩, 상점 구매 상태에 따라 달라질 수 있습니다.
+- Guide question 3 nav: 프레임 디자인은? / 단색·그라디언트·그래픽
+- Guide question 3 title: 프레임 디자인에는 무엇이 있나요?
+- Guide question 3 answer: 결과 화면의 프레임 탭에서 단색, 그라디언트, 그래픽 프레임을 고를 수 있습니다. 단색은 깔끔한 기본 느낌, 그라디언트는 부드러운 색감, 그래픽 프레임은 행사나 테마가 더 잘 드러나는 장식형 프레임에 가깝습니다.
+- Guide question 3 point 1: 상점의 프레임 팩에서 보유 중인 디자인과 잠겨 있는 디자인을 확인할 수 있습니다.
+- Guide question 3 point 2: 잠긴 프레임은 포인트, 현금 구매, 구독 혜택, 준비 중인 상품 상태에 따라 열 수 있는 방식이 달라질 수 있습니다.
+- Guide question 4 nav: 필터와 보정은? / 편집 기능
+- Guide question 4 title: 필터나 보정 기능을 사용하려면 어떻게 해야 하나요?
+- Guide question 4 answer: 촬영이나 불러오기를 마친 뒤 결과 화면에서 편집 탭을 엽니다. 여기에서 밝기, 대비, 채도, 색온도 같은 보정 항목이나 앱에서 제공하는 필터 항목을 적용합니다.
+- Guide question 4 point 1: 편집 기능이나 필터 상품 중 일부는 상점에서 준비 중이거나 별도 권한이 필요할 수 있습니다.
+- Guide question 4 point 2: 편집 후에는 저장 단계로 이동하기 전에 얼굴, 문구, 스탬프가 프레임에 가려지지 않는지 한 번 더 확인하는 것이 좋습니다.
+- Guide question 5 nav: 단체 행사에서 쓰나요? / 행사 운영
+- Guide question 5 title: 단체 행사에서 사용할 수 있나요?
+- Guide question 5 answer: 네. 행사 모드는 웨딩, 축제, 매장, 팝업, 프로모션처럼 여러 사람이 같은 기기에서 차례로 촬영할 때 쓰기 좋습니다. 운영자가 프레임과 촬영 흐름을 미리 정해두면 손님은 안내에 따라 촬영하고 QR이나 출력물로 결과를 받을 수 있습니다.
+- Guide question 5 subsection: 행사 전에 준비할 것
+- Guide question 5 point 1: EDSN Frame이 설치된 촬영용 기기, 충전기, 보조 배터리, 거치대나 삼각대를 준비합니다.
+- Guide question 5 point 2: QR 전달을 쓸 경우 안정적인 Wi-Fi나 핫스팟이 필요합니다.
+- Guide question 5 point 3: 인쇄까지 운영할 경우 연결 가능한 프린터, 용지, 잉크나 카트리지를 미리 확인합니다.
+- Guide question 5 point 4: 행사 시작 전에는 반드시 스태프가 손님처럼 처음부터 끝까지 테스트 촬영을 해보는 것이 좋습니다.
+- Guide question 6 nav: 행사 모드 설정은? / 운영자 설정
+- Guide question 6 title: 행사모드에서는 어떤 것을 설정할 수 있나요?
+- Guide question 6 answer: 행사 모드에서는 운영자가 손님이 보게 될 촬영 흐름을 미리 정합니다. 기본적으로 프레임, 촬영 컷 수, 카운트다운, 하단 문구, 결과 편집 허용 여부, 자동복귀, QR 또는 프린터 전달 경로를 점검합니다.
+- Guide question 6 point 1: 운영자 PIN 4자리나 OS 인증을 준비하면 손님이 앱 설정을 바꾸거나 행사 흐름 밖으로 나가는 것을 줄일 수 있습니다.
+- Guide question 6 point 2: 자동복귀 시간은 너무 짧게 잡지 않는 것이 좋습니다. 손님이 QR을 스캔하고 저장할 시간을 남겨야 합니다.
+- Guide question 6 point 3: 줄이 긴 행사라면 결과 편집 시간을 짧게 두고, 여유 있는 행사라면 문구나 스탬프를 고를 시간을 더 주는 방식이 좋습니다.
+- Guide question 7 nav: 손님에게 전송하려면? / QR 전달
+- Guide question 7 title: 손님에게 사진을 전송하려면 어떻게 해야하나요?
+- Guide question 7 answer: 행사에서 가장 쉬운 전달 방식은 QR 코드입니다. 촬영이 끝나고 결과가 준비되면 손님이 자신의 휴대폰 카메라로 QR을 스캔해 사진을 열고 저장합니다.
+- Guide question 7 step 1: 행사 전 관리자 화면에서 QR 전달을 사용할 수 있는 상태인지 확인합니다.
+- Guide question 7 step 2: 테스트 촬영 후 다른 휴대폰으로 QR을 직접 스캔해 사진이 열리는지 확인합니다.
+- Guide question 7 step 3: 현장에서는 손님에게 QR을 스캔한 뒤 사진이 열렸는지 확인하고, 저장까지 마친 다음 다음 손님으로 넘깁니다.
+- Guide question 8 nav: QR 전송권한은? / 권한과 크레딧
+- Guide question 8 title: QR 코드 전송권한은 무엇인가요?
+- Guide question 8 answer: QR 코드 전송권한은 행사 모드에서 촬영 결과를 QR로 전달하기 위해 필요한 이용 권한입니다. 앱 안에서는 행사 모드 관련 상품, 구독, 또는 QR 다운로드 크레딧 형태로 표시될 수 있습니다.
+- Guide question 8 point 1: QR 전달은 인터넷 연결과 서버 전송 상태가 준비되어야 사용할 수 있습니다.
+- Guide question 8 point 2: 권한이나 크레딧이 부족하면 QR 전달이 제한될 수 있으므로 행사 전 상점이나 관리자 화면에서 상태를 확인하세요.
+- Guide question 8 point 3: 상품 구성과 제공 방식은 앱 버전과 스토어 정책에 따라 달라질 수 있으니 구매 화면에 표시되는 설명을 기준으로 보면 됩니다.
+- Guide question 9 nav: 출력할 수 있나요? / 프린터 운영
+- Guide question 9 title: 사진을 출력할 수 있나요?
+- Guide question 9 answer: 행사 모드에서 프린터 전달을 사용할 수 있는 구성이라면 사진 출력도 운영할 수 있습니다. 다만 출력은 앱 설정만으로 끝나지 않고, 현장 프린터 준비가 함께 필요합니다.
+- Guide question 9 point 1: 행사 전 프린터 전원, 연결 상태, 용지 방향, 여백, 잉크나 카트리지를 확인합니다.
+- Guide question 9 point 2: 테스트 결과물을 한 장 출력해 보고 실제 프레임이 잘리지 않는지 확인합니다.
+- Guide question 9 point 3: 프린터 준비가 어렵다면 QR 저장 흐름만으로 운영하는 편이 더 안정적입니다.
+- Guide question 10 nav: 프레임 제작 의뢰는? / 메일 문의
+- Guide question 10 title: 행사용 프레임을 별도 제작 의뢰할 수 있나요?
+- Guide question 10 answer: 별도 제작이나 행사 전용 프레임이 필요하다면 메일로 문의해 주세요. 행사 날짜, 사용 목적, 원하는 문구, 로고나 색상, 필요한 컷 구성, QR 전달 또는 출력 여부를 함께 보내주시면 확인이 쉽습니다.
+- Guide question 10 email: studioyona.official@gmail.com 으로 문의하면 됩니다.
+- Guide question 11 nav: 구독권 차이는? / 멤버십 비교
+- Guide question 11 title: 각 구독권의 차이는 무엇인가요?
+- Guide question 11 answer: 구독권은 어떤 혜택을 여는지에 따라 다릅니다. 앱에서는 무제한 촬영, 무제한 컬러 프레임, 광고스킵, 행사 모드 또는 QR 전달 관련 혜택처럼 상품별 제공 범위가 나뉘어 표시될 수 있습니다.
+- Guide question 11 point 1: 무제한 촬영 계열은 포토부스 필름 소모 부담을 줄이고 자주 촬영하는 사용자에게 맞습니다.
+- Guide question 11 point 2: 무제한 컬러 프레임 계열은 프레임 색상과 디자인 선택지를 넓게 쓰고 싶은 사용자에게 맞습니다.
+- Guide question 11 point 3: 합본이나 프리미엄 상품은 여러 혜택을 함께 묶어 제공할 수 있습니다.
+- Guide question 11 point 4: 월간·연간 구독은 자동 갱신될 수 있고, 1회 구매 상품은 자동 갱신 상품이 아닙니다. 최종 가격과 기간은 앱 안의 구매 화면을 기준으로 확인하세요.
+- Guide question 12 nav: 필름은 어떻게 얻나요? / 저장 재화
+- Guide question 12 title: 포토부스 필름은 어떻게 얻나요?
+- Guide question 12 answer: 포토부스 필름은 촬영 결과를 저장할 때 쓰이는 앱 안의 재화입니다. 홈 화면이나 상점에서 남은 필름 수를 확인할 수 있습니다.
+- Guide question 12 point 1: 광고 보상으로 필름을 얻을 수 있는 경우가 있습니다.
+- Guide question 12 point 2: 상점에서 포인트나 현금 구매로 필름을 얻을 수 있는 상품이 제공될 수 있습니다.
+- Guide question 12 point 3: 무제한 촬영 구독이나 관련 멤버십을 이용 중이면 필름 사용 방식이 달라질 수 있습니다.
+- Guide question 13 nav: 업적과 포인트란? / 보상 구조
+- Guide question 13 title: 업적과 포인트란 무엇인가요?
+- Guide question 13 answer: 업적은 앱을 사용하면서 달성하는 목표이고, 포인트는 업적·출석·광고 보상 등을 통해 얻는 앱 안의 보상입니다. 포인트는 상점에서 포인트로 구매 가능한 프레임 팩이나 필름 같은 항목을 여는 데 사용할 수 있습니다.
+- Guide question 13 point 1: 업적 버튼에 받을 수 있는 보상이 표시되면 들어가서 보상을 수령하세요.
+- Guide question 13 point 2: 현재 포인트는 홈이나 상점에서 확인할 수 있습니다.
+- Guide question 14 nav: 포인트를 많이 얻으려면? / 출석·광고·업적
+- Guide question 14 title: 포인트를 많이 얻으려면 어떻게 해야하나요?
+- Guide question 14 answer: 포인트를 많이 얻으려면 출석 보상, 광고 보상, 업적 보상을 꾸준히 확인하는 것이 가장 직접적입니다.
+- Guide question 14 step 1: 홈이나 업적 화면에서 오늘 받을 수 있는 출석 보상이 있는지 확인합니다.
+- Guide question 14 step 2: 광고 보상이 열려 있다면 안내에 따라 광고를 보고 포인트나 필름 보상을 받습니다.
+- Guide question 14 step 3: 업적 화면에서 완료된 목표가 있는지 확인하고 보상을 수령합니다.
+- Guide question 14 step 4: 기기 시간을 임의로 바꾸면 포인트 적립이 잠길 수 있으니 정상적인 기기 시간으로 사용하는 것이 좋습니다.
+- Guide question 15 nav: 비밀 업적이란? / 숨겨진 목표
+- Guide question 15 title: 비밀 업적이란 무엇인가요?
+- Guide question 15 answer: 비밀 업적은 달성하기 전까지 조건이 공개되지 않는 숨겨진 목표입니다. 앱을 촬영, 저장, 편집, 상점, 행사 흐름까지 다양하게 사용하다 보면 특정 조건을 만족했을 때 열릴 수 있습니다.
+- Guide question 15 point 1: 잠겨 있을 때는 비밀 업적처럼 표시되고, 달성 후에는 이름과 보상 조건이 보일 수 있습니다.
+- Guide question 15 point 2: 일부 비밀 업적은 특정 촬영 방식이나 반복 사용 흐름과 연결될 수 있습니다.
 - Support title: 지원 안내
 - Support body: 앱 사용 중 궁금한 점이 있으시면 이메일로 편하게 알려주세요.
 - Support CTA 1: 문의 메일 보내기

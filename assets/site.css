@@ -2059,6 +2059,163 @@ body.compact-page .button.secondary:focus-visible {
   font-size: 0.95rem;
 }
 
+.app-page .guide-panel {
+  display: grid;
+  gap: 22px;
+}
+
+.app-page .guide-head {
+  max-width: 74ch;
+}
+
+.app-page .guide-head h2 {
+  margin-top: 12px;
+}
+
+.app-page .guide-head p {
+  margin: 14px 0 0;
+}
+
+.app-page .guide-layout {
+  display: grid;
+  grid-template-columns: minmax(196px, 0.32fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.app-page .guide-chapters {
+  position: sticky;
+  top: 88px;
+  max-height: calc(100vh - 116px);
+  overflow: auto;
+  padding: 18px;
+  border: 1px solid rgba(32, 25, 18, 0.08);
+  border-radius: var(--app-radius-lg);
+  background: rgba(255, 250, 242, 0.78);
+}
+
+.app-page .guide-chapters-title {
+  margin: 0 0 12px;
+  color: var(--slate, #445d72);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-page .guide-chapters ol {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-page .guide-chapters a {
+  min-height: 56px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 10px;
+  align-items: baseline;
+  padding: 11px 12px;
+  border-left: 2px solid rgba(143, 121, 83, 0.28);
+  border-radius: 0 9px 9px 0;
+  color: var(--home-dark, #201912);
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.app-page .guide-chapters a:hover,
+.app-page .guide-chapters a:focus-visible {
+  transform: translateX(2px);
+  border-color: rgba(143, 121, 83, 0.78);
+  background: rgba(201, 173, 116, 0.16);
+  outline: 2px solid transparent;
+}
+
+.app-page .guide-chapters span {
+  grid-row: span 2;
+  color: var(--slate, #445d72);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.app-page .guide-chapters strong {
+  min-width: 0;
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+.app-page .guide-chapters small {
+  min-width: 0;
+  color: var(--home-soft, #6c625b);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.app-page .guide-content {
+  display: grid;
+  gap: 14px;
+}
+
+.app-page .guide-step-card {
+  scroll-margin-top: 96px;
+  padding: 20px;
+  border: 1px solid rgba(32, 25, 18, 0.08);
+  border-radius: var(--app-radius-lg);
+  background: rgba(255, 255, 255, 0.66);
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.app-page .guide-step-card:target {
+  border-color: rgba(143, 121, 83, 0.72);
+  background: rgba(201, 173, 116, 0.16);
+}
+
+.app-page .guide-step-number {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--slate, #445d72);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.app-page .guide-step-card h3 {
+  font-family: var(--font-sans);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.app-page .guide-step-card p {
+  margin: 10px 0 0;
+}
+
+.app-page .guide-step-card h4 {
+  margin: 18px 0 0;
+  color: var(--home-dark, #201912);
+  font-family: var(--font-sans);
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.app-page .guide-step-card ul,
+.app-page .guide-step-card ol {
+  margin: 14px 0 0;
+  padding-left: 1.25rem;
+}
+
+.app-page .guide-step-card li + li {
+  margin-top: 8px;
+}
+
 .app-page .meta {
   display: flex;
   flex-wrap: wrap;
@@ -2393,8 +2550,13 @@ body.home-page .app-panel:hover .app-icon-art {
   .app-page .hero-grid,
   .app-page .section-grid,
   .app-page .screens,
+  .app-page .guide-layout,
   .app-page .layout {
     grid-template-columns: 1fr;
+  }
+
+  .app-page .guide-chapters {
+    position: static;
   }
 
   .app-page .panel {
@@ -2530,6 +2692,37 @@ body.home-page .app-panel:hover .app-icon-art {
 
   .app-page .button {
     width: 100%;
+  }
+
+  .app-page .guide-panel,
+  .app-page .guide-content {
+    gap: 18px;
+  }
+
+  .app-page .guide-chapters {
+    overflow-x: auto;
+    margin-inline: -4px;
+    padding: 10px;
+    scrollbar-width: thin;
+  }
+
+  .app-page .guide-chapters ol {
+    display: flex;
+    gap: 8px;
+    width: max-content;
+  }
+
+  .app-page .guide-chapters a {
+    width: 180px;
+    min-height: 64px;
+    border-left-width: 0;
+    border-top: 2px solid rgba(143, 121, 83, 0.28);
+    border-radius: 0 0 9px 9px;
+  }
+
+  .app-page .guide-chapters a:hover,
+  .app-page .guide-chapters a:focus-visible {
+    transform: translateY(-1px);
   }
 
   .home-header {
