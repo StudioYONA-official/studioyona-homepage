@@ -97,44 +97,25 @@ docs/site-copy.md
 
 ## Worklog Trigger
 
-아래 중 하나라도 해당하면 worklog를 만든다.
+다음처럼 이후 복원 가치가 있는 작업에만 worklog를 만든다.
 
-- 5분 이상 예상 작업
-- 코드 읽기/수정 포함
-- 파일 2개 이상 수정 가능성
-- 조사/비교/설계 판단 포함
-- 검증 필요
-- 다음 세션으로 이어질 가능성
+- 여러 세션 또는 담당자 사이의 handoff가 필요한 작업
+- 제품 계약·구조·운영 정책에 비자명한 결정을 남기는 작업
+- 배포·production 작업처럼 검증 근거와 블로커 추적이 중요한 작업
+- 사용자가 명시적으로 기록을 요청한 작업
+
+단순 진단, 작은 수정, 일회성 검증, 문구·문서 정리는 기본 worklog 대상이 아니다.
 
 ## Update Rules
 
-- 실제 변경이 있으면 `docs/CHANGELOG.md`를 갱신한다.
+- 실제 사이트 동작, 배포·운영 계약, 공개 상태가 바뀌면 `docs/CHANGELOG.md`를 갱신한다.
 - 구조적 결정이 있으면 `docs/ARCHITECTURE.md`를 갱신한다.
-- handoff는 worklog의 `Handoff / Next` 섹션에 남긴다.
-- 사용자가 명시적으로 제외하지 않는 한, 작업 단위가 끝나면 이번 작업과 직접 관련된 변경만 자동으로 스테이징한다.
-- 자동 스테이징 전에는 관련 파일 범위를 다시 확인하고, 관련 없는 변경은 스테이징하지 않는다.
+- worklog가 있는 작업의 handoff는 `Handoff / Next` 섹션에 남긴다.
 
 ## Subagent Rules
 
-- subagent 선택은 자동 추측에만 맡기지 말고 작업 종류에 맞는 라우팅 기준을 먼저 따른다.
-- 기본 라우팅:
-  - 코드 리뷰/회귀 위험 점검: `reviewer`
-  - 구조 판단/설계 리뷰: `architect-reviewer`
-  - 영향 범위 탐색/코드 위치 찾기: `code-mapper`
-  - 문서 조사/레퍼런스 확인: `docs-researcher`
-  - React UI 구현: `frontend-developer`
-  - React 패턴/상태 구조 판단: `react-specialist`
-  - 작은 UI 버그 수정: `ui-fixer`
-  - Swift/iOS 구현: `swift-expert`
-  - 모바일 앱 전반 흐름: `mobile-developer`
-  - 서버/API 구현: `backend-developer`
-  - API 계약 설계: `api-designer`
-  - DB/쿼리/스키마 점검: `database-administrator`
-- subagent 동시 운용 개수는 먼저 이 프로젝트의 병렬 운영 기준을 확인한다.
-- 별도 기준이 없으면 기본은 `동시 2개`, 조건이 좋은 경우에만 `최대 3개`까지 허용한다.
-- `3개`를 넘는 subagent 동시 운용은 금지한다.
-- subagent는 다시 subagent를 생성하지 않는다.
-- subagent는 내부 작업을 영어로 수행한다.
+- subagent는 사용자가 요청했거나 적용 가능한 프로젝트 규칙·Skill이 요구하고 독립 작업이 명확할 때만 사용한다.
+- 역할이 존재한다는 이유만으로 subagent를 만들지 않으며, 병렬화 이득이 명확한 범위만 분리한다.
 - 최종 사용자-facing 결과 정리는 메인 agent만 한국어로 출력한다.
 
 ## Optional Docs
@@ -150,10 +131,8 @@ docs/site-copy.md
 
 빈 문서를 기본으로 만들지는 않는다.
 
-## Reading Order
+## Context Routing
 
-1. `README.md`
-2. `docs/DOCS_RULES.md`
-3. latest `docs/worklog-*.md`
-4. `docs/CHANGELOG.md`
-5. `docs/ARCHITECTURE.md`
+- 범위가 작은 작업은 관련 HTML·스크립트·스타일과 필요한 카피·디자인 문서에서 바로 시작한다.
+- 기존 작업을 이어받거나 현재 상태가 중요할 때만 최신 관련 `docs/worklog-*.md`를 읽는다.
+- 변경 이력이나 구조적 근거가 필요할 때만 `docs/CHANGELOG.md` 또는 `docs/ARCHITECTURE.md`의 관련 부분을 읽는다.

@@ -90,6 +90,10 @@ body::before {
 body.home-page,
 body.compact-page {
   overflow-x: clip;
+  /* Korean wraps on word boundaries, not mid-word. `keep-all` stops CJK from
+     breaking anywhere; `break-word` still rescues a token wider than its box. */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -1679,6 +1683,10 @@ body.app-page {
   min-height: 100vh;
   color: #201912;
   font-family: "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+  /* Korean wraps on word boundaries, not mid-word. `keep-all` stops CJK from
+     breaking anywhere; `break-word` still rescues a token wider than its box. */
+  word-break: keep-all;
+  overflow-wrap: break-word;
   background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), transparent 34%),
     radial-gradient(circle at 85% 10%, rgba(138, 90, 68, 0.12), transparent 26%),
@@ -2045,7 +2053,6 @@ body.compact-page .button.secondary:focus-visible {
 }
 
 .app-page .shot {
-  min-height: 250px;
   border-radius: 24px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.62)),
@@ -2053,10 +2060,778 @@ body.compact-page .button.secondary:focus-visible {
     linear-gradient(145deg, #f0e5d9, #fffaf1);
   border: 1px solid rgba(32, 25, 18, 0.08);
   display: flex;
-  align-items: flex-end;
-  padding: 18px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 12px;
+  margin: 0;
   color: #6c625b;
   font-size: 0.95rem;
+  overflow: hidden;
+}
+
+.app-page .shot:not(:has(img)) {
+  min-height: 250px;
+  justify-content: flex-end;
+  padding: 18px;
+}
+
+.app-page .shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.app-page .shot figcaption {
+  padding: 0 4px 4px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #6c625b;
+}
+
+/* Landing sections: problem/solution story, use cases, spec rows */
+.app-page .story-panel {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 22px;
+}
+
+.app-page .story-lede {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.7;
+  color: #40382f;
+  max-width: 62ch;
+  margin: 0;
+}
+
+.app-page .story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.app-page .story-item {
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(32, 25, 18, 0.08);
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.app-page .story-item h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.app-page .story-item p {
+  margin: 0;
+}
+
+.app-page .story-step {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--home-accent);
+}
+
+.app-page .usecase-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.app-page .usecase-list li {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(32, 25, 18, 0.08);
+}
+
+.app-page .usecase-list strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.app-page .spec-rows {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 0;
+}
+
+.app-page .spec-rows li {
+  display: grid;
+  grid-template-columns: minmax(120px, 30%) 1fr;
+  gap: 16px;
+  padding: 14px 4px;
+  border-bottom: 1px solid rgba(32, 25, 18, 0.08);
+}
+
+.app-page .spec-rows li:last-child {
+  border-bottom: 0;
+}
+
+.app-page .spec-rows dfn {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .app-page .spec-rows li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+/* ── Landing: editorial bands ─────────────────────────────────────── */
+
+.app-page .band {
+  margin: 0;
+  padding: clamp(64px, 9vw, 116px) 0;
+}
+
+.app-page .band-inner {
+  width: min(100% - 40px, 1180px);
+  margin: 0 auto;
+}
+
+.app-page .band-dark {
+  position: relative;
+  background: linear-gradient(160deg, #201912 0%, #2b211a 55%, #350812 100%);
+  color: #f3ece0;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(20px, calc(50vw - 590px));
+}
+
+.app-page .band-dark h2,
+.app-page .band-dark h3 {
+  color: #fffdf8;
+}
+
+.app-page .band-dark p,
+.app-page .band-dark li {
+  color: rgba(243, 236, 224, 0.78);
+}
+
+.app-page .band-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--home-accent);
+  margin-bottom: 18px;
+}
+
+.app-page .band-dark .band-label {
+  color: var(--bronze-soft);
+}
+
+.app-page .band-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0;
+  max-width: 20ch;
+}
+
+.app-page .band-lede {
+  font-size: clamp(1.05rem, 1.5vw, 1.22rem);
+  line-height: 1.75;
+  max-width: 58ch;
+  margin: 22px 0 0;
+}
+
+/* Statement: oversized single claim */
+.app-page .band-statement .band-title {
+  max-width: 16ch;
+  font-size: clamp(2.3rem, 5.4vw, 4.2rem);
+}
+
+/* Steps: numbered editorial rows, no card chrome */
+.app-page .flow {
+  list-style: none;
+  margin: clamp(36px, 5vw, 56px) 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.app-page .flow li {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 20ch) 1fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 26px 0;
+  border-top: 1px solid rgba(243, 236, 224, 0.16);
+}
+
+.app-page .flow li:last-child {
+  border-bottom: 1px solid rgba(243, 236, 224, 0.16);
+}
+
+.app-page .flow-num {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+  line-height: 1;
+  color: var(--bronze-soft);
+}
+
+.app-page .flow h3 {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.app-page .flow p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 780px) {
+  .app-page .flow li {
+    grid-template-columns: 52px 1fr;
+    gap: 8px 18px;
+    padding: 22px 0;
+  }
+
+  .app-page .flow p {
+    grid-column: 2;
+  }
+}
+
+/* Showcase: screenshots as the subject, not a footnote */
+.app-page .showcase {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 34px);
+  margin-top: clamp(36px, 5vw, 56px);
+}
+
+.app-page .showcase figure {
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.app-page .showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background: #fffdf8;
+  box-shadow: 0 30px 60px rgba(20, 14, 8, 0.28);
+}
+
+.app-page .showcase figcaption {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.app-page .showcase figcaption strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 720px) {
+  .app-page .showcase {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-inline: auto;
+  }
+}
+
+/* Split: text beside a single large screenshot */
+.app-page .split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+
+.app-page .split img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  background: #fffdf8;
+  border: 1px solid rgba(32, 25, 18, 0.1);
+}
+
+@media (max-width: 860px) {
+  .app-page .split {
+    grid-template-columns: 1fr;
+  }
+
+  .app-page .split .split-media {
+    max-width: 360px;
+    margin-inline: auto;
+  }
+}
+
+/* Facts: quiet metric row */
+.app-page .facts {
+  list-style: none;
+  margin: clamp(32px, 4vw, 48px) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: clamp(20px, 3vw, 40px);
+}
+
+.app-page .facts li {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.app-page .facts b {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.app-page .band-dark .facts b {
+  color: #fffdf8;
+}
+
+.app-page .facts span {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Facts without a large lead-in number */
+.app-page .facts-plain li {
+  border-top: 2px solid var(--home-accent);
+  padding-top: 16px;
+}
+
+.app-page .band-dark .facts-plain li {
+  border-top-color: var(--bronze-soft);
+}
+
+.app-page .facts-plain span {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Use cases: bordered editorial columns */
+.app-page .cases {
+  list-style: none;
+  margin: clamp(36px, 5vw, 52px) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: clamp(24px, 3vw, 40px);
+}
+
+.app-page .cases li {
+  border-top: 2px solid var(--home-accent);
+  padding-top: 18px;
+}
+
+.app-page .cases strong {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.app-page .cases p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Case list without a bold lead-in label */
+.app-page .cases-plain li {
+  padding-top: 18px;
+}
+
+.app-page .band-dark .cases li {
+  border-top-color: var(--bronze-soft);
+}
+
+.app-page .band-dark .cases strong {
+  color: #fffdf8;
+}
+
+.app-page .band-dark .button.secondary {
+  border-color: rgba(243, 236, 224, 0.42);
+  color: #f3ece0;
+  background: transparent;
+}
+
+.app-page .band-dark .button.secondary:hover {
+  border-color: var(--bronze-soft);
+  color: #fffdf8;
+}
+
+/* Spec table inside a band */
+.app-page .band .spec-rows {
+  margin-top: clamp(32px, 4vw, 48px);
+}
+
+.app-page .band .spec-rows li {
+  padding: 18px 0;
+}
+
+.app-page .band-dark .spec-rows li {
+  border-bottom-color: rgba(243, 236, 224, 0.16);
+}
+
+.app-page .band-dark .spec-rows dfn {
+  color: #fffdf8;
+}
+
+.app-page .band-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: clamp(28px, 4vw, 40px);
+}
+
+/* ── Landing: scroll storytelling ─────────────────────────────────── */
+
+/* Landing hero: full-bleed dark opening that matches the bands below */
+.app-page .hero.hero-band {
+  position: relative;
+  margin-inline: calc(50% - 50vw);
+  padding: clamp(72px, 13vw, 150px) max(20px, calc(50vw - 590px)) clamp(64px, 11vw, 128px);
+  background: linear-gradient(158deg, #1b150f 0%, #2b211a 52%, #350812 100%);
+  color: #f3ece0;
+}
+
+.app-page .hero-band .hero-band-inner {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: end;
+}
+
+.app-page .hero-band .eyebrow {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bronze-soft);
+  margin-bottom: clamp(20px, 3vw, 30px);
+}
+
+.app-page .hero-band .app-lockup {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(3rem, 8.5vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  color: #fffdf8;
+  display: grid;
+  gap: 6px;
+}
+
+.app-page .hero-band .app-lockup-sub {
+  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+  color: rgba(243, 236, 224, 0.62);
+  letter-spacing: -0.01em;
+}
+
+.app-page .hero-band .lead {
+  margin: clamp(24px, 3.4vw, 34px) 0 0;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  line-height: 1.72;
+  color: rgba(243, 236, 224, 0.82);
+  max-width: 46ch;
+}
+
+.app-page .hero-band .hero-actions {
+  margin-top: clamp(30px, 4vw, 44px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-page .hero-band .button.secondary {
+  border-color: rgba(243, 236, 224, 0.42);
+  color: #f3ece0;
+  background: transparent;
+}
+
+.app-page .hero-band .button.secondary:hover {
+  border-color: var(--bronze-soft);
+  color: #fffdf8;
+}
+
+.app-page .hero-band .meta {
+  margin-top: clamp(22px, 3vw, 30px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.app-page .hero-band .pill {
+  border: 1px solid rgba(243, 236, 224, 0.26);
+  background: transparent;
+  color: rgba(243, 236, 224, 0.78);
+}
+
+/* Summary rendered as quiet rows, not a floating card */
+.app-page .hero-band .hero-summary {
+  display: grid;
+  gap: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.app-page .hero-band .hero-summary .detail-block {
+  padding: 16px 0;
+  border: 0;
+  border-top: 1px solid rgba(243, 236, 224, 0.18);
+  border-radius: 0;
+  background: transparent;
+}
+
+.app-page .hero-band .hero-summary .detail-block:last-child {
+  border-bottom: 1px solid rgba(243, 236, 224, 0.18);
+}
+
+.app-page .hero-band .hero-summary .detail-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bronze-soft);
+  margin-bottom: 8px;
+}
+
+.app-page .hero-band .hero-summary .detail-value {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(243, 236, 224, 0.88);
+}
+
+.app-page .hero-band .hero-summary .detail-value a {
+  color: rgba(243, 236, 224, 0.88);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.app-page .hero-band .hero-summary .detail-value a:hover {
+  color: #fffdf8;
+}
+
+@media (max-width: 860px) {
+  .app-page .hero-band .hero-band-inner {
+    grid-template-columns: 1fr;
+    gap: clamp(30px, 6vw, 44px);
+    align-items: start;
+  }
+}
+
+/* The statement band follows the dark hero, so soften the seam */
+.app-page .hero-band + .band-dark {
+  padding-top: clamp(40px, 6vw, 72px);
+}
+
+
+/* Sticky scene: text pins while the screenshot column scrolls past */
+.app-page .scene {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+
+.app-page .scene-pin {
+  position: sticky;
+  top: clamp(96px, 18vh, 180px);
+  padding-bottom: 40px;
+}
+
+.app-page .scene-steps {
+  display: grid;
+  gap: clamp(80px, 22vh, 220px);
+  padding: clamp(40px, 10vh, 120px) 0 clamp(60px, 16vh, 160px);
+}
+
+.app-page .scene-step {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.app-page .scene-step img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 22px;
+  background: #fffdf8;
+  box-shadow: 0 34px 70px rgba(20, 14, 8, 0.3);
+}
+
+.app-page .scene-step h3 {
+  margin: 0;
+  font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.app-page .scene-step p {
+  margin: 0;
+  max-width: 46ch;
+  line-height: 1.75;
+}
+
+.app-page .scene-index {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  line-height: 1;
+  color: var(--bronze-soft);
+}
+
+/* Progress rail beside the pinned column */
+.app-page .scene-rail {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.app-page .scene-rail li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.92rem;
+  opacity: 0.42;
+  transition: opacity 0.4s ease;
+}
+
+.app-page .scene-rail li::before {
+  content: "";
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0.45);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.app-page .scene-rail li.is-active {
+  opacity: 1;
+}
+
+.app-page .scene-rail li.is-active::before {
+  transform: scaleX(1);
+}
+
+@media (max-width: 860px) {
+  .app-page .scene {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .app-page .scene-pin {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .app-page .scene-rail {
+    display: none;
+  }
+
+  .app-page .scene-steps {
+    gap: clamp(56px, 12vh, 96px);
+    padding: clamp(36px, 8vh, 64px) 0 0;
+  }
+
+  .app-page .scene-step img {
+    max-width: 320px;
+  }
+}
+
+/* Scroll-in motion for landing blocks */
+html.has-js .app-page [data-rise] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.75s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html.has-js .app-page [data-rise].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+html.has-js .app-page [data-rise-group] > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html.has-js .app-page [data-rise-group].is-visible > * {
+  opacity: 1;
+  transform: none;
+}
+
+html.has-js .app-page [data-rise-group].is-visible > *:nth-child(1) { transition-delay: 0.04s; }
+html.has-js .app-page [data-rise-group].is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+html.has-js .app-page [data-rise-group].is-visible > *:nth-child(3) { transition-delay: 0.2s; }
+html.has-js .app-page [data-rise-group].is-visible > *:nth-child(4) { transition-delay: 0.28s; }
+html.has-js .app-page [data-rise-group].is-visible > *:nth-child(5) { transition-delay: 0.36s; }
+
+/* Scene steps fade as they enter, and dim once they pass */
+html.has-js .app-page .scene-step {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html.has-js .app-page .scene-step.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.has-js .app-page [data-rise],
+  html.has-js .app-page [data-rise-group] > *,
+  html.has-js .app-page .scene-step {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .app-page .scene-pin {
+    position: static;
+  }
 }
 
 .app-page .guide-panel {

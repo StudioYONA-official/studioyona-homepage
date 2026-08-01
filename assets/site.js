@@ -212,4 +212,80 @@
     // never left hidden.
     window.setTimeout(revealInView, 40);
   }
+
+  // Landing pages: reveal blocks on scroll and track the active scene step.
+  const riseTargets = document.querySelectorAll("[data-rise], [data-rise-group], .scene-step");
+  if (riseTargets.length > 0) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (reduceMotion || typeof IntersectionObserver !== "function") {
+      riseTargets.forEach((element) => element.classList.add("is-visible"));
+    } else {
+      const riseObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              riseObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+      );
+
+      riseTargets.forEach((element) => riseObserver.observe(element));
+
+      // Safety net: if an element never intersects (short viewport, zoom, or a
+      // hidden ancestor at load), show it rather than leaving the page blank.
+      window.setTimeout(() => {
+        riseTargets.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add("is-visible");
+          }
+        });
+      }, 600);
+    }
+
+    // Highlight the rail entry matching the step currently in the middle of the
+    // viewport, so the pinned column tells you where you are.
+    document.querySelectorAll(".scene").forEach((scene) => {
+      const steps = Array.from(scene.querySelectorAll(".scene-step"));
+      const rail = Array.from(scene.querySelectorAll(".scene-rail li"));
+      if (steps.length === 0 || rail.length !== steps.length) {
+        return;
+      }
+
+      let ticking = false;
+      const syncRail = () => {
+        ticking = false;
+        const focus = window.innerHeight * 0.5;
+        let activeIndex = 0;
+        let closest = Infinity;
+        steps.forEach((step, index) => {
+          const rect = step.getBoundingClientRect();
+          const distance = Math.abs(rect.top + rect.height / 2 - focus);
+          if (distance < closest) {
+            closest = distance;
+            activeIndex = index;
+          }
+        });
+        rail.forEach((item, index) => {
+          item.classList.toggle("is-active", index === activeIndex);
+        });
+      };
+
+      const onScrollRail = () => {
+        if (ticking) {
+          return;
+        }
+        ticking = true;
+        window.requestAnimationFrame(syncRail);
+      };
+
+      window.addEventListener("scroll", onScrollRail, { passive: true });
+      window.addEventListener("resize", onScrollRail);
+      syncRail();
+    });
+  }
 })();

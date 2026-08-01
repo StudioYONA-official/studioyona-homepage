@@ -186,7 +186,7 @@ Path: `apps/index.html`
 - H1: 우리 가족의 일상에서 태어난 앱들.
 - Lead: 포토부스에 못 가는 날 만든 EDSN Frame, 아이의 시선을 모아주는 까꿍캠. Studio YONA의 앱은 모두 실제 필요에서 시작합니다.
 - CTA 1: EDSN Frame 보기
-- CTA 2: Stampho 보기
+- CTA 2: Veruma 보기
 - Hero card 1 title: 📸
 - Hero card 1 body: EDSN Frame — 내 폰이 포토부스
 
@@ -197,7 +197,7 @@ Path: `apps/index.html`
 
 #### EDSN Frame
 
-- Status: iOS 출시
+- Status: iOS · Mac · Android 출시
 - Title: EDSN Frame (어디서나 프레임)
 - Body: 내 스마트폰으로 언제 어디서나 포토부스처럼 귀여운 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요.
 - CTA: 자세히 보기
@@ -211,7 +211,7 @@ Path: `apps/index.html`
 
 #### Detective Recorder
 
-- Status: iOS 출시
+- Status: iPhone · iPad · Mac 출시
 - Title: 탐정의 녹음기
 - Body: 카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요.
 - CTA: 자세히 보기
@@ -221,13 +221,6 @@ Path: `apps/index.html`
 - Status: iOS 출시
 - Title: Veruma
 - Body: 당신의 시선을 하나의 작품으로 만들어주는 고급스러운 카메라 앱입니다.
-- CTA: 자세히 보기
-
-#### Stampho
-
-- Status: 출시 준비 중
-- Title: Stampho
-- Body: 사진과 영상 위에 필요한 text stamp를 남기고, 카테고리별 preset으로 반복 기록을 더 쉽게 이어 가세요.
 - CTA: 자세히 보기
 
 #### Transparent Practices
@@ -264,7 +257,7 @@ Path: `support/index.html`
 - Item 1 title: 어떤 화면에서
 - Item 1 body: 어떤 화면에서 문제가 생겼는지 알려주세요.
 - Item 2 title: 기기 정보
-- Item 2 body: 기종, iOS 버전, 앱 버전을 함께 적어주시면 도움이 됩니다.
+- Item 2 body: 기종, iOS 또는 Android 버전, 앱 버전을 함께 적어주시면 도움이 됩니다.
 - Item 3 title: 어떻게 하면 다시 생기나요
 - Item 3 body: 같은 문제를 다시 일으키는 순서를 간단히 알려주세요.
 - Item 4 title: 스크린샷
@@ -296,7 +289,7 @@ Path: `contact/index.html`
 - Eyebrow: 이런 문의를 보내주세요
 - Title: 이런 이야기를 기다리고 있어요.
 - Item 1 title: 앱 질문
-- Item 1 body: EDSN Frame이나 탐정의 녹음기에 대해 궁금한 점을 편하게 물어보세요.
+- Item 1 body: EDSN Frame, 까꿍캠, 탐정의 녹음기, Veruma에 대해 궁금한 점을 편하게 물어보세요.
 - Item 2 title: 협업 제안
 - Item 2 body: Studio YONA와 함께하고 싶은 아이디어가 있다면 알려주세요.
 - Item 3 title: 기능 제안
@@ -315,7 +308,7 @@ Path: `ko/apps/edsn-frame/index.html`
 - Lead: 포토부스에 가기 어려운 날에도 귀여운 사진을 찍고 싶었습니다. 내 스마트폰으로 언제 어디서나 포토부스처럼 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요.
 - CTA 1: 개인정보처리방침
 - CTA 2: 이용약관
-- Pill 1: iOS 출시 중
+- Pill 1: iOS · Mac · Android 출시 중
 - Pill 2: 한국어 · English
 - Pill 3: 이메일 문의 가능
 - Support email: studioyona.official@gmail.com
@@ -326,101 +319,117 @@ Path: `ko/apps/edsn-frame/index.html`
 - Feature 4: 포인트를 모아 새로운 프레임과 귀여운 아이템을 잠금 해제하세요
 - Info title: 앱 정보
 - Info 1: 카테고리: 사진 및 비디오
-- Info 2: 호환성: iOS (Android 준비 중)
+- Info 2: 호환성: iPhone, iPad, Mac(macOS 13.0 이상), Android
 - Info 3: 언어: 한국어, English
 - Info 4: 가격: 무료 (인앱 구매 포함)
 - Screenshots title: 스크린샷
 - Screenshots body: 앱 화면을 미리 만나보세요.
+- Screenshot caption 1: 컷 수와 프레임 선택
+- Screenshot caption 2: 촬영 화면
+- Screenshot caption 3: 결과 꾸미기
 - Guide title: 어디서나 프레임 질문과 답변
-- Guide body: 앱의 기본 사용, 프레임, 행사 모드, 구독, 포인트를 질문과 답변 형식으로 정리했습니다. 궁금한 질문을 왼쪽에서 바로 선택하세요.
+- Guide body: 촬영 흐름, 프레임, 행사 모드, 구독, 포인트에 대해 가장 많이 들어온 질문을 모았습니다. 왼쪽에서 궁금한 질문을 고르면 바로 답변으로 이동합니다.
 - Guide question label: 질문
 - Guide question 1 nav: 무슨 어플인가요? / 앱 개요
 - Guide question 1 title: 어디서나 프레임은 무슨 어플인가요?
-- Guide question 1 answer: 어디서나 프레임은 스마트폰을 포토부스처럼 쓰는 촬영 앱입니다. 앱에서 컷 수와 프레임을 고르고, 촬영하기를 눌러 사진을 찍은 뒤, 결과 화면에서 프레임·문구·스탬프·보정 요소를 다듬어 저장합니다.
-- Guide question 1 point 1: 새로 촬영할 수도 있고, 기존 사진이나 영상을 불러와 포토부스 결과물로 만들 수도 있습니다.
-- Guide question 1 point 2: 개인 촬영은 물론, 행사 모드를 이용해 웨딩·축제·매장·팝업 현장에서 여러 손님이 차례로 촬영하는 흐름도 운영할 수 있습니다.
-- Guide question 2 nav: 어떤 프레임으로 촬영하나요? / 일반·특수 프레임
+- Guide question 1 answer: 스마트폰을 포토부스처럼 쓰는 촬영 앱입니다. 컷 수와 프레임을 고르고 촬영한 뒤, 결과 화면에서 프레임 색상, 하단 문구, 스탬프, 필터를 다듬어 사진이나 영상으로 저장합니다.
+- Guide question 1 point 1: 새로 촬영해도 되고, 갤러리에 있는 사진이나 영상을 불러와 같은 결과물로 만들어도 됩니다.
+- Guide question 1 point 2: 저장한 사진과 영상은 기기의 사진 앱에 남습니다. 계정을 탈퇴해도 기기에 저장된 결과물은 지워지지 않습니다.
+- Guide question 1 point 3: 혼자 쓰는 촬영은 물론, 행사 모드로 웨딩·축제·매장·팝업에서 손님이 차례로 촬영하는 흐름도 운영합니다.
+- Guide question 2 nav: 어떤 프레임으로 촬영하나요? / 일반 1~9컷 · 특수 3종
 - Guide question 2 title: 어떤 프레임으로 촬영할 수 있나요?
-- Guide question 2 answer: 촬영 전에는 일반 프레임과 특수 프레임 중에서 선택합니다. 일반 프레임은 1컷, 2컷, 4컷, 6컷, 9컷처럼 포토부스에 익숙한 구성을 만들 때 사용합니다.
-- Guide question 2 point 1: 처음 쓰는 경우에는 세로 4컷이나 세로 6컷처럼 단순한 구성으로 시작하는 편이 쉽습니다.
-- Guide question 2 point 2: 특수 프레임에는 컬러 헌트, 릴 스토리, 인스턴트처럼 촬영 방식이나 결과 분위기가 달라지는 구성이 포함될 수 있습니다.
-- Guide question 2 point 3: 실제로 선택 가능한 프레임 종류는 앱 버전, 보유한 프레임 팩, 상점 구매 상태에 따라 달라질 수 있습니다.
+- Guide question 2 answer: 촬영 전에 일반 프레임과 특수 프레임 중 하나를 고릅니다. 일반 프레임은 1컷부터 9컷까지, 포토부스에서 익숙한 구성을 만들 때 씁니다.
+- Guide question 2 point 1: 처음이라면 세로 4컷으로 시작하는 편이 가장 무난합니다.
+- Guide question 2 point 2: 특수 프레임은 컬러 헌트, 릴 스토리, 인스턴트 세 가지이고, 선택한 디자인에 맞춰 촬영 컷 수가 자동으로 정해집니다.
+- Guide question 2 point 3: 가로로 넓은 프레임은 기기를 눕히고, 세로로 긴 프레임은 세워두면 촬영 화면을 넓게 쓸 수 있습니다. 설정에서 권장 방향 자동 선택을 켜두면 알아서 맞춰 줍니다.
 - Guide question 3 nav: 프레임 디자인은? / 단색·그라디언트·그래픽
 - Guide question 3 title: 프레임 디자인에는 무엇이 있나요?
-- Guide question 3 answer: 결과 화면의 프레임 탭에서 단색, 그라디언트, 그래픽 프레임을 고를 수 있습니다. 단색은 깔끔한 기본 느낌, 그라디언트는 부드러운 색감, 그래픽 프레임은 행사나 테마가 더 잘 드러나는 장식형 프레임에 가깝습니다.
-- Guide question 3 point 1: 상점의 프레임 팩에서 보유 중인 디자인과 잠겨 있는 디자인을 확인할 수 있습니다.
-- Guide question 3 point 2: 잠긴 프레임은 포인트, 현금 구매, 구독 혜택, 준비 중인 상품 상태에 따라 열 수 있는 방식이 달라질 수 있습니다.
-- Guide question 4 nav: 필터와 보정은? / 편집 기능
+- Guide question 3 answer: 결과 화면의 프레임 탭에서 단색, 그라디언트, 그래픽 프레임을 고릅니다. 단색은 깔끔한 기본, 그라디언트는 부드러운 색감, 그래픽 프레임은 테마가 드러나는 장식형입니다.
+- Guide question 3 point 1: 그래픽 프레임은 일반 세로 4컷의 좁은 프레임 또는 넓은 B형에서 사용합니다.
+- Guide question 3 point 2: 상점의 프레임 팩에서 보유한 디자인과 잠긴 디자인을 확인합니다. 잠긴 프레임은 포인트나 현금으로 구매하거나, 무제한 컬러 프레임 멤버십으로 한 번에 엽니다.
+- Guide question 4 nav: 필터와 보정은? / 컷별 편집
 - Guide question 4 title: 필터나 보정 기능을 사용하려면 어떻게 해야 하나요?
-- Guide question 4 answer: 촬영이나 불러오기를 마친 뒤 결과 화면에서 편집 탭을 엽니다. 여기에서 밝기, 대비, 채도, 색온도 같은 보정 항목이나 앱에서 제공하는 필터 항목을 적용합니다.
-- Guide question 4 point 1: 편집 기능이나 필터 상품 중 일부는 상점에서 준비 중이거나 별도 권한이 필요할 수 있습니다.
-- Guide question 4 point 2: 편집 후에는 저장 단계로 이동하기 전에 얼굴, 문구, 스탬프가 프레임에 가려지지 않는지 한 번 더 확인하는 것이 좋습니다.
-- Guide question 5 nav: 단체 행사에서 쓰나요? / 행사 운영
+- Guide question 4 answer: 촬영이나 불러오기를 마치고 결과 화면에서 편집 탭을 엽니다. 기본 필터는 무료로 쓸 수 있고, 밝기·대비·채도·색온도를 다루는 사진 보정 기능과 특수 효과 필터 팩은 상점에서 포인트나 현금으로 잠금을 해제하는 항목입니다.
+- Guide question 4 point 1: 필터는 컷마다 따로 적용됩니다. 적용할 컷을 먼저 고른 뒤 필터를 선택하세요.
+- Guide question 4 point 2: 특수 효과 필터 팩은 무제한 컬러 프레임 구독에 포함되지 않는 별도 소유 항목입니다.
+- Guide question 4 point 3: 같은 화면에서 하단 문구의 글꼴, 크기, 위치, 정렬을 바꾸고 스탬프를 올릴 수 있습니다.
+- Guide question 4 point 4: 저장 전에 얼굴, 문구, 스탬프가 프레임에 가리지 않는지 한 번만 더 확인하세요.
+- Guide question 5 nav: 단체 행사에서 쓰나요? / 행사 준비물
 - Guide question 5 title: 단체 행사에서 사용할 수 있나요?
-- Guide question 5 answer: 네. 행사 모드는 웨딩, 축제, 매장, 팝업, 프로모션처럼 여러 사람이 같은 기기에서 차례로 촬영할 때 쓰기 좋습니다. 운영자가 프레임과 촬영 흐름을 미리 정해두면 손님은 안내에 따라 촬영하고 QR이나 출력물로 결과를 받을 수 있습니다.
+- Guide question 5 answer: 네. 행사/매장 모드는 웨딩, 축제, 매장, 팝업처럼 여러 사람이 같은 기기로 차례차례 촬영할 때 씁니다. 운영자가 관리자 홈에서 프레임과 촬영 흐름을 미리 고정해 두면 손님은 화면 안내만 따라가면 되고, 결과는 QR이나 인쇄로 받습니다. 행사/매장 모드와 인쇄 기능 자체는 무료이고, QR로 전달할 때만 QR 잔여 횟수를 씁니다.
 - Guide question 5 subsection: 행사 전에 준비할 것
-- Guide question 5 point 1: EDSN Frame이 설치된 촬영용 기기, 충전기, 보조 배터리, 거치대나 삼각대를 준비합니다.
-- Guide question 5 point 2: QR 전달을 쓸 경우 안정적인 Wi-Fi나 핫스팟이 필요합니다.
-- Guide question 5 point 3: 인쇄까지 운영할 경우 연결 가능한 프린터, 용지, 잉크나 카트리지를 미리 확인합니다.
-- Guide question 5 point 4: 행사 시작 전에는 반드시 스태프가 손님처럼 처음부터 끝까지 테스트 촬영을 해보는 것이 좋습니다.
-- Guide question 6 nav: 행사 모드 설정은? / 운영자 설정
+- Guide question 5 point 1: 앱이 설치된 촬영용 기기, 충전기, 보조 배터리, 거치대나 삼각대를 준비합니다.
+- Guide question 5 point 2: QR로 전달하려면 안정적인 Wi-Fi나 핫스팟, Apple 또는 Google 계정 연결, 그리고 QR 잔여 횟수가 필요합니다.
+- Guide question 5 point 3: 인쇄까지 운영하려면 프린터 ID, 용지, 잉크를 준비하고 프린터 검색으로 인쇄 가능 상태까지 확인합니다.
+- Guide question 5 point 4: 포토부스 필름을 넉넉히 채워 두세요. 행사 결과물도 저장할 때 일반 촬영과 똑같이 필름을 사용하고, 필름이 없으면 촬영을 시작할 수 없습니다.
+- Guide question 5 point 5: 손님을 받기 전에 스태프가 손님처럼 처음부터 끝까지 한 번 테스트 촬영을 합니다.
+- Guide question 6 nav: 행사 모드 설정은? / PIN·전달·자동 복귀
 - Guide question 6 title: 행사모드에서는 어떤 것을 설정할 수 있나요?
-- Guide question 6 answer: 행사 모드에서는 운영자가 손님이 보게 될 촬영 흐름을 미리 정합니다. 기본적으로 프레임, 촬영 컷 수, 카운트다운, 하단 문구, 결과 편집 허용 여부, 자동복귀, QR 또는 프린터 전달 경로를 점검합니다.
-- Guide question 6 point 1: 운영자 PIN 4자리나 OS 인증을 준비하면 손님이 앱 설정을 바꾸거나 행사 흐름 밖으로 나가는 것을 줄일 수 있습니다.
-- Guide question 6 point 2: 자동복귀 시간은 너무 짧게 잡지 않는 것이 좋습니다. 손님이 QR을 스캔하고 저장할 시간을 남겨야 합니다.
-- Guide question 6 point 3: 줄이 긴 행사라면 결과 편집 시간을 짧게 두고, 여유 있는 행사라면 문구나 스탬프를 고를 시간을 더 주는 방식이 좋습니다.
+- Guide question 6 answer: 관리자 홈의 설정 마법사에서 손님에게 보일 촬영 흐름을 통째로 고정합니다. 관리자 PIN, 프레임 디자인과 폭, 컷 수, 카운트다운, 사용할 카메라, 하단 문구의 글꼴과 크기·위치·정렬, 결과 편집 허용 범위, 전달 방식, 자동 복귀가 대상입니다. 운영자가 정한 프레임과 컷 수는 행사 촬영 중 바뀌지 않습니다.
+- Guide question 6 point 1: 관리자 PIN은 숫자 4자리입니다. 촬영 중 설정을 바꾸거나 관리자 홈으로 돌아갈 때 PIN이나 기기 인증이 필요하므로, 손님이 설정을 건드릴 걱정을 덜 수 있습니다.
+- Guide question 6 point 2: 전달 방식은 QR 전용, 프린터 전용, QR + 프린터 세 가지 중에서 고릅니다.
+- Guide question 6 point 3: 자동 복귀는 30초에서 120초 사이로 정하고 기본값은 45초입니다. 손님이 QR을 스캔해 저장할 시간을 생각하면 너무 짧게 잡지 않는 편이 좋습니다.
+- Guide question 6 point 4: 결과 편집을 허용하면 편집 시간은 5초에서 60초 사이로 정합니다. 줄이 길면 짧게, 여유 있으면 길게 잡으세요. 문구·프레임·스탬프처럼 손님이 만질 수 있는 항목도 따로 골라 둘 수 있습니다.
+- Guide question 6 point 5: 하단 문구는 결과 사진 아래에 작게 들어갑니다. 비워두면 표시하지 않습니다.
+- Guide question 6 point 6: 전달 경로가 하나도 준비되지 않으면 촬영을 시작할 수 없습니다. 관리자 홈의 준비 상태 표시로 무엇이 막혀 있는지 확인하세요.
 - Guide question 7 nav: 손님에게 전송하려면? / QR 전달
 - Guide question 7 title: 손님에게 사진을 전송하려면 어떻게 해야하나요?
-- Guide question 7 answer: 행사에서 가장 쉬운 전달 방식은 QR 코드입니다. 촬영이 끝나고 결과가 준비되면 손님이 자신의 휴대폰 카메라로 QR을 스캔해 사진을 열고 저장합니다.
-- Guide question 7 step 1: 행사 전 관리자 화면에서 QR 전달을 사용할 수 있는 상태인지 확인합니다.
-- Guide question 7 step 2: 테스트 촬영 후 다른 휴대폰으로 QR을 직접 스캔해 사진이 열리는지 확인합니다.
-- Guide question 7 step 3: 현장에서는 손님에게 QR을 스캔한 뒤 사진이 열렸는지 확인하고, 저장까지 마친 다음 다음 손님으로 넘깁니다.
-- Guide question 8 nav: QR 전송권한은? / 권한과 크레딧
+- Guide question 7 answer: 행사에서 가장 간단한 전달 방식은 QR 코드입니다. 결과가 나오면 손님이 자기 휴대폰 카메라로 QR을 스캔해 사진을 열고 저장합니다.
+- Guide question 7 step 1: 관리자 홈에서 QR 전달 준비 상태를 확인합니다. QR은 Apple 또는 Google 계정 연결, 인터넷 연결, QR 잔여 횟수가 모두 있어야 동작합니다.
+- Guide question 7 step 2: 테스트 촬영을 한 뒤 다른 휴대폰으로 QR을 직접 스캔해 사진이 열리는지 봅니다.
+- Guide question 7 step 3: 현장에서는 손님이 사진을 저장한 것까지 확인하고 다음 손님으로 넘깁니다.
+- Guide question 8 nav: QR 전송권한은? / 잔여 횟수
 - Guide question 8 title: QR 코드 전송권한은 무엇인가요?
-- Guide question 8 answer: QR 코드 전송권한은 행사 모드에서 촬영 결과를 QR로 전달하기 위해 필요한 이용 권한입니다. 앱 안에서는 행사 모드 관련 상품, 구독, 또는 QR 다운로드 크레딧 형태로 표시될 수 있습니다.
-- Guide question 8 point 1: QR 전달은 인터넷 연결과 서버 전송 상태가 준비되어야 사용할 수 있습니다.
-- Guide question 8 point 2: 권한이나 크레딧이 부족하면 QR 전달이 제한될 수 있으므로 행사 전 상점이나 관리자 화면에서 상태를 확인하세요.
-- Guide question 8 point 3: 상품 구성과 제공 방식은 앱 버전과 스토어 정책에 따라 달라질 수 있으니 구매 화면에 표시되는 설명을 기준으로 보면 됩니다.
-- Guide question 9 nav: 출력할 수 있나요? / 프린터 운영
+- Guide question 8 answer: 사진을 QR 코드로 전달할 때 차감되는 잔여 횟수입니다. Apple 또는 Google 계정을 연결하면 최초 5회가 무료로 지급되고, 더 필요하면 상점에서 QR 코드 생성 20회, 100회, 500회, 1,500회 팩으로 구매합니다. 별도 구독은 필요하지 않습니다.
+- Guide question 8 point 1: 행사 모드뿐 아니라 개인 촬영에서도 QR 코드를 만들 수 있고, 잔여 횟수는 계정 하나로 함께 씁니다. 유효기간은 없습니다.
+- Guide question 8 point 2: 계정을 연결하지 않은 게스트에게는 무료 지급이 없습니다. QR을 쓰려면 계정 연결이 필요합니다.
+- Guide question 8 point 3: 행사 모드에서 QR 전달을 쓰는 설정이라면 잔여 횟수가 0일 때 촬영을 시작할 수 없습니다. 행사 규모를 보고 여유 있게 준비하세요.
+- Guide question 8 point 4: 잔여 횟수는 서버에서 확인하므로 인터넷 연결도 함께 필요합니다. 서버 응답이 없으면 잠시 후 다시 시도하세요.
+- Guide question 8 point 5: 최종 가격과 제공 횟수는 앱 안 구매 화면의 표시를 기준으로 확인하세요.
+- Guide question 9 nav: 출력할 수 있나요? / 프린터 준비
 - Guide question 9 title: 사진을 출력할 수 있나요?
-- Guide question 9 answer: 행사 모드에서 프린터 전달을 사용할 수 있는 구성이라면 사진 출력도 운영할 수 있습니다. 다만 출력은 앱 설정만으로 끝나지 않고, 현장 프린터 준비가 함께 필요합니다.
-- Guide question 9 point 1: 행사 전 프린터 전원, 연결 상태, 용지 방향, 여백, 잉크나 카트리지를 확인합니다.
-- Guide question 9 point 2: 테스트 결과물을 한 장 출력해 보고 실제 프레임이 잘리지 않는지 확인합니다.
-- Guide question 9 point 3: 프린터 준비가 어렵다면 QR 저장 흐름만으로 운영하는 편이 더 안정적입니다.
+- Guide question 9 answer: 가능합니다. 다만 인화용 프린터가 따로 필요합니다. 행사 모드에서는 관리자 설정에서 프린터를 등록하고 자동 인쇄를 켜두면 결과가 바로 출력되고, 평소에는 내보내기 화면이나 사진 앱의 공유 메뉴에서 프린트를 누릅니다.
+- Guide question 9 point 1: 프린터는 검색으로 고르거나 ID를 직접 입력합니다. 저장된 ID만으로는 부족하고, 프린터 검색으로 지금 인쇄 가능한 상태인지 확인해야 촬영을 시작할 수 있습니다.
+- Guide question 9 point 2: 인쇄 가능 상태가 아니면 전원, 용지, 네트워크를 확인한 뒤 다시 검색하세요.
+- Guide question 9 point 3: 용지에 맞춰 한 장 채우기와 2장 배치 중에서 고를 수 있고, 자동으로 맞추게 둘 수도 있습니다.
+- Guide question 9 point 4: 테스트로 한 장 출력해 프레임이 잘리지 않는지 확인하고 시작하세요.
 - Guide question 10 nav: 프레임 제작 의뢰는? / 메일 문의
 - Guide question 10 title: 행사용 프레임을 별도 제작 의뢰할 수 있나요?
-- Guide question 10 answer: 별도 제작이나 행사 전용 프레임이 필요하다면 메일로 문의해 주세요. 행사 날짜, 사용 목적, 원하는 문구, 로고나 색상, 필요한 컷 구성, QR 전달 또는 출력 여부를 함께 보내주시면 확인이 쉽습니다.
+- Guide question 10 answer: 네, 메일로 문의해 주세요. 행사 날짜, 사용 목적, 원하는 문구, 로고와 색상, 컷 구성, QR 전달 또는 인쇄 여부를 함께 적어 주시면 확인이 빠릅니다.
 - Guide question 10 email: studioyona.official@gmail.com 으로 문의하면 됩니다.
 - Guide question 11 nav: 구독권 차이는? / 멤버십 비교
 - Guide question 11 title: 각 구독권의 차이는 무엇인가요?
-- Guide question 11 answer: 구독권은 어떤 혜택을 여는지에 따라 다릅니다. 앱에서는 무제한 촬영, 무제한 컬러 프레임, 광고스킵, 행사 모드 또는 QR 전달 관련 혜택처럼 상품별 제공 범위가 나뉘어 표시될 수 있습니다.
-- Guide question 11 point 1: 무제한 촬영 계열은 포토부스 필름 소모 부담을 줄이고 자주 촬영하는 사용자에게 맞습니다.
-- Guide question 11 point 2: 무제한 컬러 프레임 계열은 프레임 색상과 디자인 선택지를 넓게 쓰고 싶은 사용자에게 맞습니다.
-- Guide question 11 point 3: 합본이나 프리미엄 상품은 여러 혜택을 함께 묶어 제공할 수 있습니다.
-- Guide question 11 point 4: 월간·연간 구독은 자동 갱신될 수 있고, 1회 구매 상품은 자동 갱신 상품이 아닙니다. 최종 가격과 기간은 앱 안의 구매 화면을 기준으로 확인하세요.
-- Guide question 12 nav: 필름은 어떻게 얻나요? / 저장 재화
+- Guide question 11 answer: 어떤 혜택을 여는지가 다릅니다. 무제한 촬영은 포토부스 필름을, 무제한 컬러 프레임은 유료 단색·그라디언트 프레임을 기간 동안 무제한으로 씁니다. 두 혜택을 합친 상품도 월간과 연간으로 있습니다.
+- Guide question 11 point 1: 자주 찍는다면 무제한 촬영, 프레임 색상을 폭넓게 쓰고 싶다면 무제한 컬러 프레임이 맞습니다. 둘 다 필요하면 합본이 저렴합니다.
+- Guide question 11 point 2: 기한 없이 쓰고 싶다면 무제한 촬영과 컬러 프레임을 함께 여는 1회 구매 상품이 있습니다. 구독이 아니므로 자동 갱신되지 않습니다.
+- Guide question 11 point 3: 광고스킵은 1회 구매 상품으로, 광고 보상 흐름에서 광고를 보지 않고 보상을 받습니다.
+- Guide question 11 point 4: 행사/매장 모드는 구독 대상이 아닙니다. QR로 전달할 때 필요한 QR 잔여 횟수만 상점에서 따로 구매하면 됩니다.
+- Guide question 11 point 5: 월간·연간 구독은 기간 종료 24시간 전까지 취소하지 않으면 자동 갱신됩니다. 해지는 App Store 구독 관리에서 직접 해야 하고, 앱에서 회원 탈퇴해도 구독은 취소되지 않습니다.
+- Guide question 12 nav: 필름은 어떻게 얻나요? / 출석·광고·구매
 - Guide question 12 title: 포토부스 필름은 어떻게 얻나요?
-- Guide question 12 answer: 포토부스 필름은 촬영 결과를 저장할 때 쓰이는 앱 안의 재화입니다. 홈 화면이나 상점에서 남은 필름 수를 확인할 수 있습니다.
-- Guide question 12 point 1: 광고 보상으로 필름을 얻을 수 있는 경우가 있습니다.
-- Guide question 12 point 2: 상점에서 포인트나 현금 구매로 필름을 얻을 수 있는 상품이 제공될 수 있습니다.
-- Guide question 12 point 3: 무제한 촬영 구독이나 관련 멤버십을 이용 중이면 필름 사용 방식이 달라질 수 있습니다.
+- Guide question 12 answer: 결과물을 사진이나 영상으로 저장할 때 1장씩 쓰이는 앱 안의 재화입니다. 촬영이나 불러오기만 하고 저장하지 않으면 차감되지 않습니다. 처음 설치하면 3장이 지급됩니다.
+- Guide question 12 point 1: 출석 보상으로 하루 1장, 홈 화면 광고 보상으로 하루 최대 2장을 받습니다. 출석으로 받은 필름은 쓸 때까지 쌓입니다.
+- Guide question 12 point 2: 상점에서 포인트나 현금으로 5장, 10+1장 묶음을 구매합니다.
+- Guide question 12 point 3: 무제한 촬영 멤버십을 이용 중이면 기간 동안 필름 걱정 없이 저장할 수 있습니다.
 - Guide question 13 nav: 업적과 포인트란? / 보상 구조
 - Guide question 13 title: 업적과 포인트란 무엇인가요?
-- Guide question 13 answer: 업적은 앱을 사용하면서 달성하는 목표이고, 포인트는 업적·출석·광고 보상 등을 통해 얻는 앱 안의 보상입니다. 포인트는 상점에서 포인트로 구매 가능한 프레임 팩이나 필름 같은 항목을 여는 데 사용할 수 있습니다.
-- Guide question 13 point 1: 업적 버튼에 받을 수 있는 보상이 표시되면 들어가서 보상을 수령하세요.
-- Guide question 13 point 2: 현재 포인트는 홈이나 상점에서 확인할 수 있습니다.
-- Guide question 14 nav: 포인트를 많이 얻으려면? / 출석·광고·업적
+- Guide question 13 answer: 업적은 앱을 쓰면서 달성하는 목표이고, 포인트는 업적·출석·광고 보상으로 쌓이는 앱 안의 재화입니다. 포인트로는 상점의 프레임 팩이나 포토부스 필름처럼 포인트 구매가 가능한 상품을 삽니다.
+- Guide question 13 point 1: 업적과 출석 보상은 홈 화면 오른쪽 위 업적 메뉴에서 받습니다. 받을 보상이 있으면 버튼에 표시됩니다.
+- Guide question 13 point 2: 현재 포인트와 적립·사용 내역은 홈이나 상점에서 확인합니다.
+- Guide question 13 point 3: 멤버십과 광고스킵은 현금 전용 상품이라 포인트로는 구매할 수 없습니다.
+- Guide question 14 nav: 포인트를 많이 얻으려면? / 매일 챙길 보상
 - Guide question 14 title: 포인트를 많이 얻으려면 어떻게 해야하나요?
-- Guide question 14 answer: 포인트를 많이 얻으려면 출석 보상, 광고 보상, 업적 보상을 꾸준히 확인하는 것이 가장 직접적입니다.
-- Guide question 14 step 1: 홈이나 업적 화면에서 오늘 받을 수 있는 출석 보상이 있는지 확인합니다.
-- Guide question 14 step 2: 광고 보상이 열려 있다면 안내에 따라 광고를 보고 포인트나 필름 보상을 받습니다.
-- Guide question 14 step 3: 업적 화면에서 완료된 목표가 있는지 확인하고 보상을 수령합니다.
-- Guide question 14 step 4: 기기 시간을 임의로 바꾸면 포인트 적립이 잠길 수 있으니 정상적인 기기 시간으로 사용하는 것이 좋습니다.
+- Guide question 14 answer: 출석 보상, 광고 보상, 업적 보상을 매일 챙기는 것이 가장 빠릅니다.
+- Guide question 14 step 1: 업적 메뉴에서 출석 보상을 받습니다. 하루 1회이고 포인트와 포토부스 필름 1장을 함께 줍니다. 매일 새벽 4시(지역 시간 기준)에 초기화됩니다.
+- Guide question 14 step 2: 같은 화면에서 광고를 끝까지 보면 포인트가 지급됩니다. 광고가 중간에 끊기면 지급되지 않습니다.
+- Guide question 14 step 3: 업적 화면에서 완료된 목표의 보상을 수령합니다.
+- Guide question 14 step 4: 친구가 앱을 설치하고 Apple 또는 Google 계정을 연결하면 초대 보상을 받습니다. 기기당 1회입니다.
+- Guide question 14 step 5: 기기 시간을 임의로 바꾸면 적립이 잠길 수 있으니 시간은 그대로 두고 쓰세요.
 - Guide question 15 nav: 비밀 업적이란? / 숨겨진 목표
 - Guide question 15 title: 비밀 업적이란 무엇인가요?
-- Guide question 15 answer: 비밀 업적은 달성하기 전까지 조건이 공개되지 않는 숨겨진 목표입니다. 앱을 촬영, 저장, 편집, 상점, 행사 흐름까지 다양하게 사용하다 보면 특정 조건을 만족했을 때 열릴 수 있습니다.
-- Guide question 15 point 1: 잠겨 있을 때는 비밀 업적처럼 표시되고, 달성 후에는 이름과 보상 조건이 보일 수 있습니다.
-- Guide question 15 point 2: 일부 비밀 업적은 특정 촬영 방식이나 반복 사용 흐름과 연결될 수 있습니다.
+- Guide question 15 answer: 달성 방법을 감춰 둔 업적입니다. 결과물을 꾸준히 저장하다 보면 자연스럽게 열리는 것도 있고, 꽤 특이한 행동을 해야 열리는 것도 있습니다.
+- Guide question 15 point 1: 잠겨 있는 동안에는 조건이 보이지 않고, 달성한 뒤에 이름과 조건이 공개됩니다.
+- Guide question 15 point 2: 일부러 찾기보다는 촬영과 저장을 이어 가다 보면 하나씩 열립니다.
 - Support title: 지원 안내
 - Support body: 앱 사용 중 궁금한 점이 있으시면 이메일로 편하게 알려주세요.
 - Support CTA 1: 문의 메일 보내기
@@ -456,6 +465,9 @@ Path: `ko/apps/detective-recorder/index.html`
 - Info 4: 가격: App Store 기준
 - Screenshots title: 스크린샷
 - Screenshots body: 앱 화면을 미리 만나보세요.
+- Screenshot caption 1: 카테고리로 정리
+- Screenshot caption 2: 녹음 중
+- Screenshot caption 3: 텍스트 전사
 - Support title: 지원 안내
 - Support body: 앱 사용 중 궁금한 점이 있으시면 이메일로 편하게 알려주세요.
 - Support CTA 1: 문의 메일 보내기
@@ -477,7 +489,7 @@ Path: `ko/apps/peekaboo-cam/index.html`
 - CTA 2: 이용약관
 - Pill 1: iOS 출시 중
 - Pill 2: 한국어 · English
-- Pill 3: 유료 앱 예정
+- Pill 3: 유료 앱
 - Support email: studioyona.official@gmail.com
 - Section title: 주요 기능
 - Feature 1: 사진과 동영상 촬영, 전면·후면 카메라 전환
@@ -488,9 +500,14 @@ Path: `ko/apps/peekaboo-cam/index.html`
 - Info 1: 카테고리: 사진 및 비디오
 - Info 2: 호환성: iOS
 - Info 3: 언어: 한국어, English
-- Info 4: 가격: 유료 앱 예정
+- Info 4: 가격: 유료 (App Store 기준)
 - Output title: 저장 결과물
 - Output body: 주의 유도용 소리와 시각 큐는 저장 결과물에 합성되지 않습니다. 촬영한 사진과 동영상만 기기의 사진 보관함에 저장됩니다.
+- Screenshots title: 스크린샷
+- Screenshots body: 앱 화면을 미리 만나보세요.
+- Screenshot caption 1: 설정 한눈에 보기
+- Screenshot caption 2: 음성 프리셋 녹음
+- Screenshot caption 3: 시각 큐 조절
 - Support title: 지원 안내
 - Support body: 앱 사용 중 궁금한 점이 있으시면 이메일로 알려주세요.
 - Support CTA 1: 문의 메일 보내기
@@ -543,24 +560,39 @@ Path: `ko/apps/veruma/index.html`
 - Eyebrow: Studio YONA의 iPhone 카메라 앱
 - H1: Veruma
 - Lead: Veruma는 셔터를 누르는 순간 화면에서 보던 프리뷰를 기준으로 저장하는 카메라 앱입니다. 명화 셔터, 프레임 하단 문구, 앱 아이콘, 4K 프리뷰 캡처, 제어센터 바로 열기까지 사진을 찍는 손맛을 조용하게 다듬었습니다.
-- CTA 1: 개인정보처리방침
-- CTA 2: 이용약관
+- CTA 1: App Store
+- CTA 2: 개인정보처리방침
+- CTA 3: 이용약관
 - Pill 1: iPhone 전용
 - Pill 2: iOS 18 이상
 - Pill 3: 한국어 · English
+- Summary label 1 / value: 한 줄 소개 / 화면에서 본 그대로 저장하는 카메라.
+- Summary label 2 / value: 출시 현황 / App Store 출시 중 · iPhone 전용
+- Summary label 3 / value: 지원 이메일 / studioyona.official@gmail.com
 - Section title: 주요 기능
 - Feature 1: 프리뷰와 저장 결과의 예측 가능성을 우선하는 촬영 흐름
 - Feature 2: 프레임 하단 문구와 넘버링을 유지하는 촬영 기록
 - Feature 3: Veruma Pro: 모든 셔터 명화, 4K 프리뷰 캡처, 제어센터 바로 열기, 앱 아이콘 변경
 - Info title: 앱 정보
 - Info 1: 카테고리: 사진 및 비디오
-- Info 2: 구독: 월간·연간 자동 갱신 및 평생 이용 상품 준비
-- Info 3: 지원: 이메일 문의
+- Info 2: 호환성: iPhone (iOS 18.0 이상)
+- Info 3: 언어: 한국어, English
+- Info 4: 가격: 무료 (Veruma Pro 인앱 구매 포함)
+- Info 5: Veruma Pro: 월간·연간 자동 갱신 구독과 평생 이용 상품
 - Support title: 지원 안내
 - Support body: 앱 사용, 결제 복원, 개인정보 권리행사, 기타 문의는 이메일로 접수합니다.
 - Support CTA 1: 문의 메일 보내기
 - Support CTA 2: 지원 페이지 보기
 - Support email: studioyona.official@gmail.com
+- Screenshots title: 스크린샷
+- Screenshots body: 앱 화면을 미리 만나보세요.
+- Screenshot caption 1: 화면 그대로 촬영
+- Screenshot caption 2: 명화 셔터 고르기
+- Screenshot caption 3: 작품 정보 보기
+- Related title: 관련 문서
+- Related link 1: Veruma 개인정보처리방침
+- Related link 2: Veruma 이용약관
+- Related link 3: 회사 문의
 
 ## App Support - Peekaboo Cam
 
@@ -618,8 +650,8 @@ Path: `404.html`
 - Body: 찾으시는 페이지가 이동되었거나 아직 준비 중일 수 있습니다. 아래 버튼으로 홈페이지로 돌아가 주세요.
 - CTA 1: 한국어 홈
 - CTA 2: English Home
-- Card 1 title: 두 개의 앱
-- Card 1 body: EDSN Frame과 탐정의 녹음기 상세 페이지는 앱 소개에서 확인하실 수 있습니다.
+- Card 1 title: Studio YONA의 앱
+- Card 1 body: EDSN Frame, 까꿍캠, 탐정의 녹음기, Veruma 상세 페이지는 앱 소개에서 확인하실 수 있습니다.
 - Card 2 title: 도움이 필요하신가요?
 - Email: studioyona.official@gmail.com
 - Link 1: 앱 소개

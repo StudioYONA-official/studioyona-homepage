@@ -264,17 +264,16 @@ KR:
 - Description: EDSN Frame, Stampho, 까꿍캠, 탐정의 녹음기 — Studio YONA의 앱을 만나보세요.
 - Eyebrow: 앱 소개
 - H1: 우리 가족의 일상에서 태어난 앱들.
-- Lead: 포토부스에 못 가는 날 만든 EDSN Frame, 사진과 영상 위에 필요한 stamp를 남기는 Stampho, 아이의 시선을 모아주는 까꿍캠. Studio YONA의 앱은 모두 실제 필요에서 시작합니다.
+- Lead: 포토부스에 못 가는 날 만든 EDSN Frame, 아이의 시선을 모아주는 까꿍캠. Studio YONA의 앱은 모두 실제 필요에서 시작합니다.
 - CTA 1: EDSN Frame 보기
-- CTA 2: Stampho 보기
+- CTA 2: Veruma 보기
 - Hero card 1: 📸 / EDSN Frame — 내 폰이 포토부스
-- Hero card 2: STAMP / Stampho — 사진과 영상 위의 text stamp
 - Section eyebrow: 우리의 앱
 - Section title: Studio YONA의 앱
-- Card 1: iOS 출시 중 / EDSN Frame (어디서나 프레임) / 내 스마트폰으로 언제 어디서나 포토부스처럼 귀여운 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요. / 자세히 보기
-- Card 2: 출시 준비 중 / Stampho / 사진과 영상 위에 필요한 text stamp를 남기고, 카테고리별 preset으로 반복 기록을 더 쉽게 이어 가세요. / 자세히 보기
-- Card 3: 런칭 준비 중 / 까꿍캠 / 부모 음성 프리셋과 전면 카메라 시각 큐로 아이의 시선을 카메라 쪽으로 모아주는 보호자용 카메라 앱입니다. / 자세히 보기
-- Card 4: 이후 준비 중 / 탐정의 녹음기 / 카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요. / 자세히 보기
+- Card 1: iOS · Mac · Android 출시 / EDSN Frame (어디서나 프레임) / 내 스마트폰으로 언제 어디서나 포토부스처럼 귀여운 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요. / 자세히 보기
+- Card 2: iOS 출시 / 까꿍캠 / 시청각 효과로 아이와 동물의 시선을 카메라 쪽으로 모아주는 카메라 앱입니다. / 자세히 보기
+- Card 3: iPhone · iPad · Mac 출시 / 탐정의 녹음기 / 카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요. / 자세히 보기
+- Card 4: iOS 출시 / Veruma / 당신의 시선을 하나의 작품으로 만들어주는 고급스러운 카메라 앱입니다. / 자세히 보기
 - Card 5: 안심하세요 / 투명한 운영 / 개인정보처리방침과 이용약관을 앱별로 공개하고 있으며, 궁금한 점은 언제든 이메일로 물어보실 수 있습니다.
 
 EN:
@@ -312,7 +311,7 @@ KR:
 - Section eyebrow: 빠른 답변을 위해
 - Section title: 이런 내용을 함께 보내주시면 더 빨리 도와드릴 수 있어요.
 - List 1: 어떤 화면에서 / 어떤 화면에서 문제가 생겼는지 알려주세요.
-- List 2: 기기 정보 / 기종, iOS 버전, 앱 버전을 함께 적어주시면 도움이 됩니다.
+- List 2: 기기 정보 / 기종, iOS 또는 Android 버전, 앱 버전을 함께 적어주시면 도움이 됩니다.
 - List 3: 어떻게 하면 다시 생기나요 / 같은 문제를 다시 일으키는 순서를 간단히 알려주세요.
 - List 4: 스크린샷 / 화면 캐처를 함께 보내주시면 훨씬 빠르게 확인할 수 있어요.
 
@@ -349,7 +348,7 @@ KR:
 - Hero card 2: 간편 문의 / 별도 가입이나 양식 없이, 바로 이메일로 연결됩니다.
 - Section eyebrow: 이런 문의를 보내주세요
 - Section title: 이런 이야기를 기다리고 있어요.
-- List 1: 앱 질문 / EDSN Frame이나 탐정의 녹음기에 대해 궁금한 점을 편하게 물어보세요.
+- List 1: 앱 질문 / EDSN Frame, 까꿍캠, 탐정의 녹음기, Veruma에 대해 궁금한 점을 편하게 물어보세요.
 - List 2: 협업 제안 / Studio YONA와 함께하고 싶은 아이디어가 있다면 알려주세요.
 - List 3: 기능 제안 / "이런 기능이 있으면 좋겠어요!" 같은 의견도 대환영입니다.
 - List 4: 버그 제보 / 앱이 이상하게 동작한다면 스크린샷과 함께 알려주세요. 빠르게 확인하겠습니다.
@@ -384,9 +383,9 @@ KR:
 - H1: EDSN Frame / (어디서나 프레임)
 - Lead: 포토부스에 가기 어려운 날에도 귀여운 사진을 찍고 싶었습니다. 내 스마트폰으로 언제 어디서나 포토부스처럼 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요.
 - CTA: 개인정보처리방침, 이용약관
-- Pills: iOS 출시 중, 한국어 · English, 이메일 문의 가능
+- Pills: iOS · Mac · Android 출시 중, 한국어 · English, 이메일 문의 가능
 - Summary: 한 줄 소개 / 내 스마트폰이 포토부스가 되는 앱.
-- Status: 출시 현황 / iOS 버전 출시 완료 · Android 버전 준비 중
+- Status: 출시 현황 / iPhone · iPad · Mac · Android 출시
 - Support: 지원 이메일 / studioyona.official@gmail.com
 - Key features:
   - 스마트폰 카메라로 언제 어디서나 포토부스 스타일의 사진을 촬영할 수 있습니다
@@ -395,7 +394,7 @@ KR:
   - 포인트를 모아 새로운 프레임과 귀여운 아이템을 잠금 해제하세요
 - App info:
   - 카테고리: 사진 및 비디오
-  - 호환성: iOS (Android 준비 중)
+  - 호환성: iPhone, iPad, Mac(macOS 13.0 이상), Android
   - 언어: 한국어, English
   - 가격: 무료 (인앱 구매 포함)
 - Screenshots title: 스크린샷
@@ -415,9 +414,9 @@ EN:
 - H1: EDSN Frame
 - Lead: We wanted cute photo booth pictures even on days we couldn't actually go. Turn your smartphone into a photo booth — snap fun photos anytime, anywhere, and dress them up with colorful frames.
 - CTA: Privacy Policy, Terms of Service
-- Pills: Now on iOS, Korean · English, Email support
+- Pills: Now on iOS, Mac, and Android, Korean · English, Email support
 - Summary: One-liner / Your smartphone, now a photo booth.
-- Status: Status / iOS version available now · Android coming soon
+- Status: Status / Available on iPhone, iPad, Mac, and Android
 - Support: Support email / studioyona.official@gmail.com
 - Key features:
   - Take photo booth-style pictures with your phone camera — anytime, anywhere
@@ -426,7 +425,7 @@ EN:
   - Earn points to unlock new frames and adorable items
 - App info:
   - Category: Photo & Video
-  - Compatibility: iOS available now (Android coming soon)
+  - Compatibility: iPhone, iPad, Mac (macOS 13.0 or later), Android
   - Languages: Korean, English
   - Price: Free (in-app purchases available)
 - Screenshots title: Screenshots
