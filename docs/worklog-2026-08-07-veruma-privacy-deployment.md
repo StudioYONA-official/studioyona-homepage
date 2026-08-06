@@ -29,7 +29,12 @@ Date: 2026-08-07
 - 배포 전 `git diff --check` 통과.
 - 로컬 no-cache HTTP 미리보기에서 한·영 URL 모두 `200 OK`와 `Cache-Control: no-store` 확인.
 - 한·영 페이지에서 2026-08-07 시행일, Photos 읽기 전용 열람, 로컬 진단 필수 문구 확인.
+- 배포 커밋 `faa92ad`를 `origin/main`에 push했다.
+- GitHub Pages `pages-build-deployment` run `31129250750`이 `success`로 완료됐다.
+- 공개 한·영 URL 모두 `HTTP/2 200`을 반환하고, 2026-08-07 시행일과 Photos 읽기 전용 열람·로컬 진단
+  필수 문구가 실제 응답 본문에 포함된 것을 cache-busting 요청으로 재확인했다.
 
 ## Handoff / Next
 
-- `main` push 후 GitHub Pages 배포 완료와 공개 한·영 URL의 HTTP 200 및 필수 문구를 재확인한다.
+- production 배포와 공개 재조회가 완료됐다. 이후 앱 동작이나 진단 내보내기 항목이 바뀌면 앱 내 방침,
+  Homepage 한·영 원문, ASC 개인정보 답변을 같은 릴리즈 경계에서 다시 맞춘다.
