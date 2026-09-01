@@ -176,6 +176,28 @@ EN:
 - CTA: View app
 - Links: Privacy Policy, Terms
 
+#### Spark Catcher
+
+KR:
+- Kicker: Fifth app
+- Title: Spark Catcher
+- Body: 다른 앱을 사용하는 중에도 단축키로 메모와 할 일을 바로 기록할 수 있습니다. 중요한 기록은 Mac 화면 위에 띄워 두고, iPhone과 iPad에서도 함께 정리하세요.
+- Points:
+  - Control과 Option 단축키로 빠른 기록
+  - 메모·할 일·스크랩을 한곳에서 정리
+- CTA: 앱 소개 보기
+- Links: 개인정보처리방침, 이용약관
+
+EN:
+- Kicker: Fifth app
+- Title: Spark Catcher
+- Body: Capture a note or task with a shortcut while another app is active. Keep important entries above other Mac windows, then organize them on iPhone and iPad too.
+- Points:
+  - Quick capture with Control and Option shortcuts
+  - Notes, tasks, and scraps in one library
+- CTA: View app
+- Links: Privacy Policy, Terms
+
 ### Support Summary
 
 KR:
@@ -261,7 +283,7 @@ Path: `apps/index.html`
 
 KR:
 - Title: Studio YONA | 앱 소개
-- Description: EDSN Frame, Stampho, 까꿍캠, 탐정의 녹음기 — Studio YONA의 앱을 만나보세요.
+- Description: EDSN Frame, 까꿍캠, 탐정의 녹음기, Veruma, Spark Catcher — Studio YONA의 앱을 만나보세요.
 - Eyebrow: 앱 소개
 - H1: 우리 가족의 일상에서 태어난 앱들.
 - Lead: 포토부스에 못 가는 날 만든 EDSN Frame, 아이의 시선을 모아주는 까꿍캠. Studio YONA의 앱은 모두 실제 필요에서 시작합니다.
@@ -274,11 +296,12 @@ KR:
 - Card 2: iOS 출시 / 까꿍캠 / 시청각 효과로 아이와 동물의 시선을 카메라 쪽으로 모아주는 카메라 앱입니다. / 자세히 보기
 - Card 3: iPhone · iPad · Mac 출시 / 탐정의 녹음기 / 카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요. / 자세히 보기
 - Card 4: iOS 출시 / Veruma / 당신의 시선을 하나의 작품으로 만들어주는 고급스러운 카메라 앱입니다. / 자세히 보기
-- Card 5: 안심하세요 / 투명한 운영 / 개인정보처리방침과 이용약관을 앱별로 공개하고 있으며, 궁금한 점은 언제든 이메일로 물어보실 수 있습니다.
+- Card 5: iPhone · iPad · Mac 출시 준비 중 / Spark Catcher / 떠오른 메모와 할 일을 Mac 단축키로 바로 기록하고, 메모·할 일·스크랩을 한곳에서 정리하는 앱입니다. / 자세히 보기
+- Card 6: 안심하세요 / 투명한 운영 / 개인정보처리방침과 이용약관을 앱별로 공개하고 있으며, 궁금한 점은 언제든 이메일로 물어보실 수 있습니다.
 
 EN:
 - Title: Studio YONA | Apps
-- Description: EDSN Frame, Stampho, Peekaboo Cam, Detective's Recorder — meet the apps from Studio YONA.
+- Description: EDSN Frame, Peekaboo Cam, Detective's Recorder, Veruma, and Spark Catcher — meet the apps from Studio YONA.
 - Eyebrow: Apps
 - H1: Born from our family's everyday life.
 - Lead: EDSN Frame was born on a day we couldn't visit a photo booth. Stampho turns everyday photos and videos into stamped records. Peekaboo Cam helps families capture a child's attention. Every Studio YONA app begins with a real need.
@@ -292,7 +315,8 @@ EN:
 - Card 2: Coming soon / Stampho / Add useful text stamps to photos and videos, then keep repeated records moving with category-based presets. / Learn more
 - Card 3: Launch prep / Peekaboo Cam / A guardian camera app with parent voice presets and front-camera visual cues to help children look toward the camera. / Learn more
 - Card 4: Planned later / Detective's Recorder / Tap a category and recording starts instantly — auto-organized. Keep lectures, meetings, and daily conversations neatly sorted. / Learn more
-- Card 5: You're safe / Transparent practices / We publish privacy policies and terms for each app, and you can always reach us by email with questions.
+- Card 5: Preparing for iPhone, iPad, and Mac / Spark Catcher / Capture notes and tasks with global shortcuts on Mac, then organize notes, tasks, and scraps in one place. / Learn more
+- Card 6: You're safe / Transparent practices / We publish privacy policies and terms for each app, and you can always reach us by email with questions.
 
 ## Support Page
 
@@ -563,6 +587,38 @@ EN:
 - Support CTA: Email support, Support page
 - Related title: Related pages
 - Related links: Detective's Recorder Privacy Policy, Detective's Recorder Terms of Service, Contact Studio YONA
+
+### Spark Catcher
+
+KR path: `ko/apps/spark-catcher/index.html`
+
+KR:
+- Title: Spark Catcher | Studio YONA
+- Description: Spark Catcher — 떠오른 메모와 할 일을 Mac 전역 단축키로 바로 기록하고, iPhone·iPad와 함께 정리하는 메모·할 일 앱입니다.
+- Eyebrow: Studio YONA의 다섯 번째 앱
+- Lead: 다른 앱을 사용 중이어도 단축키로 빠른 메모나 할 일 창을 열고, 떠오른 순간을 놓치지 않도록 만든 기록 앱입니다.
+- CTA: 기능 살펴보기, 개인정보처리방침, 이용약관
+- Pills: 출시 준비 중, iPhone · iPad · Mac, 한국어 · English
+- Summary: 한 줄 소개 / 떠오른 순간, 바로 열고 바로 남기는 기록 앱.
+- Status: 출시 현황 / iPhone, iPad, Mac 출시 준비 중
+- Support: 지원 이메일 / studioyona.official@gmail.com
+- Flow: 빠른 메모 열기, 할 일 한 줄 기록, 한곳에서 정리
+- Key features: 메모와 할 일, 최근 기록과 즐겨찾기, 스크랩과 검색, iCloud와 Apple 미리알림 연결
+
+EN path: `en/apps/spark-catcher/index.html`
+
+EN:
+- Title: Spark Catcher | Studio YONA
+- Description: Spark Catcher — capture notes and tasks with global shortcuts on Mac, then organize them alongside iPhone and iPad.
+- Eyebrow: The fifth app from Studio YONA
+- Lead: Open Quick Note or Quick Task with a shortcut while you are using another app, so an idea never disappears before you can capture it.
+- CTA: Explore features, Privacy Policy, Terms of Service
+- Pills: Preparing for release, iPhone · iPad · Mac, Korean · English
+- Summary: One-liner / Open fast and capture the moment before it is gone.
+- Status: Status / Preparing for release on iPhone, iPad, and Mac
+- Support: Support email / studioyona.official@gmail.com
+- Flow: Open Quick Note, start a task in one line, organize everything together
+- Key features: notes and tasks, recent items and favorites, scraps and search, iCloud and Apple Reminders
 
 ## Legal And Notice Pages
 

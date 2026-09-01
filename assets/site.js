@@ -198,8 +198,8 @@
         }
       });
       if (pending.size === 0) {
-        window.removeEventListener("scroll", onScroll);
-        window.removeEventListener("resize", onScroll);
+        window.removeEventListener("scroll", revealInView);
+        window.removeEventListener("resize", revealInView);
       }
     };
 
