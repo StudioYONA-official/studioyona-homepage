@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "MQ566TS9GT.kr.co.studioyona.notchdice",
+          "MQ566TS9GT.com.vibecoding.notchdice.desktop.debug"
+        ],
+        "components": [
+          {
+            "/": "/apps/notch-dice/play/",
+            "#": "v1=*",
+            "comment": "Only Notch Dice signed game links; other Studio YONA pages stay on the web."
+          }
+        ]
+      }
+    ]
+  }
+}

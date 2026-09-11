@@ -9,6 +9,14 @@
 
 ## Decisions
 
+### 2026-09-11 - Notch Dice Universal Link Installation Landing
+
+- `/apps/notch-dice/play/` serves the bilingual installation fallback for Notch Dice Messages games. Its native app source lives in the Notch Dice repository; `web/message-links/` there is the canonical source of the copied page/module and this AASA entry.
+- The AASA route is limited to this exact path and `#v1=*`, for the explicit release/debug app identifiers. Preserve any future additional app/service entries when updating it.
+- Signed game bytes stay in the URL fragment. The page does not decode, store, or forward them and introduces no game backend or analytics.
+- The app has not been released: the fixed App Store URL is null. A verified public listing can be configured after release. Installation still requires reopening the original invitation.
+- Public HTTP/AASA retrieval and Apple profile/capability verification are separate deployment checks; publishing this page alone does not establish native Universal Link behavior.
+
 ### 2026-04-05 - Documentation System Bootstrapped For Homepage Project
 
 - Context:
