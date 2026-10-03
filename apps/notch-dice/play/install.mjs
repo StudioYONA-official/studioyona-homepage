@@ -17,8 +17,12 @@ export function validatedAppStoreURL(value) {
 export function hasGameFragment(hash) {
   const prefixLength = "https://www.studioyona.co.kr/apps/notch-dice/play/".length;
   if (typeof hash !== "string" || hash.length + prefixLength > 4096 || !hash.startsWith("#v1=")) return false;
-  const payload = hash.slice(4);
-  if (!payload || /[^A-Za-z0-9_-]/.test(payload)) return false;
+  const encoded = hash.slice(4);
+  const chunks = encoded.split(".");
+  if (chunks.some(chunk => !chunk || /[^A-Za-z0-9_-]/.test(chunk))) return false;
+  if (chunks.length > 1 && (chunks.slice(0, -1).some(chunk => chunk.length !== 128)
+      || chunks.at(-1).length > 128)) return false;
+  const payload = chunks.join("");
   const remainder = payload.length % 4;
   const last = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_".indexOf(payload.at(-1));
   return remainder !== 1
