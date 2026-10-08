@@ -9,6 +9,12 @@
 
 ## Decisions
 
+### 2026-10-08 - Retain Original Assets And Serve Lightweight Copies
+
+- `assets/fonts/PretendardSite.woff2`, `SongMyungSite.woff2`와 앱 아이콘 WebP는 `scripts/optimize_assets.py`로 원본에서 재생성한다. 생성 시 현재 HTML의 화면 문구·관련 속성과 CSS의 문자·이스케이프 기호를 포함하고, 폰트의 가변 굵기와 이미지의 원본 픽셀을 보존한다.
+- 경량 폰트를 먼저 사용하며, 이후 문구에 새로운 글자가 들어오면 기존 전체 폰트가 표시를 담당한다. 문구·CSS 기호 수정 후 경량 폰트를 다시 생성하면 불필요한 전체 폰트 다운로드를 피할 수 있다.
+- 생성 도구는 로컬 Python의 `fontTools`, `brotli`, `Pillow`를 사용한다. 해당 모듈이 있는 환경에서 `python scripts/optimize_assets.py`를 실행한다. 사이트 실행과 배포에는 Python·빌드 단계·외부 CDN이 필요하지 않다.
+
 ### 2026-09-11 - Notch Dice Universal Link Installation Landing
 
 - `/apps/notch-dice/play/` serves the bilingual installation fallback for Notch Dice Messages games. Its native app source lives in the Notch Dice repository; `web/message-links/` there is the canonical source of the copied page/module and this AASA entry.

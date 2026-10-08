@@ -1,3 +1,13 @@
+/* Generated from the retained originals by scripts/optimize_assets.py.
+   Full fonts remain available for characters introduced by later copy edits. */
+@font-face {
+  font-family: "Pretendard Site";
+  font-style: normal;
+  font-weight: 45 920;
+  font-display: swap;
+  src: url("/assets/fonts/PretendardSite.woff2") format("woff2");
+}
+
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
@@ -23,6 +33,14 @@
 }
 
 @font-face {
+  font-family: "Song Myung Site";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/SongMyungSite.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Song Myung";
   font-style: normal;
   font-weight: 400;
@@ -32,7 +50,7 @@
 
 :root {
   color-scheme: light;
-  --font-sans: "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+  --font-sans: "Pretendard Site", "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --bg: #f6f1ea;
   --bg-alt: #efe4d8;
@@ -742,7 +760,7 @@ img {
 
 body.app-page,
 body.compact-page {
-  --font-display: "Playfair Display", "Song Myung", Georgia, serif;
+  --font-display: "Playfair Display", "Song Myung Site", "Song Myung", Georgia, serif;
   --ink: #1a1a1e;
   --maroon-deep: #350812;
   --maroon: #582020;
@@ -774,7 +792,7 @@ body.compact-page {
 
 body.home-page {
   --home-bg: #fbf8f3;
-  --font-display: "Playfair Display", "Song Myung", Georgia, serif;
+  --font-display: "Playfair Display", "Song Myung Site", "Song Myung", Georgia, serif;
   --ink: #1a1a1e;
   --maroon-deep: #350812;
   --maroon: #582020;
@@ -808,7 +826,7 @@ body.home-page {
     radial-gradient(circle at 85% 10%, rgba(185, 167, 127, 0.22), transparent 26%),
     linear-gradient(180deg, #fbf8f3 0%, #f7f2ea 56%, #f3ecdf 100%);
   color: var(--home-dark);
-  font-family: "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
+  font-family: "Pretendard Site", "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -878,7 +896,7 @@ body.home-page::before {
 .home-wordmark {
   position: relative;
   z-index: 41;
-  font-family: "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
+  font-family: "Pretendard Site", "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
   font-size: 13.33px;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1080,7 +1098,7 @@ body.home-page::before {
   padding: 0 var(--space-4);
   border-radius: 4px;
   color: var(--home-dark);
-  font-family: "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
+  font-family: "Pretendard Site", "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
   font-size: 13.33px;
   line-height: 1.2;
   letter-spacing: 0;
@@ -1566,7 +1584,7 @@ body.home-page .contact-section .button.secondary:focus-visible {
 .support-label,
 .footer-mark {
   margin: 0;
-  font-family: "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
+  font-family: "Pretendard Site", "Pretendard", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
   font-size: clamp(1rem, 2vw, 1.5rem);
   letter-spacing: 0;
 }
@@ -1683,7 +1701,7 @@ body.app-page {
   --app-radius-md: 10px;
   min-height: 100vh;
   color: #201912;
-  font-family: "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+  font-family: "Pretendard Site", "Pretendard", "Avenir Next", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;
   /* Korean wraps on word boundaries, not mid-word. `keep-all` stops CJK from
      breaking anywhere; `break-word` still rescues a token wider than its box. */
   word-break: keep-all;
@@ -3029,7 +3047,7 @@ body.link-hub-page::before {
 
 .link-hub-section-head h2 {
   margin: 0;
-  font-family: "Playfair Display", "Song Myung", Georgia, serif;
+  font-family: "Playfair Display", "Song Myung Site", "Song Myung", Georgia, serif;
   font-size: clamp(2.25rem, 7vw, 3.5rem);
   font-weight: 400;
   line-height: 1.05;
@@ -3734,7 +3752,7 @@ body.link-hub-page::before {
 }
 
 /* Scroll reveal — only active when JS adds .has-js (content visible otherwise).
-   Block fade-up for content sections (hero & apps animate their children instead). */
+   The hero stays visible immediately; app cards animate their children. */
 html.has-js body.home-page .story-section[data-reveal],
 html.has-js body.home-page .support-section[data-reveal],
 html.has-js body.home-page .contact-section[data-reveal],
@@ -3751,22 +3769,6 @@ html.has-js body.home-page .home-footer-band.is-visible {
   opacity: 1;
   transform: none;
 }
-
-/* Hero: stagger the lines in */
-html.has-js body.home-page .hero-section .hero-copy > * {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-html.has-js body.home-page .hero-section.is-visible .hero-copy > * {
-  opacity: 1;
-  transform: none;
-}
-
-body.home-page .hero-section.is-visible .hero-copy > *:nth-child(2) { transition-delay: 0.08s; }
-body.home-page .hero-section.is-visible .hero-copy > *:nth-child(3) { transition-delay: 0.16s; }
-body.home-page .hero-section.is-visible .hero-copy > *:nth-child(4) { transition-delay: 0.24s; }
 
 /* Apps: cards rise with a stagger */
 html.has-js body.home-page .apps-section .apps-stack .app-panel {
