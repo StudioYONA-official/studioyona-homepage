@@ -36,12 +36,12 @@ EN:
 
 KR:
 - © Studio YONA
-- 상호: 스튜디오 요나 | 대표: 이나영 | 개인정보관리책임자: 이나영 | 이메일: studioyona.official@gmail.com
+- 상호: 스튜디오 요나 | 대표: 이나영 | 개인정보관리책임자: 이나영 | 이메일: studioyona.official@gmail.com | 전화: 010-4983-9194
 - 주소: 서울특별시 영등포구 대방천로12길 1, 419호 | 사업자등록번호: 392-20-02356 | 통신판매: 제 2026-서울영등포-0975 호
 
 EN:
 - © Studio YONA
-- Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer: Nayoung Lee | Email: studioyona.official@gmail.com
+- Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer: Nayoung Lee | Email: studioyona.official@gmail.com | Phone: +82 10-4983-9194
 - Address: #419, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea | Business Registration No.: 392-20-02356 | Mail-order business report: 2026-Seoul-Yeongdeungpo-0975
 
 ## Home Page
