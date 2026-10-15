@@ -24,3 +24,7 @@ The user asked to publish the EverScene homepage pages ("홈페이지는 배포�
 ## Free allowance update (2026-10-15)
 
 - The app's free allowance went from 30 to 50 decided videos (user decision). Intro and support pages and terms §5 regenerated from EverScene main `e1544a4`; terms SHA-256 matches the source. The owner moved the terms effective date to 2026-10-15 (privacy policy stays 2026-10-14) and approved this second publication.
+
+## Sharing and favorite in the privacy policy (2026-10-16)
+
+- The app's review screen gained share and a heart (Photos favorite). The privacy policy now covers both and the share file's retention; its effective date moved to 2026-10-15 (owner decision). Terms and policy name the settings screen instead of "앱 정보". Regenerated from EverScene main `0a42dac`; both SHA-256 values match the sources. Published with the owner's approval.
