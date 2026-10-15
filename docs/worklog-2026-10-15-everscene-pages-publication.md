@@ -20,3 +20,7 @@ The user asked to publish the EverScene homepage pages ("홈페이지는 배포�
 
 - After the push: confirm the native Pages build and the live canonical URLs.
 - The legal texts keep 시행일 2026-10-14 (drafted date; the app is not released). Change only on the owner's decision.
+
+## Free allowance update (2026-10-15)
+
+- The app's free allowance went from 30 to 50 decided videos (user decision). Intro and support pages and terms §5 regenerated from EverScene main `e1544a4`; terms SHA-256 matches the source. The owner moved the terms effective date to 2026-10-15 (privacy policy stays 2026-10-14) and approved this second publication.
