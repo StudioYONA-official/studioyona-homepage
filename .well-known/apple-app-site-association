@@ -13,6 +13,20 @@
             "comment": "Only Notch Dice signed game links; other Studio YONA pages stay on the web."
           }
         ]
+      },
+      {
+        "appIDs": [
+          "MQ566TS9GT.kr.co.studioyona.cheerupbuddies"
+        ],
+        "components": [
+          {
+            "/": "/i/",
+            "?": {
+              "code": "?*"
+            },
+            "comment": "CheerUpBuddies friend and group invites"
+          }
+        ]
       }
     ]
   }

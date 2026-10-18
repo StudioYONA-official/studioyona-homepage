@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <title>CheerUpBuddies 초대 | Studio YONA</title>
+  <link rel="canonical" href="https://www.studioyona.co.kr/i/" />
+  <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/site.css?v=20261008a" />
+</head>
+<body class="app-page app-legal-page compact-page">
+  <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+  <header class="home-header compact-header"><a class="home-wordmark" href="/" aria-label="Studio YONA 홈"><img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" /><span>Studio YONA</span></a></header>
+  <div class="shell"><main id="content"><section class="hero"><article class="card hero-copy">
+    <h1>CheerUpBuddies 초대</h1>
+    <p id="invite-instruction">초대 링크의 코드를 확인해 주세요.</p>
+    <p><strong id="invite-code"></strong></p>
+  </article></section></main><footer class="footer footer-global">© 2026 Studio YONA</footer></div>
+  <script>
+    (() => {
+      const params = new URLSearchParams(window.location.search);
+      const codes = params.getAll('code');
+      const code = codes.length === 1 ? codes[0].trim().toUpperCase() : '';
+      if (!/^[A-Z0-9]{8}$/.test(code)) return;
+      document.getElementById('invite-code').textContent = code;
+      document.getElementById('invite-instruction').textContent = 'CheerUpBuddies 앱의 초대 코드 입력에 이 코드를 넣어 주세요.';
+    })();
+  </script>
+</body>
+</html>
