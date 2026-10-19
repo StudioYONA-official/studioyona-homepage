@@ -32,3 +32,8 @@ The user asked to publish the EverScene homepage pages ("홈페이지는 배포�
 ## Legal texts on the Notch Dice template (2026-10-16)
 
 - Owner request: take the Notch Dice terms and privacy policy and change only what differs for this app. Regenerated from EverScene main (legal texts after removing overly favourable, guideline-like and hedging wording); the generator now renders Markdown tables as `legal-table`, wraps articles in sections and shows the effective date in the hero, like the Notch Dice pages. Checked locally in a browser (tables, hero date). Effective date stays 2026-10-15. Reviewed against EDSN Frame: liability, free-scope changes and EU consumer / GDPR sections added.
+
+## English legal translations (2026-10-20)
+
+- Owner request ("약관 페이지 영어판도 만들어서 배포해줘"), for the English App Store description's legal links. `/en/apps/everscene/legal/{terms,privacy}/` translate the current Korean pages (effective 2026-10-15) and state that the Korean version prevails. Korean pages gained the EN switch and hreflang links; the neutral routes offer both languages. Intro and support stay Korean only.
+- Internal links of the 6 touched pages resolve to files in the tree.
