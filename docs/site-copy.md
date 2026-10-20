@@ -653,6 +653,157 @@ KR path: `ko/apps/mandarana/index.html`
 - Apps EN: Preparing for iPhone release · Korean app / Mandarana / Turn focused time into a mandala. Choose a duration and color, then keep your sessions in an on-device gallery. / Learn more (Korean)
 - Language: 영어 홈·목록에서도 한국어 소개·법률 문서로 연결하며 링크에 Korean을 표시합니다. 한국어 원문만 제공하고 영어 법률 번역은 만들지 않습니다.
 
+## EverScene / 영리하다 — 2026-10-20
+
+Source: owner-approved `EverScene/docs/store/store_copy_ko.md` (Korean and English).
+Release state: coming soon; no App Store download button. Home and app-list cards use the promotional paragraph from this source, after Mandarana. Locale home/list wrappers remain unchanged.
+
+### ko/apps/everscene/index.html
+
+- Studio YONA의 동영상 정리 앱
+- 영리하다
+- 꼭 필요한 장면만 남기는 동영상 정리
+- 스마트폰 속 모든 영상을 빠르게 확인하고 지울 것과 남길 것을 구분하세요. 꼭 필요한 부분만 클립으로 남겨둘 수도 있습니다.
+- 기능 살펴보기
+- 개인정보처리방침
+- 이용약관
+- 출시 준비 중
+- iPhone 전용
+- iOS 26 이상
+- 한국어 · English
+- 한 줄 소개
+- 꼭 필요한 장면만 남기는 동영상 정리
+- 가격
+- 처음 30개 무료 · 이후 하루 5개 · Pro 1회 구입(구독 없음)
+- 지원 이메일
+- studioyona.official@gmail.com
+- 주요 기능
+- 보고, 고르고, 정리합니다
+- 회원 가입 없이 바로 동영상 정리를 시작하세요.
+- 보면서 바로 판정
+- 최대 10배속으로 소리 없이 재생되는 영상을 보며 위로 스와이프하면 삭제 후보, 아래로 스와이프하면 남기기, 왼쪽으로 넘기면 고민됨으로 분류합니다. 잘못 고른 판정은 여러 번 되돌릴 수 있습니다.
+- 타임라인과 썸네일로 빠르게 훑기
+- 타임라인을 움직이며 필요한 장면이 있는지 확인하세요. 영상 전체를 세세한 썸네일로 만들어서 한눈에 파악할 수도 있습니다.
+- 큰 영상부터, 기간별로
+- 원하는 달·날짜·기간을 정해서 작업하거나, 용량이 큰 동영상부터 정리할 수 있습니다.
+- 필요한 구간만 새 클립으로
+- 필요한 일부 구간 때문에 영상을 지우지 못하고 계신가요? 그 구간만 잘라서 저장할 수 있습니다.
+- 말소리로 장면 찾기
+- 영상 속 말소리를 자막으로 바로 확인하세요. 소리를 켜지 않아도 대화 내용을 확인하며 정리할 수 있습니다. 한국어 및 영어를 지원합니다.
+- 무료로 시작, 필요하면 Pro
+- 처음 영상 30개는 무료로 판정할 수 있고, 이후에는 하루에 5개까지 판정할 수 있습니다. 영리하다 Pro는 한 번 구매로 계속 쓰는 권한이며 구독이 아닙니다. 구매하면 제한 없이 정리할 수 있습니다.
+- 사용 화면
+- 이렇게 정리하세요
+- 보면서 판정하세요
+- 한눈에 확인하세요
+- 필요한 구간만 저장하세요
+- 01
+- 보면서 판정하세요
+- 소리 없이 재생되는 영상을 보며 남기기, 고민됨, 삭제 후보로 분류합니다.
+- 02
+- 한눈에 확인하세요
+- 영상 전체를 세세한 썸네일로 확인합니다.
+- 03
+- 필요한 구간만 저장하세요
+- 필요한 부분만 잘라 새 클립으로 저장합니다.
+- 문의
+- 도움이 필요하신가요
+- 앱 사용, 구입과 복원, 개인정보 권리행사와 오류 제보를 이메일로 받고 있습니다.
+- 문의 메일 보내기
+- 지원 페이지 보기
+- 개인정보처리방침
+- 이용약관
+
+### ko/apps/everscene/support/index.html
+
+- 영리하다 지원
+- 앱 사용, 사진 접근, 구입과 복원, 개인정보 권리행사와 오류 제보는 이메일로 보내주세요.
+- studioyona.official@gmail.com
+- 빠른 확인
+- 영상이 보이지 않으면 iOS 설정 > 앱 > 영리하다 > 사진에서 접근 범위를 확인해 주세요. 선택한 항목만 허용하면 그 영상만 정리합니다.
+- 원본이 iCloud에만 있는 영상은 '내려받아 재생'을 눌러야 재생됩니다. 이때 데이터가 사용될 수 있습니다.
+- 삭제한 영상은 보통 사진 앱의 '최근 삭제된 항목'에서 복구할 수 있습니다. 기기 공간은 그곳에서 영구 삭제해야 바로 확보됩니다.
+- 처음 영상 30개는 무료로 판정할 수 있고, 이후에는 하루에 5개까지 판정할 수 있습니다. Pro는 구독이 아닌 일회성 구입이며, 재설치나 기기 변경 뒤에는 같은 Apple 계정으로 Pro 화면의 '구매 복원'을 눌러 주세요.
+- 전사는 기기와 언어에 따라 사용할 수 없을 수 있으며, 처음 사용할 때 언어 모델을 내려받습니다.
+- 정리 기록과 전사는 기기 안에만 저장됩니다. 문의 메일에는 꼭 필요한 내용만 적어 주세요.
+- 관련 문서
+- 영리하다 소개
+- 개인정보처리방침
+- 이용약관
+
+### en/apps/everscene/index.html
+
+- Video cleanup by Studio YONA
+- EverScene
+- Keep only the scenes you need
+- Quickly check every video on your phone and sort what to delete from what to keep. You can also save just the parts you need as clips.
+- Explore features
+- Privacy Policy
+- Terms of Use
+- Coming soon
+- iPhone only
+- iOS 26 or later
+- Korean · English
+- At a glance
+- Keep only the scenes you need
+- Pricing
+- First 30 free · Then 5 a day · One-time Pro purchase
+- Support email
+- studioyona.official@gmail.com
+- Key features
+- Watch, decide, and clean up
+- No account needed. Start cleaning up your videos right away.
+- Decide while you watch
+- Watch videos play silently at up to 10× speed. Swipe up for Delete Candidate, down for Keep, or left for Later. You can undo several recent decisions in a row.
+- Skim with the timeline and thumbnails
+- Move along the timeline to see whether there is a scene you need. Overview shows a whole video as detailed thumbnails so you can take it in at a glance.
+- Biggest first, or by period
+- Pick a month, day or date range to work on, or start with your largest videos.
+- Save Clip
+- Can’t delete a video because of one part you want to keep? Cut out just that part and save it.
+- Speech
+- See the speech in your videos as subtitles right away. Follow conversations and keep cleaning up without turning the sound on. Korean and English supported.
+- Free to start, Pro when you need more
+- Decide your first 30 videos for free, then up to 5 a day. EverScene Pro is a one-time purchase, not a subscription, and removes the limit.
+- How it works
+- See EverScene in action
+- Decide while you watch
+- Overview
+- Save Clip
+- 01
+- Decide while you watch
+- Sort videos into Keep, Later, or Delete Candidate as they play silently.
+- 02
+- Overview
+- See a whole video as detailed thumbnails.
+- 03
+- Save Clip
+- Cut out the part you need and save it as a new clip.
+- Contact
+- Have a question?
+- We take questions about app usage, purchases and restoration, privacy rights, and bug reports by email.
+- Email support
+- Support page
+- Privacy Policy
+- Terms of Use
+
+### en/apps/everscene/support/index.html
+
+- EverScene Support
+- Email us with questions about app usage, photo access, purchases and restoration, privacy rights, or bugs.
+- studioyona.official@gmail.com
+- Quick checks
+- If videos are missing, check access in iOS Settings > Apps > EverScene > Photos. If you allow only selected items, only those videos are available to organize.
+- Videos whose originals are only in iCloud need to be downloaded before playback. This may use data.
+- Deleted videos can usually be recovered from Recently Deleted in Photos. To free device space immediately, they must be permanently deleted there.
+- Decide your first 30 videos for free, then up to 5 a day. EverScene Pro is a one-time purchase, not a subscription. After reinstalling or changing devices, restore your purchase from the Pro screen using the same Apple Account.
+- Speech transcription may be unavailable depending on the device and language. A language model is downloaded on first use.
+- Cleanup history and transcripts are stored only on your device. Include only necessary information in support emails.
+- Related pages
+- About EverScene
+- Privacy Policy
+- Terms of Use
+
 ## Legal And Notice Pages
 
 이 문서에는 법률 전문 본문을 포함하지 않았다.
