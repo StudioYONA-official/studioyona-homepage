@@ -657,6 +657,7 @@ KR path: `ko/apps/mandarana/index.html`
 
 Source: owner-approved `EverScene/docs/store/store_copy_ko.md` (Korean and English).
 Release state: coming soon; no App Store download button. Home and app-list cards use the promotional paragraph from this source, after Mandarana. Locale home/list wrappers remain unchanged.
+Update 2026-11-09: released on iPhone, Mac, and Android. The hero shows App Store, Mac App Store, and Google Play buttons; the home card adds the same store buttons; the app-list tag reads `iPhone · Mac · Android 출시` / `Available on iPhone, Mac, and Android`. Android minimum: Android 11 (`minSdk = 30`).
 
 ### ko/apps/everscene/index.html
 
@@ -667,9 +668,9 @@ Release state: coming soon; no App Store download button. Home and app-list card
 - 기능 살펴보기
 - 개인정보처리방침
 - 이용약관
-- 출시 준비 중
-- iPhone 전용
-- iOS 26 이상
+- 출시 중
+- iPhone · Mac · Android
+- iOS 26 · macOS 26 · Android 11 이상
 - 한국어 · English
 - 한 줄 소개
 - 꼭 필요한 장면만 남기는 동영상 정리
@@ -723,7 +724,7 @@ Release state: coming soon; no App Store download button. Home and app-list card
 - 영상이 보이지 않으면 iOS 설정 > 앱 > 영리하다 > 사진에서 접근 범위를 확인해 주세요. 선택한 항목만 허용하면 그 영상만 정리합니다.
 - 원본이 iCloud에만 있는 영상은 '내려받아 재생'을 눌러야 재생됩니다. 이때 데이터가 사용될 수 있습니다.
 - 삭제한 영상은 보통 사진 앱의 '최근 삭제된 항목'에서 복구할 수 있습니다. 기기 공간은 그곳에서 영구 삭제해야 바로 확보됩니다.
-- 처음 영상 30개는 무료로 판정할 수 있고, 이후에는 하루에 5개까지 판정할 수 있습니다. Pro는 구독이 아닌 일회성 구입이며, 재설치나 기기 변경 뒤에는 같은 Apple 계정으로 Pro 화면의 '구매 복원'을 눌러 주세요.
+- 처음 영상 30개는 무료로 판정할 수 있고, 이후에는 하루에 5개까지 판정할 수 있습니다. Pro는 구독이 아닌 일회성 구입이며, 재설치나 기기 변경 뒤에는 같은 Apple 계정(Android는 같은 Google 계정)으로 Pro 화면의 '구매 복원'을 눌러 주세요.
 - 전사는 기기와 언어에 따라 사용할 수 없을 수 있으며, 처음 사용할 때 언어 모델을 내려받습니다.
 - 정리 기록과 전사는 기기 안에만 저장됩니다. 문의 메일에는 꼭 필요한 내용만 적어 주세요.
 - 관련 문서
@@ -740,9 +741,9 @@ Release state: coming soon; no App Store download button. Home and app-list card
 - Explore features
 - Privacy Policy
 - Terms of Use
-- Coming soon
-- iPhone only
-- iOS 26 or later
+- Available
+- iPhone, Mac, and Android
+- iOS 26 · macOS 26 · Android 11 or later
 - Korean · English
 - At a glance
 - Keep only the scenes you need
@@ -796,7 +797,7 @@ Release state: coming soon; no App Store download button. Home and app-list card
 - If videos are missing, check access in iOS Settings > Apps > EverScene > Photos. If you allow only selected items, only those videos are available to organize.
 - Videos whose originals are only in iCloud need to be downloaded before playback. This may use data.
 - Deleted videos can usually be recovered from Recently Deleted in Photos. To free device space immediately, they must be permanently deleted there.
-- Decide your first 30 videos for free, then up to 5 a day. EverScene Pro is a one-time purchase, not a subscription. After reinstalling or changing devices, restore your purchase from the Pro screen using the same Apple Account.
+- Decide your first 30 videos for free, then up to 5 a day. EverScene Pro is a one-time purchase, not a subscription. After reinstalling or changing devices, restore your purchase from the Pro screen using the same Apple Account (on Android, the same Google account).
 - Speech transcription may be unavailable depending on the device and language. A language model is downloaded on first use.
 - Cleanup history and transcripts are stored only on your device. Include only necessary information in support emails.
 - Related pages
