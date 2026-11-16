@@ -89,6 +89,7 @@ Related Files:
   - `detective-recorder` 선택적 iCloud(CloudKit) 동기화 지원 사실을 한·영 앱 소개 페이지 및 법률 문서에 일치
   - `/contact/`, `/support/` 이메일 문의 개인정보 처리 안내 추가
   - 저장소 내 모든 한국어/영문 HTML 푸터의 `개인정보 보호책임자` 및 `Mail-order business report: 2026-Seoul-Yeongdeungpo-0975` 일괄 통일
+  - 홈 하단 사전 공지 배너(`index.html`, `2027-01-16`까지 표시) 교체 및 출시 6개 앱 통합 개정 안내 페이지(`ko/legal/update-2026-12-17/index.html`, `en/legal/update-2026-12-17/index.html`, `legal/update-2026-12-17/index.html`) 추가
   - `docs/CHANGELOG.md` 및 본 worklog 작성
 - 제외 범위:
   - 각 iOS/macOS/Android 앱 저장소 내부에 오프라인 번들된 별도 마크다운/법률 텍스트 수정
