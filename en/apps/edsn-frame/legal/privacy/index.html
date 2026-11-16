@@ -6,7 +6,7 @@
     <title>EDSN Frame Privacy Policy | Studio YONA</title>
     <meta
       name="description"
-      content="Privacy Policy for EDSN Frame, including guest use, Apple/Google account linking, in-app purchases, advertising and consent flows, and account deletion."
+      content="Privacy Policy for EDSN Frame, including guest use, Apple/Google account linking, QR photo delivery, in-app purchases, advertising and consent flows, and account deletion."
     />
     <link rel="canonical" href="https://www.studioyona.co.kr/en/apps/edsn-frame/legal/privacy/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
@@ -53,6 +53,7 @@
         <section class="hero">
           <article class="card hero-copy">
             <h1>EDSN Frame Privacy Policy</h1>
+            <p>Initial Effective Date: May 2, 2026 · Announced: November 16, 2026 · Effective Date: December 17, 2026</p>
           </article>
         </section>
 
@@ -60,11 +61,11 @@
           <article class="card content">
             <div class="section">
               <h2>1. General Provisions</h2>
-              <p>Studio YONA (the "Company") values the personal information of users of the EDSN Frame iOS and Android apps (the "Service") and has established this Privacy Policy in order to comply with applicable laws and regulations, including the Personal Information Protection Act.</p>
+              <p>Studio YONA (the "Company") values the personal information of users of the EDSN Frame iOS, iPadOS, Mac, and Android apps (the "Service") and has established this Privacy Policy in order to comply with applicable laws and regulations, including the Personal Information Protection Act of the Republic of Korea.</p>
               <ul>
                 <li>Service name: <strong>EDSN Frame</strong></li>
-                <li>Scope of application: iOS and Android apps, in-app guest use flow, Apple/Google account linking, in-app purchases, advertising/consent flows, customer support/account deletion flows</li>
-                <li>Operator information: <strong>Studio YONA / Representative Nayoung Lee / #419, 4F, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea</strong></li>
+                <li>Scope of application: iOS, iPadOS, Mac, and Android apps, guest use, Apple/Google account linking, personal and Event/Store Mode QR photo delivery, in-app purchases, advertising/consent settings, customer support, and account deletion</li>
+                <li>Operator information: <strong>Studio YONA / Representative Nayoung Lee / #419, 4F, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea / Business Registration No. 392-20-02356 / Mail-order business report 2026-Seoul-Yeongdeungpo-0975</strong></li>
               </ul>
             </div>
 
@@ -97,18 +98,23 @@
                     </tr>
                     <tr>
                       <td>Optional</td>
-                      <td>Synchronization and account-based restoration of points, achievements, shop ownership, photobooth film, and invite code status</td>
-                      <td>Internal user ID, point balance, achievement progress, shop ownership, quantity of photobooth film, and invite code/reward status</td>
+                      <td>Synchronization and account-based restoration of points, achievements, shop ownership, photobooth film, QR delivery credits, and invite code status</td>
+                      <td>Internal user ID, point balance, achievement progress, shop ownership, quantity of photobooth film, remaining QR delivery credits, and invite code/reward status</td>
+                    </tr>
+                    <tr>
+                      <td>Optional</td>
+                      <td>QR photo delivery in personal shooting or Event/Store Mode, download link issuance, and download limit/expiration management</td>
+                      <td>Final composite photo image file selected for QR delivery (which may include portraits of photographed persons), QR download token, delivery status, remaining download count (up to 3 downloads), creation and expiration timestamps (24 hours), linked account internal user ID, and QR delivery credit deduction/balance records</td>
                     </tr>
                     <tr>
                       <td>Required</td>
                       <td>Ensuring service operational stability, responding to incidents, and backing up/restoring data</td>
-                      <td>Backup copies of service operational data stored in the Supabase DB, such as account authentication/session-related information, account-based snapshots, point/currency balances, point grant/deduction history, owned item information, and purchase/entitlement snapshots</td>
+                      <td>Encrypted operational database backups containing account authentication/session information, account synchronization data, point/currency balances and grant/deduction history, owned item information, and purchase/entitlement synchronization data</td>
                     </tr>
                     <tr>
                       <td>Required</td>
-                      <td>Prevent repeated fraudulent claiming of referral rewards and free/reward grants</td>
-                      <td>Apple DeviceCheck or Google Play Integrity verification result, Apple/Google account identifier hash processed with a server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
+                      <td>Preventing repeated fraudulent claiming of referral rewards and free/reward grants</td>
+                      <td>Apple DeviceCheck or Google Play Integrity verification result, one-way hashed Apple/Google account identifier and device/installation anti-abuse identifier, reward/grant type, grant key, first/recent detection time, expiration time</td>
                     </tr>
                     <tr>
                       <td>Optional</td>
@@ -125,11 +131,11 @@
               </div>
               <h3>Additional Notes</h3>
               <ul>
-                <li>Based on the current implementation, original photos and videos taken through the Service are generally stored on the user's device or in the user's photo library and are not uploaded to the operator's server during normal use of the Service.</li>
+                <li>During ordinary personal shooting and saving, original photos and videos taken through the Service are stored on the user's device or in the user's photo library and are not uploaded to the Company's servers. However, when a linked user directly uses the QR photo delivery feature in personal shooting or Event/Store Mode, the resulting photo image is temporarily uploaded to server storage (Seoul region, Republic of Korea) to issue the download link. Photos taken in Event/Store Mode are not separately saved on the shooting device in principle.</li>
+                <li>Users who operate Event/Store Mode at weddings, events, stores, or pop-ups (event hosts or store operators) are responsible for informing photographed guests of the shooting and QR delivery flow on site and confirming any required portrait or privacy consent.</li>
                 <li>Linking an Apple or Google account is optional, and users may start the core shooting flow in guest mode.</li>
                 <li>Apple DeviceCheck or Google Play Integrity verification information may be sent to Apple or Google to verify and prevent repeated fraudulent claiming of free/reward grants. The Company does not store raw device tokens on its server. The Company stores only the minimum records needed for abuse prevention, such as grant status, grant key, and processing time.</li>
-                <li>The Company does not collect unique identifiers such as resident registration numbers, passport numbers, or driver's license numbers.</li>
-                <li>The Company does not, by default, collect sensitive information such as health information or biometric information. If the actual operational scope changes, this Policy will be updated.</li>
+                <li>The Company does not collect unique identifiers (such as resident registration numbers, passport numbers, or driver's license numbers) or sensitive information (such as health or biometric information).</li>
               </ul>
             </div>
 
@@ -150,8 +156,12 @@
                       <td>Until the app is deleted, data is reset, or the relevant purpose is achieved</td>
                     </tr>
                     <tr>
-                      <td>Apple/Google linked account information, internal user ID, and account-based snapshot data</td>
+                      <td>Apple/Google linked account information, internal user ID, and account synchronization data</td>
                       <td>Until account deletion or unlinking. However, where necessary under applicable law or for dispute response, such data may be retained for the relevant period.</td>
+                    </tr>
+                    <tr>
+                      <td>Uploaded images and download links for QR photo delivery</td>
+                      <td>Download access expires after 24 hours from upload or after up to 3 downloads, whichever comes first, and the image is deleted without delay under storage cleanup procedures thereafter (minimal metadata regarding QR credit deduction, transactions, or anti-abuse may be retained while the account remains active or for statutory periods).</td>
                     </tr>
                     <tr>
                       <td>In-app purchase/restoration/transaction records</td>
@@ -175,11 +185,11 @@
                     </tr>
                     <tr>
                       <td>Database backups for service operational stability, incident response, and data recovery</td>
-                      <td>Retained for up to 14 days from creation of the backup artifact, then expired or deleted</td>
+                      <td>Retained for up to 14 days from backup creation, then automatically expired or deleted</td>
                     </tr>
                     <tr>
                       <td>Feedback/inquiry and account deletion response records</td>
-                      <td>Until processing is completed and thereafter for any period required by applicable law or dispute response needs</td>
+                      <td>Retained for 3 years after inquiry handling is completed in accordance with statutory consumer complaint/dispute retention standards under Korean e-commerce law, then destroyed (unless a longer statutory retention period applies)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -203,8 +213,9 @@
                   </ul>
                 </li>
               </ol>
+              <p>Image files temporarily uploaded for QR photo delivery are disabled upon expiration of the 24-hour validity window or reaching the 3-download limit, and are deleted in a manner that makes recovery difficult under automated or scheduled cleanup procedures.</p>
               <p>Hash records used for fraud and abuse prevention do not store original Apple/Google account identifiers, email addresses, device names, or advertising identifiers, and are deleted when the retention period expires.</p>
-              <p>Backup artifacts used for service stability and incident recovery are deleted or expired when the configured retention period ends and are not intended for long-term retention.</p>
+              <p>Operational database backups used for service stability and incident recovery are irreversibly deleted when the configured retention period (up to 14 days) ends and are not retained long-term.</p>
             </div>
 
             <div class="section">
@@ -233,8 +244,8 @@
                   <tbody>
                     <tr>
                       <td>Supabase, Inc.</td>
-                      <td>Account authentication, session handling, and synchronization of account-based data</td>
-                      <td>Until termination of the entrustment agreement or achievement of the processing purpose</td>
+                      <td>Account authentication, session handling, synchronization of account-based data, temporary image storage (Storage) for QR photo delivery, and download/credit verification</td>
+                      <td>Until termination of the entrustment agreement or achievement of the processing purpose (QR delivery images are deleted after 24 hours or 3 downloads)</td>
                     </tr>
                     <tr>
                       <td>RevenueCat, Inc.</td>
@@ -243,13 +254,13 @@
                     </tr>
                     <tr>
                       <td>Google LLC</td>
-                      <td>Google account sign-in (when selected), Google Play purchase/restoration, Play Integrity verification, ad serving, ad reward processing, and ad consent management</td>
-                      <td>Until termination of the entrustment agreement or achievement of the processing purpose</td>
+                      <td>Google account sign-in (when selected), Google Play purchase/restoration, Play Integrity verification, ad serving, ad reward processing, ad consent management, and customer support email (Gmail) infrastructure</td>
+                      <td>Until termination of the entrustment agreement or achievement of the processing purpose (support emails: retained for 3 years after inquiry resolution)</td>
                     </tr>
                     <tr>
                       <td>GitHub, Inc.</td>
-                      <td>Creating database backup files through GitHub Actions and storing backup artifacts</td>
-                      <td>Up to 14 days from creation of the backup artifact</td>
+                      <td>Encrypted operational database backup storage and short-term recovery infrastructure</td>
+                      <td>Up to 14 days from backup creation</td>
                     </tr>
                   </tbody>
                 </table>
@@ -275,11 +286,11 @@
                   <tbody>
                     <tr>
                       <td>Supabase, Inc.</td>
-                      <td>Account authentication/session-related information and account-based snapshot data</td>
-                      <td>Republic of Korea (Seoul, <code>ap-northeast-2</code>)</td>
-                      <td>Transferred over a network when the Service is used</td>
-                      <td>Login/session maintenance and account-based synchronization</td>
-                      <td>Until the purpose is achieved or the contract ends</td>
+                      <td>Account authentication/session information, account synchronization data, and temporarily uploaded QR delivery images and delivery metadata</td>
+                      <td>Data storage region: Republic of Korea (Seoul) / Cloud auth &amp; management HQ: United States</td>
+                      <td>Transferred over an encrypted network when the Service or QR delivery feature is used</td>
+                      <td>Login/session maintenance, account-based synchronization, and QR photo delivery handling</td>
+                      <td>QR delivery images deleted after 24 hours or 3 downloads; account data retained until purpose achieved or contract ends</td>
                     </tr>
                     <tr>
                       <td>RevenueCat, Inc.</td>
@@ -291,11 +302,11 @@
                     </tr>
                     <tr>
                       <td>Google LLC</td>
-                      <td>Google sign-in information (when selected), Google Play transaction/purchase token information, Play Integrity verification results, advertising/advertising identifiers, and AdMob/UMP consent status</td>
-                      <td>United States and other countries</td>
-                      <td>Transferred when sign-in, Google Play purchase/restoration, Play Integrity verification, or ad requests occur</td>
-                      <td>Providing sign-in, Google Play purchase/restoration, device/app integrity verification, serving/measuring advertising, and managing consent</td>
-                      <td>Until the purpose is achieved or the contract ends</td>
+                      <td>Google sign-in information (when selected), Google Play transaction/purchase token information, Play Integrity verification results, advertising/advertising identifiers, AdMob/UMP consent status, and customer support email sender address, body, and attachments (when emailing support)</td>
+                      <td>United States and other countries where Google global infrastructure operates</td>
+                      <td>Transferred when sign-in, Google Play purchase/restoration, Play Integrity verification, ad requests, or support emails occur</td>
+                      <td>Providing sign-in, Google Play purchase/restoration, device/app integrity verification, serving/measuring advertising, managing consent, and receiving/replying to support emails</td>
+                      <td>Until the purpose is achieved or the contract ends (support emails: retained for 3 years after inquiry resolution under Company policy and subject to Google policies)</td>
                     </tr>
                     <tr>
                       <td>Apple Inc.</td>
@@ -307,16 +318,16 @@
                     </tr>
                     <tr>
                       <td>GitHub, Inc.</td>
-                      <td>Account and service operational data included in Supabase DB backups</td>
-                      <td>United States and other countries/regions where GitHub infrastructure operates</td>
-                      <td>Transferred over a network when GitHub Actions backup jobs run</td>
+                      <td>Account and service operational data included in encrypted operational database backups</td>
+                      <td>United States and other countries where GitHub infrastructure operates</td>
+                      <td>Transferred over an encrypted network when scheduled backup jobs run</td>
                       <td>Service incident response, data backup, and recovery</td>
-                      <td>Up to 14 days from creation of the backup artifact</td>
+                      <td>Up to 14 days from backup creation</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <p>Users may inquire about international transfers through the contact channel below. Supabase is currently operated based on the <code>Northeast Asia (Seoul)</code> region.</p>
+              <p>Users may refuse external or international processing by using the app without linking an account, limiting ad/tracking permissions, or choosing not to send support emails; however, features that rely on those flows (such as account sync, in-app purchase/restoration, QR photo delivery, or email support) may be unavailable. Primary database and storage infrastructure is operated in the Seoul, Republic of Korea region.</p>
             </div>
 
             <div class="section">
@@ -332,22 +343,15 @@
               </ol>
               <p>These rights may be exercised through in-app settings or the contact channel below.</p>
               <ul>
-                <li>In-app features: Settings &gt; Account &gt; Delete Account, legal links in Settings, and permission/tracking/advertising settings in iOS or Android system settings</li>
+                <li>In-app features: Account management (account deletion) and legal notices in Settings, plus permission/tracking/advertising settings in iOS or Android system settings</li>
                 <li>Inquiry email: <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a></li>
               </ul>
               <h3>How to request deletion of your account and related data</h3>
-              <p>Users who link an Apple or Google account may request deletion of their account and related data inside the app. This guidance applies to EDSN Frame distributed on both the Apple App Store and Google Play.</p>
-              <ol>
-                <li>Open the EDSN Frame app.</li>
-                <li>Go to <strong>Settings</strong>.</li>
-                <li>Open <strong>View Account</strong> or the <strong>Account</strong> screen.</li>
-                <li>Select <strong>Account Withdrawal</strong> or <strong>Withdrawal Guide</strong>.</li>
-                <li>Review the deletion notice, impact summary, purchase/restoration notice, and submit the deletion request by following the in-app steps.</li>
-              </ol>
+              <p>Users who link an Apple or Google account may review the deletion impact disclosures and submit an account deletion request directly through the account withdrawal menu under <strong>Settings &gt; Account Management</strong> inside the app (applicable across Apple App Store and Google Play builds).</p>
               <p>If the user cannot access the app or the in-app deletion request cannot be completed, the user may request account deletion by emailing <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>. The Company may request only the minimum information necessary to verify and identify the account.</p>
               <p>When the deletion request is completed, the Company deletes or de-identifies account information directly managed by the Company, internal user ID, account-based progress, point/reward status, shop ownership, purchase-restoration linkage information, and account-related information needed for customer support handling.</p>
               <p>However, records required for legal compliance, payment settlement, refund or dispute response, security, and abuse prevention may be separately retained for the retention period stated in this Policy or for the period required by applicable law. App Store or Google Play payment records may be retained separately by Apple or Google under their respective platform policies and applicable laws.</p>
-              <p>The Company does not direct the Service primarily to children under the age of 14. If the Company becomes aware that it has collected personal information from a child under 14 without consent from a legal representative, it will review and take necessary measures without delay, such as deletion or restriction of use. A legal representative may notify the Company of the relevant facts or request deletion through the contact channel below.</p>
+              <p>Account-linking features are available only to users aged 14 or older, and the Company does not collect personal information from children under 14. If the Company becomes aware that personal information of a child under 14 has been collected, it will promptly terminate the account and delete the relevant data, and a legal representative may request deletion through the contact channel below.</p>
             </div>
 
             <div class="section">
@@ -356,7 +360,7 @@
               <h3>9-1. Processed Items</h3>
               <ul>
                 <li>Advertising identifiers (such as IDFA or Android Advertising ID, when permitted)</li>
-                <li>Apple DeviceCheck or Google Play Integrity verification result, used to prevent repeated fraudulent claiming of free/reward grants and not for advertising tracking.</li>
+                <li>Apple DeviceCheck or Google Play Integrity verification result (used to prevent repeated fraudulent claiming of free/reward grants, not for advertising tracking)</li>
                 <li>Ad exposure/click/reward processing status</li>
                 <li>App version, device OS, permission status, and minimal service usage log information</li>
               </ul>
@@ -408,11 +412,10 @@
                 </li>
                 <li>Technical measures
                   <ul>
-                    <li>Using external authentication infrastructure when handling authentication/sessions</li>
-                    <li>Separating secrets from values that may be publicly exposed</li>
-                    <li>Managing backup authorization information through GitHub production Environment secrets</li>
-                    <li>Restricting access to backup artifacts and limiting artifact retention periods</li>
-                    <li>Applying a policy that does not store raw tokens, receipt originals, or free-text originals in logs</li>
+                    <li>Using verified authentication infrastructure and encrypted transport (HTTPS) for authentication and sessions</li>
+                    <li>Isolating secrets from configuration values and enforcing strict access controls</li>
+                    <li>Restricting access to operational database backups and enforcing automatic short-term expiration (up to 14 days)</li>
+                    <li>Applying a minimal logging policy that excludes raw tokens, receipt originals, and free-text originals</li>
                   </ul>
                 </li>
                 <li>Physical measures
@@ -424,11 +427,13 @@
             </div>
 
             <div class="section">
-              <h2>11. Contact Point for Privacy Inquiries and Exercise of Rights</h2>
-              <p>At this small-scale operational stage, the Company intends to operate a unified contact channel for privacy inquiries, complaint handling, and requests for access, correction, deletion, suspension of processing, and withdrawal of consent. If no separate privacy officer is designated, the representative or operational manager may carry out those duties in accordance with applicable law.</p>
+              <h2>11. Privacy Officer and Contact Point for Exercising Rights</h2>
+              <p>The Company designates and operates the Privacy Officer and contact channel below to oversee personal information handling and respond to inquiries, complaints, and requests for access, correction, deletion, or suspension of processing.</p>
               <ul>
+                <li>Privacy Officer &amp; Access Request Contact: <strong>Nayoung Lee (Representative)</strong></li>
                 <li>Unified inquiry email: <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a></li>
-                <li>Scope of requests: privacy inquiries, access/correction/deletion/suspension of processing, withdrawal of consent, account deletion, and complaint handling</li>
+                <li>Phone: <a href="tel:+821049839194">+82 10-4983-9194</a></li>
+                <li>Scope and submission method: privacy inquiries, access/correction/deletion/suspension of processing, withdrawal of consent, account deletion, and complaint handling (requests are received primarily by email for accurate verification and record tracking)</li>
               </ul>
             </div>
 
@@ -444,11 +449,8 @@
             </div>
 
             <div class="section">
-              <h2>13. Information on the Right to Data Portability and Automated Decisions</h2>
-              <ul>
-                <li>Right to data portability: where applicable under law, users may request transmission of their personal information, and guidance on the request method is planned to be provided through <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>.</li>
-                <li>Automated decisions: the Service does not, by default, assume AI-based automated decisions that significantly affect users' rights or obligations. If such a feature is introduced in the future, this Policy will be updated to include guidance on the decision criteria, procedures, and rights to object.</li>
-              </ul>
+              <h2>13. Automated Decision-Making</h2>
+              <p>The Company does not perform automated decision-making that produces legal or similarly significant effects on users' rights or obligations, nor does it use user-captured media to train artificial intelligence models.</p>
             </div>
 
             <div class="section">
@@ -456,7 +458,8 @@
               <p>The Company may revise this Policy due to changes in laws, service features, or internal operating policies.</p>
               <ul>
                 <li>If there is a material change, the Company will provide advance notice through in-app notices, Service screens, or a separate notice channel.</li>
-                <li>The revision history is intended to be made available at the top of this Policy or in a separate notice area.</li>
+                <li>The revision history is available within this Policy or on separate update notice pages.</li>
+                <li>Announced November 16, 2026 (Effective December 17, 2026): specified iPadOS and Mac scope, personal and Event/Store Mode QR photo delivery (deleted after 24 hours or up to 3 downloads), unified 3-year customer support retention under e-commerce standards, Gmail processing disclosures, and 14+ age requirement for account linking.</li>
                 <li>The June 14, 2026 notice about the Android launch, Google Play processing items, and account/data deletion guidance is available as a separate update notice.</li>
                 <li>The May 12, 2026 notice about backup and recovery operations is available as a separate update notice.</li>
               </ul>
@@ -474,8 +477,8 @@
                 <li>Controller: <strong>Studio YONA</strong></li>
                 <li>Representative: <strong>Nayoung Lee</strong></li>
                 <li>Address: <strong>#419, 4F, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea</strong></li>
-                <li>Privacy contact: <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a></li>
-                <li>EU representative: based on the current small-scale operation and the current non-sensitive, non-high-risk processing scope, the Company has not appointed an EU representative at this time. The Company will reassess this position if the EU operation, processing scale, or risk profile materially changes.</li>
+                <li>Privacy contact: <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a> / <a href="tel:+821049839194">+82 10-4983-9194</a></li>
+                <li>EEA/EU inquiry channel: EEA/EU users may submit privacy inquiries and data-subject requests directly to the Privacy Officer contact above.</li>
               </ul>
               <h3>15-2. Legal Bases for Processing</h3>
               <div class="legal-table-wrap">
@@ -488,7 +491,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Providing the app, maintaining guest/local state, account linking, purchase verification, entitlement restoration, and customer support</td>
+                      <td>Providing the app, maintaining guest/local state, account linking, QR photo delivery, purchase verification, entitlement restoration, and customer support</td>
                       <td>Performance of a contract or steps requested by the user before entering into a contract</td>
                     </tr>
                     <tr>
@@ -511,15 +514,15 @@
               <h3>15-4. International Transfers</h3>
               <p>The Service is operated from the Republic of Korea and may use vendors located in Korea, the United States, and other regions as described in this Policy. Where EEA/EU personal data is transferred outside the EEA/EU, the Company relies on available safeguards such as adequacy decisions, contractual safeguards, vendor data-processing terms, or other mechanisms permitted by applicable law.</p>
               <h3>15-5. Children and Automated Decisions</h3>
-              <p>The Service is not primarily directed to children. The Service does not, by default, use automated decision-making that produces legal or similarly significant effects for users.</p>
+              <p>Account-linking features are available only to users aged 14 or older, and the Company does not use automated decision-making that produces legal or similarly significant effects for users.</p>
             </div>
 
             <div class="section">
               <h2>16. Public Locations and Effective Date</h2>
               <ul>
                 <li>Public URL: <a href="https://www.studioyona.co.kr/en/apps/edsn-frame/legal/privacy/">https://www.studioyona.co.kr/en/apps/edsn-frame/legal/privacy/</a></li>
-                <li>Effective date: 2026.05.02.</li>
-                <li>Last updated: 2026.06.14.</li>
+                <li>Initial effective date: May 2, 2026</li>
+                <li>Announced: November 16, 2026 / Effective date: December 17, 2026</li>
               </ul>
             </div>
           </article>

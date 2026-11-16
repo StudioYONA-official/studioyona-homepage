@@ -6,19 +6,28 @@
 - canonical 도메인은 `https://www.studioyona.co.kr`를 사용한다.
 - MVP 기준으로 빌드 없는 정적 사이트를 그대로 배포한다.
 
-## Current Live State
+## Deployment Configuration (Live State Unverified)
+
+아래는 배포 설정 기준이며 현재 DNS·HTTPS·공개 상태의 조회 결과가 아니다. 실제 반영 전에는 다음 Target Source Of Truth를 확인한다.
 
 - 공개 URL: `https://www.studioyona.co.kr`
 - GitHub Pages source: `main` branch `/ (root)`
 - Custom domain: `www.studioyona.co.kr`
 - DNS:
-  - `CNAME | www | studioyona.github.io`
+  - `CNAME | www | <PAGES_CNAME_TARGET>`
   - `A | @ | 185.199.108.153`
   - `A | @ | 185.199.109.153`
   - `A | @ | 185.199.110.153`
   - `A | @ | 185.199.111.153`
-- HTTPS: 활성화 및 적용 확인
-- 브라우저 확인: Safari에서 실접속 확인 완료
+- HTTPS·Safari 실접속: 과거 확인 기록이며 현재 상태는 재조회하지 않았다.
+
+## DNS Target Source Of Truth
+
+- 이 문서의 유일한 CNAME/ALIAS 대상 표기는 `<PAGES_CNAME_TARGET>`이다. **현재 실제 값은 미확인**이며 그대로 DNS에 입력하면 안 된다.
+- 승인된 저장소의 GitHub `Settings > Pages`에서 배포 대상과 기본 Pages 도메인을 확인하고, 해당 기본 도메인의 **호스트 부분만** 이 표기의 실제 값으로 사용한다. 저장소 이름·URL 경로·custom domain을 대상에 넣지 않는다.
+- DNS 제공자의 현재 `www` CNAME과 위의 확인된 대상을 대조한다. 불일치하면 어느 설정이 승인된 배포를 나타내는지 확인하며, 옛 문서의 계정 이름으로 대상을 추정하거나 DNS를 바꾸지 않는다.
+- 실제 배포 작업에서 확인한 값·확인 시점·provider readback을 이 절에 기록하면, 이후 모든 예시와 확인 단계는 그 동일한 값을 사용한다. 조회할 수 없으면 `unknown`으로 두고 외부 변경 없이 가능한 로컬 준비를 마친다.
+- 대상 선택과 apex 레코드는 [GitHub Pages 공식 custom domain 안내](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)를 따른다. 아래 A 레코드는 제공자 문서의 값이며 live DNS 결과가 아니다.
 
 ## Deployment Target
 
@@ -33,7 +42,7 @@
 - 저장소 이름 추천: `studioyona-homepage`
 - 정적 파일은 저장소 루트에 위치한다.
 - GitHub Pages source는 `main` branch `/ (root)`를 기준으로 설정한다.
-- 개인 계정 저장소 기준 `www` CNAME 대상은 `<github-username>.github.io` 형식이다.
+- `www` CNAME 대상은 위 Target Source Of Truth에서 확인한 `<PAGES_CNAME_TARGET>`를 사용한다.
 
 ## Required Files
 
@@ -76,7 +85,7 @@
 ### `www`
 
 - `www`는 `CNAME`으로 GitHub Pages 기본 도메인에 직접 연결한다.
-- 개인 계정 저장소라면 일반적으로 `<github-username>.github.io`를 사용한다.
+- 계정명으로 추정하지 않고 Target Source Of Truth에서 확인한 `<PAGES_CNAME_TARGET>`를 사용한다.
 - repository name은 넣지 않는다.
 
 예시:
@@ -84,15 +93,7 @@
 ```text
 Type: CNAME
 Name: www
-Value: <github-username>.github.io
-```
-
-`summerjelly` 기준 예시:
-
-```text
-Type: CNAME
-Name: www
-Value: summerjelly.github.io
+Value: <PAGES_CNAME_TARGET>
 ```
 
 ### apex
@@ -103,7 +104,7 @@ Value: summerjelly.github.io
 
 권장안:
 
-- DNS 제공자가 `ALIAS` 또는 `ANAME`을 지원하면 `@ -> <github-username>.github.io`
+- DNS 제공자가 `ALIAS` 또는 `ANAME`을 지원하면 `@ -> <PAGES_CNAME_TARGET>`
 - 그런 기능이 없으면 GitHub Pages A 레코드 사용
 
 GitHub Pages A 레코드:
@@ -205,7 +206,7 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 4. `https://www.studioyona.co.kr/apps/edsn-frame/legal/terms/`
 5. `https://studioyona.co.kr/`가 `www` 기준으로 정리되는지 확인
 
-현재 확인 완료 항목:
+과거 확인 완료 기록 (이번 지침 정리에서 재조회하지 않음):
 
 - `https://www.studioyona.co.kr/`
 - `https://www.studioyona.co.kr/?lang=en`
@@ -237,7 +238,7 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 2. 현재 파일 전체 업로드
 3. `Settings > Pages`에서 `Deploy from a branch` + `main` + `/ (root)` 저장
 4. `Custom domain`에 `www.studioyona.co.kr` 입력
-5. DNS에서 `www CNAME -> <github-username>.github.io` 설정
+5. DNS에서 `www CNAME -> <PAGES_CNAME_TARGET>` 설정
 6. DNS에서 apex를 `ALIAS/ANAME` 또는 GitHub Pages A 레코드로 설정
 7. 가능하면 `Verified domains`용 TXT 레코드 추가
 8. 배포 후 HTTPS 활성화
@@ -258,7 +259,7 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 4. `Deploy from a branch`를 선택한다.
 5. `main` + `/ (root)`를 선택하고 저장한다.
 6. `Custom domain`에 `www.studioyona.co.kr`를 입력한다.
-7. 대상 도메인은 `summerjelly.github.io`를 기준으로 본다.
+7. Target Source Of Truth에 따라 `<PAGES_CNAME_TARGET>`의 실제 값을 확인한다. 확인 전에는 아래 DNS 입력 단계로 진행하지 않는다.
 
 ### Hosting.kr에서 `www` CNAME 넣는 순서
 
@@ -272,7 +273,7 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 ```text
 유형: CNAME
 호스트 이름: www
-값: summerjelly.github.io
+값: <PAGES_CNAME_TARGET>
 ```
 
 주의:
@@ -286,12 +287,12 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 
 - `네임서버 / DNS` 탭에서 네임서버가 `호스팅케이알 Cloud`인지 확인한다.
 - Cloud 네임서버라면 `새 DNS 레코드 추가`에서 `CNAME(Alias)`를 선택한다.
-- 값에 `summerjelly.github.io`를 넣고 저장한다.
+- 값에 `<PAGES_CNAME_TARGET>`를 넣고 저장한다.
 
 ```text
 유형: CNAME(Alias)
 호스트 이름: @ 또는 공란(화면 정책 기준)
-값: summerjelly.github.io
+값: <PAGES_CNAME_TARGET>
 ```
 
 권장 2안:
@@ -318,7 +319,7 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 
 ### Hosting.kr에서 확인할 것
 
-- `www` CNAME이 `summerjelly.github.io`로 저장되었는지
+- `www` CNAME이 `<PAGES_CNAME_TARGET>`로 저장되었는지
 - apex가 `CNAME(Alias)` 또는 A 레코드 4개로 들어갔는지
 - 적용에는 최대 24~48시간 정도 걸릴 수 있는지
 
@@ -335,4 +336,4 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 
 - MVP는 정적 파일만 사용하므로 별도 서버 운영은 필요 없다.
 - DNS 설정 화면 이름은 등록기관마다 다를 수 있다.
-- `www` CNAME은 `<github-username>.github.io`를 직접 가리켜야 하며 repository 경로를 붙이면 안 된다.
+- `www` CNAME은 `<PAGES_CNAME_TARGET>`를 직접 가리켜야 하며 repository 경로를 붙이면 안 된다.

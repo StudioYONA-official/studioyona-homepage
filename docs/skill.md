@@ -1,7 +1,14 @@
 ---
-name: design-system-parade-development
-description: Creates implementation-ready design-system guidance with tokens, component behavior, and accessibility standards. Use when creating or updating UI rules, component specifications, or design-system documentation.
+name: reference-parade-development-extraction
+description: Historical source-site design extraction. Consult only to trace the reference; current Studio YONA design guidance and font mappings are in docs/design.md.
 ---
+
+> **Historical reference only.** The managed extraction below records the source
+> site's brand, tokens, and authoring workflow; it is not an implementation or
+> output-format instruction for Studio YONA. Use [design.md](design.md) for the
+> project mapping: body/UI uses Pretendard; do not ship TT-Hoves-Pro-Trial or
+> Opiumnewc. Retain the project accessibility requirements in
+> [DOCS_RULES.md](DOCS_RULES.md#design-baseline).
 
 <!-- TYPEUI_SH_MANAGED_START -->
 

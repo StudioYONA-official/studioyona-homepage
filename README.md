@@ -63,9 +63,9 @@ rg --files
 
 ## Documentation
 
-- [docs/DOCS_RULES.md](/Users/Captain/Projects/VibeCoding/Studio YONA HomePage/docs/DOCS_RULES.md)
+- [docs/DOCS_RULES.md](docs/DOCS_RULES.md)
 - latest `docs/worklog-*.md`
-- [docs/CHANGELOG.md](/Users/Captain/Projects/VibeCoding/Studio YONA HomePage/docs/CHANGELOG.md)
-- [docs/ARCHITECTURE.md](/Users/Captain/Projects/VibeCoding/Studio YONA HomePage/docs/ARCHITECTURE.md)
-- [docs/STUDIO_YONA_HOMEPAGE_MVP_PLAN_2026-04-05.md](/Users/Captain/Projects/VibeCoding/Studio YONA HomePage/docs/STUDIO_YONA_HOMEPAGE_MVP_PLAN_2026-04-05.md)
-- [docs/DEPLOYMENT.md](/Users/Captain/Projects/VibeCoding/Studio YONA HomePage/docs/DEPLOYMENT.md)
+- [docs/CHANGELOG.md](docs/CHANGELOG.md)
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- [docs/STUDIO_YONA_HOMEPAGE_MVP_PLAN_2026-04-05.md](docs/STUDIO_YONA_HOMEPAGE_MVP_PLAN_2026-04-05.md)
+- [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
