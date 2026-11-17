@@ -163,3 +163,11 @@ Related Files:
 - 다음 세션 시작 TODO:
   1. (`선택`) `fontTools`, `brotli`, `Pillow`가 있는 Python 환경에서 `python3 scripts/optimize_assets.py` 실행
   2. 로컬 프리뷰로 주요 법률 페이지 및 `/contact/`, `/support/` 화면 확인 후 Git 커밋·배포
+
+## 2026-11-17 후속 — Notch Dice 시행일 정정 (로컬 준비)
+
+- 사용자가 Notch Dice는 미출시 앱이라고 확인하고 시행일을 앞당기도록 요청하여, Notch Dice 한·영 이용약관·개인정보처리방침의 시행일만 `2026-12-17`에서 `2026-11-17`로 정정했다. 공고일 `2026-11-16`, 이전 시행일·조항·다른 앱 문서는 보존했다.
+- 법률 전문 변경 범위는 `ko/apps/notch-dice/legal/{terms,privacy}/index.html`, `en/apps/notch-dice/legal/{terms,privacy}/index.html` 네 파일의 시행일 표기 각 2곳이다. 언어 중립 진입 페이지에는 시행일이 없어 변경하지 않았다.
+- 한·영 공통 개정 안내(`ko/legal/update-2026-12-17/index.html`, `en/legal/update-2026-12-17/index.html`)에서는 Notch Dice를 미출시 앱으로 구분하고 `2026-11-17` 시행일을 표시했다. 다른 출시 5개 앱의 `2026-12-17` 일정과 조항·변경 내용은 보존했으며, 공통 표의 일정과 부동의 안내 범위도 이에 맞췄다.
+- 공개 사이트는 아직 `2026-12-17` 시행일을 표시한다. 이번 수정은 로컬 준비이며 커밋·푸시·게시·Actions 실행·호스팅/DNS 변경을 하지 않았다.
+- 기존 게시 경로는 GitHub Pages `main`/root이며 동적 Pages Action을 사용한다. 기존에 확인된 Actions 없는 대체 게시 경로는 없으므로, Actions 금지 상태에서 공개 반영은 미완료다. 이전 Notch Dice 35줄 패치는 최신 11월 16일 법률 전문을 덮어쓰는 데 사용하지 않는다.
